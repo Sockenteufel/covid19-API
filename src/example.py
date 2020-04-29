@@ -7,7 +7,9 @@ if __name__ == '__main__':
             Bucket='repo-minciencia-datos-covid19',
             Key='output/producto1/Covid-19_std.csv',
             ExpressionType='SQL',
-            Expression="select * from s3object s ",
+            # Expression="select * from s3object s ",
+            # Expression="select * from s3object s where s.Fecha like '%2020-04-24%'",
+
             InputSerialization = {'CSV': {"FileHeaderInfo": "Use"}},
             OutputSerialization = {'CSV': {}},
     )
