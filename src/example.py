@@ -9,7 +9,7 @@ if __name__ == '__main__':
             ExpressionType='SQL',
             # Expression="select * from s3object s ",
             # Expression="select * from s3object s where s.Fecha like '%2020-04-24%'",
-
+            Expression="select * from s3object s where s.Fecha = '2020-04-24'",
             InputSerialization = {'CSV': {"FileHeaderInfo": "Use"}},
             OutputSerialization = {'CSV': {}},
     )
