@@ -49,14 +49,14 @@ def csv2line(input):
             print(input + ' is time-series')
             print(list(df))
             if 'producto1/Covid-19_std.csv' in input:
-                lines = ['Casos confirmados comunal'
+                lines = ['"Casos confirmados comunal"'
                          + ' '
                          + 'Region=' + unidecode.unidecode(str(df['Region'][d])) + ","
-                         + 'Codigo region=' + str(df['Codigo region'][d]) + ","
+                         + '"Codigo region"=' + str(df['Codigo region'][d]) + ","
                          + 'Comuna=' + unidecode.unidecode(str(df['Comuna'][d])) + ","
-                         + 'Codigo comuna=' + str(df['Codigo comuna'][d]) + ","
+                         + '"Codigo comuna"=' + str(df['Codigo comuna'][d]) + ","
                          + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                         + 'Casos confirmados=' + str(df['Casos confirmados'][d])
+                         + '"Casos confirmados"=' + str(df['Casos confirmados'][d])
                          + " " + str(df["Fecha"][d]) for d in range(len(df))
                          ]
 
