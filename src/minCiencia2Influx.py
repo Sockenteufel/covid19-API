@@ -57,7 +57,6 @@ def fileWriter(path, lines):
 def prod1ToLine(df, path):
     lines = []
     for d in range(len(df)):
-        timestamp = pd.to_datetime(df["Fecha"][d])
         lines.append('Casos_confirmados_comunal,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
@@ -78,7 +77,6 @@ def prod1ToLine(df, path):
 def prod3ToLine(df, path):
     lines = []
     for d in range(len(df)):
-        timestamp = pd.to_datetime(df["Fecha"][d])
         lines.append('Casos_acumulados_regional,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
@@ -89,6 +87,22 @@ def prod3ToLine(df, path):
                      + str(pd.to_datetime(df["Fecha"][d]).value)
                      )
     fileWriter(path, lines)
+
+
+def prod5ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('Totales_nacionales,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Serie="' + unidecode.unidecode(str(df['Dato'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Total'][d])
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
 
 
 def csv2line(input):
@@ -102,6 +116,9 @@ def csv2line(input):
                 prod1ToLine(df, '../output/p1-chronograf.txt')
             if 'producto3' in input:
                 prod3ToLine(df, '../output/p3-chronograf.txt')
+            if 'producto5' in input:
+                prod5ToLine(df, '../output/p5-chronograf.txt')
+
 
 
         else:
