@@ -104,6 +104,20 @@ def prod5ToLine(df, path):
     fileWriter(path, lines)
 
 
+def prod7ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('PCR_Regional,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['numero'][d])
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
 
 def csv2line(input):
     if input != '':
@@ -118,6 +132,8 @@ def csv2line(input):
                 prod3ToLine(df, '../output/p3-chronograf.txt')
             if 'producto5' in input:
                 prod5ToLine(df, '../output/p5-chronograf.txt')
+            if 'producto7' in input:
+                prod7ToLine(df, '../output/p7-chronograf.txt')
 
 
 
