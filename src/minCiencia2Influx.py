@@ -58,11 +58,14 @@ def csv2line(input):
                     timestamp = pd.to_datetime(df["Fecha"][d])
                     lines.append('Casos_confirmados_comunal'
                              + ' '
+                             # TAGS are used to check if measurements are the same
                              + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
                              + 'Codigo_region=' + str(df['Codigo region'][d]) + ","
                              + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
                              + 'Codigo_comuna=' + str(df['Codigo comuna'][d]) + ","
                              + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                             + ' '
+                             # Fields
                              + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
                              # epoch = int(time.mktime(time.strptime(date_time, pattern)))
                              #+ " " + str(df["Fecha"][d]) for d in range(len(df))
@@ -70,6 +73,9 @@ def csv2line(input):
                              )
 
                 thefile = open('../output/p1-chronograf.txt', 'w')
+                header = ['# DML', '# CONTEXT-DATABASE: covid19']
+                for line in header:
+                    thefile.write("%s\n" % line)
                 for item in lines:
                     thefile.write("%s\n" % item)
 
@@ -84,8 +90,20 @@ if __name__ == '__main__':
         print('Checking ' + k + ': ' + relevantCSVs[k])
         df = csv2line(relevantCSVs[k])
 
+
+
 """
+HEADER_
+# DDL
+CREATE DATABASE covid19
+
+# DML
+# CONTEXT-DATABASE: covid19
+
+
 #convert csv's to line protocol
+
+
 
 #convert sample output to line protocol (with nanosecond precision)
 df = pd.read_csv("output/BTC_sm_ns.csv")
