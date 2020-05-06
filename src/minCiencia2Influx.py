@@ -79,12 +79,12 @@ def prod3ToLine(df, path):
     lines = []
     for d in range(len(df)):
         timestamp = pd.to_datetime(df["Fecha"][d])
-        lines.append('Casos_confirmados_comunal,'
+        lines.append('Casos_acumulados_regional,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Casos_acumulados_regional=' + str(df['Total'][d])
+                     + 'Casos_acumulados=' + str(df['Total'][d])
                      + ' '
                      + str(pd.to_datetime(df["Fecha"][d]).value)
                      )
