@@ -44,6 +44,7 @@ relevantCSVs = {
     'prod28': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto28/FechaInicioSintomas_reportadosSEREMI_std.csv',
 }
 
+
 def fileWriter(path, lines):
     thefile = open(path, 'w')
     header = ['# DML', '# CONTEXT-DATABASE: covid19']
@@ -52,6 +53,27 @@ def fileWriter(path, lines):
     for item in lines:
         thefile.write("%s\n" % item)
 
+
+def prod1ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        timestamp = pd.to_datetime(df["Fecha"][d])
+        lines.append('Casos_confirmados_comunal,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + ' '
+                     # Fields
+
+                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
 def csv2line(input):
     if input != '':
         df = pd.read_csv(input)
@@ -59,24 +81,25 @@ def csv2line(input):
         if 'fecha' in df.columns.str.lower():
             print(input + ' is time-series')
             if 'producto1/Covid-19_std.csv' in input:
-                lines = []
-                for d in range(len(df)):
-                    timestamp = pd.to_datetime(df["Fecha"][d])
-                    lines.append('Casos_confirmados_comunal,'
-                                 # TAGS are used to check if measurements are the same
-                                 + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                                 + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                                 + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                                 + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
-                                 + ' '
-                                 # Fields
-
-                                 + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                                 + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
-                                 + ' '
-                                 + str(pd.to_datetime(df["Fecha"][d]).value)
-                                 )
-                fileWriter('../output/p1-chronograf.txt', lines)
+                prod1ToLine(df, '../output/p1-chronograf.txt')
+                # lines = []
+                # for d in range(len(df)):
+                #     timestamp = pd.to_datetime(df["Fecha"][d])
+                #     lines.append('Casos_confirmados_comunal,'
+                #                  # TAGS are used to check if measurements are the same
+                #                  + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                #                  + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
+                #                  + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                #                  + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                #                  + ' '
+                #                  # Fields
+                #
+                #                  + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                #                  + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
+                #                  + ' '
+                #                  + str(pd.to_datetime(df["Fecha"][d]).value)
+                #                  )
+                # fileWriter('../output/p1-chronograf.txt', lines)
 
         else:
             print('check ' + input + ' for is not a time series')
