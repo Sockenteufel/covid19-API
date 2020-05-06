@@ -44,14 +44,20 @@ relevantCSVs = {
     'prod28': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto28/FechaInicioSintomas_reportadosSEREMI_std.csv',
 }
 
+def fileWriter(path, lines):
+    thefile = open(path, 'w')
+    header = ['# DML', '# CONTEXT-DATABASE: covid19']
+    for line in header:
+        thefile.write("%s\n" % line)
+    for item in lines:
+        thefile.write("%s\n" % item)
 
 def csv2line(input):
     if input != '':
         df = pd.read_csv(input)
+        df = df.fillna(0)
         if 'fecha' in df.columns.str.lower():
             print(input + ' is time-series')
-            print(list(df))
-            df = df.fillna(0)
             if 'producto1/Covid-19_std.csv' in input:
                 lines = []
                 for d in range(len(df)):
@@ -70,13 +76,7 @@ def csv2line(input):
                                  + ' '
                                  + str(pd.to_datetime(df["Fecha"][d]).value)
                                  )
-
-                thefile = open('../output/p1-chronograf.txt', 'w')
-                header = ['# DML', '# CONTEXT-DATABASE: covid19']
-                for line in header:
-                    thefile.write("%s\n" % line)
-                for item in lines:
-                    thefile.write("%s\n" % item)
+                fileWriter('../output/p1-chronograf.txt', lines)
 
         else:
             print('check ' + input + ' for is not a time series')
