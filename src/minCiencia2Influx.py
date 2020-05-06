@@ -59,12 +59,13 @@ def csv2line(input):
                     lines.append('Casos_confirmados_comunal,'
                                  # TAGS are used to check if measurements are the same
                                  + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                                 + 'Codigo_region=' + str(df['Codigo region'][d]) + ","
+                                 + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
                                  + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                                 + 'Codigo_comuna=' + str(df['Codigo comuna'][d]) + ","
-                                 + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                                 + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
                                  + ' '
                                  # Fields
+
+                                 + 'Poblacion=' + str(df['Poblacion'][d]) + ","
                                  + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
                                  + ' '
                                  + str(pd.to_datetime(df["Fecha"][d]).value)
