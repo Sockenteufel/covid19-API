@@ -6,6 +6,9 @@
 
 import pandas as pd
 import unidecode
+import numpy as np
+import time
+from datetime import datetime
 
 relevantCSVs = {
     'prod1': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto1/Covid-19_std.csv',
@@ -48,17 +51,23 @@ def csv2line(input):
         if 'fecha' in df.columns.str.lower():
             print(input + ' is time-series')
             print(list(df))
+
             if 'producto1/Covid-19_std.csv' in input:
-                lines = ['"Casos confirmados comunal"'
-                         + ' '
-                         + 'Region=' + unidecode.unidecode(str(df['Region'][d])) + ","
-                         + '"Codigo region"=' + str(df['Codigo region'][d]) + ","
-                         + 'Comuna=' + unidecode.unidecode(str(df['Comuna'][d])) + ","
-                         + '"Codigo comuna"=' + str(df['Codigo comuna'][d]) + ","
-                         + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                         + '"Casos confirmados"=' + str(df['Casos confirmados'][d])
-                         + " " + str(df["Fecha"][d]) for d in range(len(df))
-                         ]
+                lines = []
+                for d in range(len(df)):
+                    timestamp = pd.to_datetime(df["Fecha"][d])
+                    lines.append('Casos_confirmados_comunal'
+                             + ' '
+                             + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                             + 'Codigo_region=' + str(df['Codigo region'][d]) + ","
+                             + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                             + 'Codigo_comuna=' + str(df['Codigo comuna'][d]) + ","
+                             + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                             + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
+                             # epoch = int(time.mktime(time.strptime(date_time, pattern)))
+                             #+ " " + str(df["Fecha"][d]) for d in range(len(df))
+                             + " " + str(pd.to_datetime(df["Fecha"][d]).value)
+                             )
 
                 thefile = open('../output/p1-chronograf.txt', 'w')
                 for item in lines:
