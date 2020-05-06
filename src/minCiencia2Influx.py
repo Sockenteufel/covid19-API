@@ -113,7 +113,7 @@ def prod7ToLine(df, path):
                      + 'Codigo_region="' + str(df['Codigo region'][d]) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['numero'][d])
+                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
                      + ' '
                      + str(pd.to_datetime(df["fecha"][d]).value)
                      )
