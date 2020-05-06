@@ -74,32 +74,35 @@ def prod1ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+
+def prod3ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        timestamp = pd.to_datetime(df["Fecha"][d])
+        lines.append('Casos_confirmados_comunal,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Casos_acumulados_regional=' + str(df['Total'][d])
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+
 def csv2line(input):
     if input != '':
         df = pd.read_csv(input)
         df = df.fillna(0)
         if 'fecha' in df.columns.str.lower():
             print(input + ' is time-series')
+            print((list(df)))
             if 'producto1/Covid-19_std.csv' in input:
                 prod1ToLine(df, '../output/p1-chronograf.txt')
-                # lines = []
-                # for d in range(len(df)):
-                #     timestamp = pd.to_datetime(df["Fecha"][d])
-                #     lines.append('Casos_confirmados_comunal,'
-                #                  # TAGS are used to check if measurements are the same
-                #                  + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                #                  + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                #                  + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                #                  + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
-                #                  + ' '
-                #                  # Fields
-                #
-                #                  + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                #                  + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
-                #                  + ' '
-                #                  + str(pd.to_datetime(df["Fecha"][d]).value)
-                #                  )
-                # fileWriter('../output/p1-chronograf.txt', lines)
+            if 'producto3' in input:
+                prod3ToLine(df, '../output/p3-chronograf.txt')
+
 
         else:
             print('check ' + input + ' for is not a time series')
