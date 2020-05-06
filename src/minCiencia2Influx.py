@@ -51,7 +51,7 @@ def csv2line(input):
         if 'fecha' in df.columns.str.lower():
             print(input + ' is time-series')
             print(list(df))
-
+            df = df.fillna(0)
             if 'producto1/Covid-19_std.csv' in input:
                 lines = []
                 for d in range(len(df)):

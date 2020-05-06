@@ -75,7 +75,7 @@ Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="San_Antoni
 Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="San_Esteban",Codigo_comuna=5304,Poblacion=20643.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="San_Felipe",Codigo_comuna=5701,Poblacion=83494.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="Santa_Maria",Codigo_comuna=5706,Poblacion=16367.0,Casos_confirmados=0.0 1585526400000000000
-Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="Santo_Domingo",Codigo_comuna=5606,Poblacion=11934.0,Casos_confirmados=nan 1585526400000000000
+Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="Santo_Domingo",Codigo_comuna=5606,Poblacion=11934.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="Valparaiso",Codigo_comuna=5101,Poblacion=315732.0,Casos_confirmados=16.0 1585526400000000000
 Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="Villa_Alemana",Codigo_comuna=5804,Poblacion=139310.0,Casos_confirmados=6.0 1585526400000000000
 Casos_confirmados_comunal Region="Valparaiso",Codigo_region=5,Comuna="Vina_del_Mar",Codigo_comuna=5109,Poblacion=361371.0,Casos_confirmados=29.0 1585526400000000000
@@ -247,7 +247,7 @@ Casos_confirmados_comunal Region="Biobio",Codigo_region=8,Comuna="Santa_Juana",C
 Casos_confirmados_comunal Region="Biobio",Codigo_region=8,Comuna="Talcahuano",Codigo_comuna=8110,Poblacion=158345.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Biobio",Codigo_region=8,Comuna="Tirua",Codigo_comuna=8207,Poblacion=11019.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Biobio",Codigo_region=8,Comuna="Tome",Codigo_comuna=8111,Poblacion=58729.0,Casos_confirmados=4.0 1585526400000000000
-Casos_confirmados_comunal Region="Biobio",Codigo_region=8,Comuna="Tucapel",Codigo_comuna=8312,Poblacion=15205.0,Casos_confirmados=nan 1585526400000000000
+Casos_confirmados_comunal Region="Biobio",Codigo_region=8,Comuna="Tucapel",Codigo_comuna=8312,Poblacion=15205.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Biobio",Codigo_region=8,Comuna="Yumbel",Codigo_comuna=8313,Poblacion=22132.0,Casos_confirmados=5.0 1585526400000000000
 Casos_confirmados_comunal Region="Araucania",Codigo_region=9,Comuna="Angol",Codigo_comuna=9201,Poblacion=56058.0,Casos_confirmados=7.0 1585526400000000000
 Casos_confirmados_comunal Region="Araucania",Codigo_region=9,Comuna="Carahue",Codigo_comuna=9102,Poblacion=25486.0,Casos_confirmados=0.0 1585526400000000000
@@ -280,7 +280,7 @@ Casos_confirmados_comunal Region="Araucania",Codigo_region=9,Comuna="Tolten",Cod
 Casos_confirmados_comunal Region="Araucania",Codigo_region=9,Comuna="Traiguen",Codigo_comuna=9210,Poblacion=19314.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Araucania",Codigo_region=9,Comuna="Victoria",Codigo_comuna=9211,Poblacion=35467.0,Casos_confirmados=5.0 1585526400000000000
 Casos_confirmados_comunal Region="Araucania",Codigo_region=9,Comuna="Vilcun",Codigo_comuna=9119,Poblacion=30766.0,Casos_confirmados=4.0 1585526400000000000
-Casos_confirmados_comunal Region="Araucania",Codigo_region=9,Comuna="Villarrica",Codigo_comuna=9120,Poblacion=59103.0,Casos_confirmados=nan 1585526400000000000
+Casos_confirmados_comunal Region="Araucania",Codigo_region=9,Comuna="Villarrica",Codigo_comuna=9120,Poblacion=59103.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Los_Rios",Codigo_region=14,Comuna="Corral",Codigo_comuna=14102,Poblacion=5447.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Los_Rios",Codigo_region=14,Comuna="Futrono",Codigo_comuna=14202,Poblacion=15261.0,Casos_confirmados=0.0 1585526400000000000
 Casos_confirmados_comunal Region="Los_Rios",Codigo_region=14,Comuna="La_Union",Codigo_comuna=14201,Poblacion=39538.0,Casos_confirmados=0.0 1585526400000000000
