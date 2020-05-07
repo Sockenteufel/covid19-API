@@ -119,6 +119,37 @@ def prod7ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+
+def prod8ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('UCI_Regional,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+
+def prod9ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('UCI_Etario,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
 def csv2line(input):
     if input != '':
         df = pd.read_csv(input)
@@ -134,6 +165,10 @@ def csv2line(input):
                 prod5ToLine(df, '../output/p5-chronograf.txt')
             if 'producto7' in input:
                 prod7ToLine(df, '../output/p7-chronograf.txt')
+            if 'producto8' in input:
+                prod8ToLine(df, '../output/p8-chronograf.txt')
+            if 'producto9' in input:
+                prod9ToLine(df, '../output/p9-chronograf.txt')
 
 
 
