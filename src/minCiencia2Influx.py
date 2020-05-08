@@ -248,7 +248,7 @@ def prod17ToLine(df, path):
         lines.append('PCR_tipo_establecimiento,'
                      # TAGS are used to check if measurements are the same
                      + 'Establecimiento="' + unidecode.unidecode(str(df['Establecimiento'][d]).replace(' ', '_')) + '",'
-                     + 'Examenes="' + unidecode.unidecode(str(df['Examenes'][d])) + '"'
+                     + 'Examenes="' + unidecode.unidecode(str(df['Examenes'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
                      + 'Total=' + str(df['Numero de PCR'][d]).replace('-', '0')
