@@ -201,12 +201,12 @@ def prod14ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+
 def prod15ToLine(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
     df2 = pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv')
-    print(df2)
     for d in range(len(df)):
         lines.append('Inicio_sintomas_comunal,'
                      # TAGS are used to check if measurements are the same
@@ -224,40 +224,51 @@ def prod15ToLine(df, path):
     fileWriter(path, lines)
 
 
+def prod16ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df)):
+        lines.append('Casos_genero_Etario,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '",'
+                     + 'Sexo="' + unidecode.unidecode(str(df['Sexo'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
 
 def csv2line(input):
     if input != '':
         df = pd.read_csv(input)
         df = df.fillna(0)
-        if 'fecha' in df.columns.str.lower():
-            print(input + ' is time-series')
-            print((list(df)))
-            if 'producto1/Covid-19_std.csv' in input:
-                prod1ToLine(df, '../output/p1-chronograf.txt')
-            if 'producto3' in input:
-                prod3ToLine(df, '../output/p3-chronograf.txt')
-            if 'producto5' in input:
-                prod5ToLine(df, '../output/p5-chronograf.txt')
-            if 'producto7' in input:
-                prod7ToLine(df, '../output/p7-chronograf.txt')
-            if 'producto8' in input:
-                prod8ToLine(df, '../output/p8-chronograf.txt')
-            if 'producto9' in input:
-                prod9ToLine(df, '../output/p9-chronograf.txt')
-            if 'producto10' in input:
-                prod10ToLine(df, '../output/p10-chronograf.txt')
-            if 'producto13' in input:
-                prod13ToLine(df, '../output/p13-chronograf.txt')
-            if 'producto14' in input:
-                prod14ToLine(df, '../output/p14-chronograf.txt')
+        print((list(df)))
+        if 'producto1/Covid-19_std.csv' in input:
+            prod1ToLine(df, '../output/p1-chronograf.txt')
+        if 'producto3' in input:
+            prod3ToLine(df, '../output/p3-chronograf.txt')
+        if 'producto5' in input:
+            prod5ToLine(df, '../output/p5-chronograf.txt')
+        if 'producto7' in input:
+            prod7ToLine(df, '../output/p7-chronograf.txt')
+        if 'producto8' in input:
+            prod8ToLine(df, '../output/p8-chronograf.txt')
+        if 'producto9' in input:
+            prod9ToLine(df, '../output/p9-chronograf.txt')
+        if 'producto10' in input:
+            prod10ToLine(df, '../output/p10-chronograf.txt')
+        if 'producto13' in input:
+            prod13ToLine(df, '../output/p13-chronograf.txt')
+        if 'producto14' in input:
+            prod14ToLine(df, '../output/p14-chronograf.txt')
+        if 'producto15' in input:
+            prod15ToLine(df, '../output/p15-chronograf.txt')
+        if 'producto16' in input:
+            prod16ToLine(df, '../output/p16-chronograf.txt')
 
-
-
-        else:
-            print('check ' + input + ' for is not a time series')
-            print(list(df))
-            if 'producto15' in input:
-                prod15ToLine(df, '../output/p15-chronograf.txt')
 
 
 if __name__ == '__main__':
