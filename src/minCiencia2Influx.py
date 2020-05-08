@@ -168,6 +168,24 @@ def prod10ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+
+def prod13ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df)):
+        lines.append('Casos_nuevos_Cumulativo,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region"' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Total'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+
 def csv2line(input):
     if input != '':
         df = pd.read_csv(input)
@@ -189,6 +207,8 @@ def csv2line(input):
                 prod9ToLine(df, '../output/p9-chronograf.txt')
             if 'producto10' in input:
                 prod10ToLine(df, '../output/p10-chronograf.txt')
+            if 'producto13' in input:
+                prod13ToLine(df, '../output/p13-chronograf.txt')
 
 
         else:
