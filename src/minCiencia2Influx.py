@@ -138,8 +138,24 @@ def prod8ToLine(df, path):
 
 def prod9ToLine(df, path):
     lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
     for d in range(len(df)):
         lines.append('UCI_Etario,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+def prod10ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('Fallecidos_Etario,'
                      # TAGS are used to check if measurements are the same
                      + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '"'
                      + ' '
