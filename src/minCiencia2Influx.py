@@ -25,8 +25,8 @@ relevantCSVs = {
     'prod12': '',  # this is prod 7
     'prod13': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto13/CasosNuevosCumulativo_std.csv',
     'prod14': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto14/FallecidosCumulativo_std.csv',
-    'prod15.1': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/FechaInicioSintomas_std.csv',
-    'prod15.2': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv',
+    'prod15': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/FechaInicioSintomas_std.csv',
+   # 'prod15.2': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv',
     'prod16': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto16/CasosGeneroEtario_std.csv',
     'prod17': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto17/PCREstablecimiento_std.csv',
     'prod18': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto18/TasaDeIncidencia_std.csv',
@@ -174,7 +174,7 @@ def prod13ToLine(df, path):
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
     for d in range(len(df)):
-        lines.append('Casos_nuevos_cumulativo,'
+        lines.append('Casos_nuevos_cumulativo_regional,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
                      + ' '
@@ -190,7 +190,7 @@ def prod14ToLine(df, path):
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
     for d in range(len(df)):
-        lines.append('Fallecidos_cumulativo,'
+        lines.append('Fallecidos_cumulativo_regional,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
                      + ' '
@@ -200,6 +200,29 @@ def prod14ToLine(df, path):
                      + str(pd.to_datetime(df["Fecha"][d]).value)
                      )
     fileWriter(path, lines)
+
+def prod15ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    df2 = pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv')
+    print(df2)
+    for d in range(len(df)):
+        lines.append('Inicio_sintomas_comunal,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df2.loc[[0], df["Semana Epidemiologica"][d]][0]).value)
+                     )
+    fileWriter(path, lines)
+
 
 
 def csv2line(input):
@@ -229,9 +252,12 @@ def csv2line(input):
                 prod14ToLine(df, '../output/p14-chronograf.txt')
 
 
+
         else:
             print('check ' + input + ' for is not a time series')
             print(list(df))
+            if 'producto15' in input:
+                prod15ToLine(df, '../output/p15-chronograf.txt')
 
 
 if __name__ == '__main__':
