@@ -174,7 +174,7 @@ def prod13ToLine(df, path):
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
     for d in range(len(df)):
-        lines.append('Casos_nuevos_Cumulativo,'
+        lines.append('Casos_nuevos_cumulativo,'
                      # TAGS are used to check if measurements are the same
                      + 'Region"' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
                      + ' '
