@@ -185,7 +185,8 @@ def csv2line(input):
                 prod8ToLine(df, '../output/p8-chronograf.txt')
             if 'producto9' in input:
                 prod9ToLine(df, '../output/p9-chronograf.txt')
-
+            if 'producto10' in input:
+                prod10ToLine(df, '../output/p10-chronograf.txt')
 
 
         else:
