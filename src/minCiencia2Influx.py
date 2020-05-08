@@ -154,6 +154,8 @@ def prod9ToLine(df, path):
 
 def prod10ToLine(df, path):
     lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
     for d in range(len(df)):
         lines.append('Fallecidos_Etario,'
                      # TAGS are used to check if measurements are the same
