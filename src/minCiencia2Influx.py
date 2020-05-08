@@ -204,8 +204,6 @@ def prod14ToLine(df, path):
 
 def prod15ToLine(df, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
     df2 = pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv')
     for d in range(len(df)):
         lines.append('Inicio_sintomas_comunal,'
@@ -241,6 +239,24 @@ def prod16ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+
+def prod17ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df)):
+        lines.append('PCR_tipo_establecimiento,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Establecimiento="' + unidecode.unidecode(str(df['Establecimiento'][d]).replace(' ', '_')) + '",'
+                     + 'Examenes="' + unidecode.unidecode(str(df['Examenes'][d])) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Numero de PCR'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
 def csv2line(input):
     if input != '':
         df = pd.read_csv(input)
@@ -268,6 +284,8 @@ def csv2line(input):
             prod15ToLine(df, '../output/p15-chronograf.txt')
         if 'producto16' in input:
             prod16ToLine(df, '../output/p16-chronograf.txt')
+        if 'producto17' in input:
+            prod17ToLine(df, '../output/p17-chronograf.txt')
 
 
 
