@@ -312,6 +312,39 @@ def prod20ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+def prod21_1ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df)):
+        lines.append('Sintomas_casos_confirmados,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Sintomas="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+
+def prod21_2ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df)):
+        lines.append('Sintomas_hospitalizados,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Sintomas="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
 
 def csv2line(input):
     if input != '':
@@ -348,6 +381,10 @@ def csv2line(input):
             prod19ToLine(df, '../output/p19-chronograf.txt')
         if 'producto20' in input:
             prod20ToLine(df, '../output/p20-chronograf.txt')
+        if 'SintomasCasosConfirmados' in input:
+            prod21_1ToLine(df, '../output/p21_1-chronograf.txt')
+        if 'SintomasHospitalizados' in input:
+            prod21_2ToLine(df, '../output/p21_2-chronograf.txt')
 
 
 if __name__ == '__main__':
