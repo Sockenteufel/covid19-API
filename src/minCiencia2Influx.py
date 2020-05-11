@@ -397,6 +397,43 @@ def prod23ToLine(df, path):
     fileWriter(path, lines)
 
 
+def prod24ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df)):
+        lines.append('Camas_hospital,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Tipo_de_cama="' + unidecode.unidecode(str(df['Tipo de cama'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+
+def prod25ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('Casos_actuales_comunal,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + ' '
+                     # Fields
+
+                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                     + 'Casos_actuales=' + str(df['Casos actuales'][d])
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+
 def csv2line(input):
     if input != '':
         df = pd.read_csv(input)
@@ -444,6 +481,10 @@ def csv2line(input):
             prod22_2ToLine(df, '../output/p22_2-chronograf.txt')
         if 'producto23' in input:
             prod23ToLine(df, '../output/p23-chronograf.txt')
+        if 'producto24' in input:
+            prod24ToLine(df, '../output/p24-chronograf.txt')
+        if 'producto25' in input:
+            prod25ToLine(df, '../output/p25-chronograf.txt')
 
 
 
