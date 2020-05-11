@@ -303,7 +303,7 @@ def prod20ToLine(df, path):
     for d in range(len(df)):
         lines.append('Ventiladores_nacional,'
                      # TAGS are used to check if measurements are the same
-                     + 'Ventiladores"' + unidecode.unidecode(str(df['Ventiladores'][d]).replace(' ', '_')) + '"'
+                     + 'Ventiladores="' + unidecode.unidecode(str(df['Ventiladores'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
                      + 'Total=' + str(df['numero'][d]).replace('-', '0')
