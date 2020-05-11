@@ -443,7 +443,7 @@ def csv2line(input):
         if 'HospitalizadosUCI_Acumulado' in input:
             prod22_2ToLine(df, '../output/p22_2-chronograf.txt')
         if 'producto23' in input:
-            prod20ToLine(df, '../output/p23-chronograf.txt')
+            prod23ToLine(df, '../output/p23-chronograf.txt')
 
 
 
