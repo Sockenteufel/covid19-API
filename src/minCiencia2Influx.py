@@ -385,10 +385,10 @@ def prod23ToLine(df, path):
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
     for d in range(len(df)):
-        lines.append('Pacientes_criticos,'
+        lines.append('Pacientes_criticos'
                      # TAGS are used to check if measurements are the same
                      #+ 'Pacientes_criticos="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
-                     + ' ,'
+                     + ' '
                      # Fields
                      + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
                      + ' '
