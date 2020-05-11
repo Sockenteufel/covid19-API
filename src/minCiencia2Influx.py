@@ -388,7 +388,7 @@ def prod23ToLine(df, path):
         lines.append('Pacientes_criticos,'
                      # TAGS are used to check if measurements are the same
                      #+ 'Pacientes_criticos="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
-                     + ' '
+                     + ' ,'
                      # Fields
                      + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
                      + ' '
