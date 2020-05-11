@@ -257,6 +257,7 @@ def prod17ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+
 def prod18ToLine(df, path):
     lines = []
     for d in range(len(df)):
@@ -273,6 +274,41 @@ def prod18ToLine(df, path):
                      + 'Tasa_de_incidencia=' + str(df['Tasa de incidencia'][d])
                      + ' '
                      + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+def prod19ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('Casos_activos_comunal,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + ' '
+                     # Fields
+
+                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                     + 'Casos_activos=' + str(df['Casos activos'][d])
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+def prod20ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df)):
+        lines.append('Ventiladores_nacional,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Ventiladores"' + unidecode.unidecode(str(df['Ventiladores'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["fecha"][d]).value)
                      )
     fileWriter(path, lines)
 
@@ -308,7 +344,10 @@ def csv2line(input):
             prod17ToLine(df, '../output/p17-chronograf.txt')
         if 'producto18' in input:
             prod18ToLine(df, '../output/p18-chronograf.txt')
-
+        if 'producto19' in input:
+            prod19ToLine(df, '../output/p19-chronograf.txt')
+        if 'producto20' in input:
+            prod20ToLine(df, '../output/p20-chronograf.txt')
 
 
 if __name__ == '__main__':
