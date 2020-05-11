@@ -359,7 +359,7 @@ def prod22_1ToLine(df, path):
                      # Fields
                      + 'Total=' + str(df['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df["fecha"][d]).value)
                      )
     fileWriter(path, lines)
 
@@ -376,7 +376,7 @@ def prod22_2ToLine(df, path):
                      # Fields
                      + 'Total=' + str(df['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df["fecha"][d]).value)
                      )
     fileWriter(path, lines)
 
