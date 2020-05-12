@@ -42,6 +42,8 @@ relevantCSVs = {
     'prod26': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto26/CasosNuevosConSintomas_std.csv',
     'prod27': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto27/CasosNuevosSinSintomas_std.csv',
     'prod28': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto28/FechaInicioSintomas_reportadosSEREMI_std.csv',
+    'prod29': '', #geo product
+    'prod30': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto30/PacientesVMI_std.csv'
 }
 
 
@@ -449,6 +451,22 @@ def prod28ToLine(df,path):
                      )
     fileWriter(path, lines)
 
+def prod30ToLine(df, path):
+    lines = []
+    df = df.replace('<=', 'menor que ', regex=True)
+    df = df.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df)):
+        lines.append('Pacientes_VMI'
+                     # TAGS are used to check if measurements are the same
+                     #+ 'Pacientes_criticos="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
 
 
 def csv2line(input):
@@ -458,7 +476,7 @@ def csv2line(input):
         print((list(df)))
         if 'producto1/Covid-19_std.csv' in input:
             prod1ToLine(df, '../output/p1-chronograf.txt')
-        if 'producto3' in input:
+        if 'producto3/' in input:
             prod3ToLine(df, '../output/p3-chronograf.txt')
         if 'producto5' in input:
             prod5ToLine(df, '../output/p5-chronograf.txt')
@@ -504,6 +522,8 @@ def csv2line(input):
             prod25ToLine(df, '../output/p25-chronograf.txt')
         if 'producto28' in input:
             prod28ToLine(df, '../output/p28-chronograf.txt')
+        if 'producto30' in input:
+            prod30ToLine(df, '../output/p30-chronograf.txt')
 
 
 
