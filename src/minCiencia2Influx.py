@@ -433,6 +433,23 @@ def prod25ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+def prod28ToLine(df,path):
+    lines = []
+    df2 = pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv')
+    for d in range(len(df)):
+        lines.append('Inicio_sintomas_reportados,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['SEREMI notificacion'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df2.loc[[0], df["Semana Epidemiologica"][d]][0]).value)
+                     )
+    fileWriter(path, lines)
+
+
 
 def csv2line(input):
     if input != '':
@@ -485,6 +502,8 @@ def csv2line(input):
             prod24ToLine(df, '../output/p24-chronograf.txt')
         if 'producto25' in input:
             prod25ToLine(df, '../output/p25-chronograf.txt')
+        if 'producto28' in input:
+            prod28ToLine(df, '../output/p28-chronograf.txt')
 
 
 
