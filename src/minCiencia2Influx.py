@@ -25,7 +25,7 @@ relevantCSVs = {
     'prod12': '',  # this is prod 7
     'prod13': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto13/CasosNuevosCumulativo_std.csv',
     'prod14': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto14/FallecidosCumulativo_std.csv',
-    'prod15': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/FechaInicioSintomas_std.csv',
+    'prod15': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/FechaInicioSintomasHistorico_std.csv',
    # 'prod15.2': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv',
     'prod16': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto16/CasosGeneroEtario_std.csv',
     'prod17': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto17/PCREstablecimiento_std.csv',
@@ -213,7 +213,8 @@ def prod15ToLine(df, path):
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
                      + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
                      + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '",'
+                     + 'Publicacion="' + str(df['Publicacion'][d]) + '"'
                      + ' '
                      # Fields
                      + 'Poblacion=' + str(df['Poblacion'][d]) + ","
