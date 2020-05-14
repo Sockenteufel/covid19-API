@@ -534,32 +534,3 @@ if __name__ == '__main__':
     for k in relevantCSVs:
         print('Checking ' + k + ': ' + relevantCSVs[k])
         df = csv2line(relevantCSVs[k])
-
-"""
-HEADER_
-# DDL
-CREATE DATABASE covid19
-
-# DML
-# CONTEXT-DATABASE: covid19
-
-
-#convert csv's to line protocol
-
-
-
-#convert sample output to line protocol (with nanosecond precision)
-df = pd.read_csv("output/BTC_sm_ns.csv")
-lines = [“price”
-         + ",type=BTC"
-         + " "
-         + "close=" + str(df["close"][d]) + ","
-         + "high=" + str(df["high"][d]) + ","
-         + "low=" + str(df["low"][d]) + ","
-         + "open=" + str(df["open"][d]) + ","
-         + "volume=" + str(df["volume"][d])
-         + " " + str(df["time"][d]) for d in range(len(df))]
-thefile = open('output/chronograf.txt', 'w')
-for item in lines:
-    thefile.write("%s\n" % item)
-    """
