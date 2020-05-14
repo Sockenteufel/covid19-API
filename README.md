@@ -26,3 +26,11 @@ Para ver las series disponibles:
 Para obtener los datos de las camas:
 
 `curl -u anonymous:anonymous 'http://covid19.dataobservatory.net:85/query?db=covid19' --data-urlencode "q=SELECT "Total" FROM "autogen"."Camas_hospital" "`
+
+
+## Como funciona?
+Cada vez que se actualiza un producto en el repo del [MinCiencia](https://github.com/MinCiencia/Datos-COVID19)
+se gatilla un [github action](https://github.com/features/actions) que nos notifica mediante un dispatch, 
+gatillando a su vez un github action acá que genera los archivos para influx. Cada 30 minutos,
+la base de datos ingesta las nuevas series.
+
