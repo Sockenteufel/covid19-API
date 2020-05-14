@@ -5,7 +5,7 @@ en su [repositorio](https://github.com/MinCiencia/Datos-COVID19) en formato line
 y/o construir soluciones.
 
 
-## Donde está?
+## Donde están los recursos?
 
 Puedes acceder al dashboard [aca](http://covid19.dataobservatory.net/grafana). Corresponde a una 
 instancia de [grafana](https://grafana.com/), que permite explorar los datos.
