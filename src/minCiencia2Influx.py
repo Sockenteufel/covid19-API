@@ -443,7 +443,7 @@ def prod28ToLine(df,path):
         lines.append('Inicio_sintomas_reportados,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d].replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
                      + 'Publicacion="' + str(df['Publicacion'][d]) + '"'
                      + ' '
                      # Fields
