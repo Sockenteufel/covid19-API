@@ -41,7 +41,7 @@ relevantCSVs = {
     'prod25': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto25/CasosActualesPorComuna_std.csv',
     'prod26': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto26/CasosNuevosConSintomas_std.csv',
     'prod27': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto27/CasosNuevosSinSintomas_std.csv',
-    'prod28': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto28/FechaInicioSintomas_reportadosSEREMI_std.csv',
+    'prod28': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto28/FechaInicioSintomas_reportadosSEREMIHistorico_std.csv',
     'prod29': '', #geo product
     'prod30': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto30/PacientesVMI_std.csv'
 }
@@ -442,8 +442,9 @@ def prod28ToLine(df,path):
     for d in range(len(df)):
         lines.append('Inicio_sintomas_reportados,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['SEREMI notificacion'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d].replace(' ', '_')) + '",'
+                     + 'Publicacion="' + str(df['Publicacion'][d]) + '"'
                      + ' '
                      # Fields
                      + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
