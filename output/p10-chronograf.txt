@@ -259,3 +259,10 @@ Fallecidos_Etario,Grupo_de_edad="60-69" Total=65 1589500800000000000
 Fallecidos_Etario,Grupo_de_edad="70-79" Total=110 1589500800000000000
 Fallecidos_Etario,Grupo_de_edad="80-89" Total=117 1589500800000000000
 Fallecidos_Etario,Grupo_de_edad="mayor_que_90" Total=39 1589500800000000000
+Fallecidos_Etario,Grupo_de_edad="menor_que_39" Total=10 1589587200000000000
+Fallecidos_Etario,Grupo_de_edad="40-49" Total=24 1589587200000000000
+Fallecidos_Etario,Grupo_de_edad="50-59" Total=32 1589587200000000000
+Fallecidos_Etario,Grupo_de_edad="60-69" Total=73 1589587200000000000
+Fallecidos_Etario,Grupo_de_edad="70-79" Total=118 1589587200000000000
+Fallecidos_Etario,Grupo_de_edad="80-89" Total=123 1589587200000000000
+Fallecidos_Etario,Grupo_de_edad="mayor_que_90" Total=41 1589587200000000000
