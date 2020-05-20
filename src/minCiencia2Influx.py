@@ -479,7 +479,9 @@ def prod31ToLine(df, path):
         lines.append('Nacimientos_comunal,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '"'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
                      + 'Nacimientos=' + str(df['Nacimientos'][d])
@@ -495,7 +497,9 @@ def prod32ToLine(df, path):
         lines.append('Defunciones_comunal,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '"'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
                      + 'Defunciones=' + str(df['Defunciones'][d])
