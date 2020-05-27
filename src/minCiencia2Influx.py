@@ -45,7 +45,8 @@ relevantCSVs = {
     'prod29': '', #geo product
     'prod30': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto30/PacientesVMI_std.csv',
     'prod31': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto31/Nacimientos_std.csv',
-    'prod32': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto32/Defunciones_std.csv'
+    'prod32': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto32/Defunciones_std.csv',
+    'prod33': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto33/IndiceDeMovilidad_std.csv'
 
 }
 
@@ -509,6 +510,27 @@ def prod32ToLine(df, path):
     fileWriter(path, lines)
 
 
+def prod33ToLine(df, path):
+    lines = []
+    #Region,Codigo region,Comuna,Codigo comuna,Superficie_km2,Poblacion,Fecha,variable,value
+    for d in range(len(df)):
+        lines.append('Indice_de_movilidad,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '",'
+                     + 'Serie="' + unidecode.unidecode(str(df['variable'][d])) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
+                     + 'Superficie_km2=' + str(df['Superficie_km2'][d]) + ","
+                     + 'Indice=' + str(df['value'][d])
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
 
 
 def csv2line(input):
@@ -570,6 +592,8 @@ def csv2line(input):
             prod31ToLine(df, '../output/p31-chronograf.txt')
         if 'producto32' in input:
             prod32ToLine(df, '../output/p32-chronograf.txt')
+        if 'producto33' in input:
+            prod33ToLine(df, '../output/p33-chronograf.txt')
 
 
 
