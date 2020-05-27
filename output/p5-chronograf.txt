@@ -588,3 +588,10 @@ Totales_nacionales,Serie="Fallecidos" Total=761.0 1590364800000000000
 Totales_nacionales,Serie="Casos_activos" Total=43934.0 1590364800000000000
 Totales_nacionales,Serie="Casos_nuevos_sin_sintomas" Total=467.0 1590364800000000000
 Totales_nacionales,Serie="Casos_nuevos_totales" Total=4895.0 1590364800000000000
+Totales_nacionales,Serie="Casos_nuevos_con_sintomas" Total=3618.0 1590451200000000000
+Totales_nacionales,Serie="Casos_totales" Total=77961.0 1590451200000000000
+Totales_nacionales,Serie="Casos_recuperados" Total=30915.0 1590451200000000000
+Totales_nacionales,Serie="Fallecidos" Total=806.0 1590451200000000000
+Totales_nacionales,Serie="Casos_activos" Total=46240.0 1590451200000000000
+Totales_nacionales,Serie="Casos_nuevos_sin_sintomas" Total=346.0 1590451200000000000
+Totales_nacionales,Serie="Casos_nuevos_totales" Total=3964.0 1590451200000000000
