@@ -1633,7 +1633,7 @@ Casos_acumulados_regional,Region="Aysen" Casos_acumulados=19 1591401600000000000
 Casos_acumulados_regional,Region="Magallanes" Casos_acumulados=1081 1591401600000000000
 Casos_acumulados_regional,Region="Total" Casos_acumulados=127745 1591401600000000000
 Casos_acumulados_regional,Region="Arica_y_Parinacota" Casos_acumulados=850 1591488000000000000
-Casos_acumulados_regional,Region="Tarapaca" Casos_acumulados=325 1591488000000000000
+Casos_acumulados_regional,Region="Tarapaca" Casos_acumulados=3250 1591488000000000000
 Casos_acumulados_regional,Region="Antofagasta" Casos_acumulados=3154 1591488000000000000
 Casos_acumulados_regional,Region="Atacama" Casos_acumulados=306 1591488000000000000
 Casos_acumulados_regional,Region="Coquimbo" Casos_acumulados=990 1591488000000000000
@@ -1641,11 +1641,11 @@ Casos_acumulados_regional,Region="Valparaiso" Casos_acumulados=4862 159148800000
 Casos_acumulados_regional,Region="Metropolitana" Casos_acumulados=108462 1591488000000000000
 Casos_acumulados_regional,Region="O'Higgins" Casos_acumulados=1183 1591488000000000000
 Casos_acumulados_regional,Region="Maule" Casos_acumulados=2109 1591488000000000000
-Casos_acumulados_regional,Region="Nuble" Casos_acumulados=149 1591488000000000000
+Casos_acumulados_regional,Region="Nuble" Casos_acumulados=1490 1591488000000000000
 Casos_acumulados_regional,Region="Biobio" Casos_acumulados=2595 1591488000000000000
 Casos_acumulados_regional,Region="Araucania" Casos_acumulados=2377 1591488000000000000
 Casos_acumulados_regional,Region="Los_Rios" Casos_acumulados=417 1591488000000000000
 Casos_acumulados_regional,Region="Los_Lagos" Casos_acumulados=1003 1591488000000000000
 Casos_acumulados_regional,Region="Aysen" Casos_acumulados=20 1591488000000000000
 Casos_acumulados_regional,Region="Magallanes" Casos_acumulados=1082 1591488000000000000
-Casos_acumulados_regional,Region="Total" Casos_acumulados=13415 1591488000000000000
+Casos_acumulados_regional,Region="Total" Casos_acumulados=134150 1591488000000000000
