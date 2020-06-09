@@ -7,649 +7,660 @@
 import pandas as pd
 import unidecode
 
+GITHUB_REPO = 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output'
+
 relevantCSVs = {
-    'prod1': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto1/Covid-19_std.csv',
-    'prod2': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto6/bulk/data.csv', ## Prod 1
-    'prod3': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto3/CasosTotalesCumulativo_std.csv',
-    'prod4': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto11/bulk/producto4.csv', ## Prod 5
-    'prod5': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto5/TotalesNacionales_std.csv',
+    'prod1': ('%s/producto1/Covid-19_std.csv' % GITHUB_REPO),
+    'prod2': ('%s/producto6/bulk/data.csv' % GITHUB_REPO),
+    # Prod 1
+    'prod3': ('%s/producto3/CasosTotalesCumulativo_std.csv' % GITHUB_REPO),
+    'prod4': ('%s/producto11/bulk/producto4.csv' % GITHUB_REPO),
+    # Prod 5
+    'prod5': ('%s/producto5/TotalesNacionales_std.csv' % GITHUB_REPO),
     'prod6': '',  # this is prod 2
-    'prod7': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto7/PCR_std.csv',
-    'prod8': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto8/UCI_std.csv',
-    'prod9': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto9/HospitalizadosUCIEtario_std.csv',
-    'prod10': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto10/FallecidosEtario_std.csv',
+    'prod7': ('%s/producto7/PCR_std.csv' % GITHUB_REPO),
+    'prod8': ('%s/producto8/UCI_std.csv' % GITHUB_REPO),
+    'prod9': ('%s/producto9/HospitalizadosUCIEtario_std.csv' % GITHUB_REPO),
+    'prod10': ('%s/producto10/FallecidosEtario_std.csv' % GITHUB_REPO),
     'prod11': '',  # this is prod 4
     'prod12': '',  # this is prod 7
-    'prod13': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto13/CasosNuevosCumulativo_std.csv',
-    'prod14': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto14/FallecidosCumulativo_std.csv',
-    'prod15': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/FechaInicioSintomasHistorico_std.csv',
-   # 'prod15.2': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv',
-    'prod16': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto16/CasosGeneroEtario_std.csv',
-    'prod17': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto17/PCREstablecimiento_std.csv',
-    'prod18': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto18/TasaDeIncidencia_std.csv',
-    'prod19': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto19/CasosActivosPorComuna_std.csv',
-    'prod20': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto20/NumeroVentiladores_std.csv',
-    'prod21.1': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto21/SintomasCasosConfirmados_std.csv',
-    'prod21.2': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto21/SintomasHospitalizados_std.csv',
-    'prod22.1': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto22/HospitalizadosEtario_Acumulado_std.csv',
-    'prod22.2': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto22/HospitalizadosUCI_Acumulado_std.csv',
-    'prod23': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto23/PacientesCriticos_std.csv',
-    'prod24': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto24/CamasHospital_Diario_std.csv',
-    'prod25': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto25/CasosActualesPorComuna_std.csv',
-    'prod26': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto26/CasosNuevosConSintomas_std.csv',
-    'prod27': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto27/CasosNuevosSinSintomas_std.csv',
-    'prod28': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto28/FechaInicioSintomas_reportadosSEREMIHistorico_std.csv',
-    'prod29': '', #geo product
-    'prod30': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto30/PacientesVMI_std.csv',
-    'prod31': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto31/Nacimientos_std.csv',
-    'prod32': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto32/Defunciones_std.csv',
-    'prod33': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto33/IndiceDeMovilidad_std.csv',
-    'prod34': '', #geo product
-    'prod35': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto35/Comorbilidad_std.csv',
-    'prod36': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto36/ResidenciasSanitarias_std.csv',
-    'prod37': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto37/Defunciones_std.csv'
+    'prod13': ('%s/producto13/CasosNuevosCumulativo_std.csv' % GITHUB_REPO),
+    'prod14': ('%s/producto14/FallecidosCumulativo_std.csv' % GITHUB_REPO),
+    'prod15': ('%s/producto15/FechaInicioSintomasHistorico_std.csv' % GITHUB_REPO),
+    # 'prod15.2': ('%s/producto15/SemanasEpidemiologicas.csv', % GITHUB_REPO),
+    'prod16': ('%s/producto16/CasosGeneroEtario_std.csv' % GITHUB_REPO),
+    'prod17': ('%s/producto17/PCREstablecimiento_std.csv' % GITHUB_REPO),
+    'prod18': ('%s/producto18/TasaDeIncidencia_std.csv' % GITHUB_REPO),
+    'prod19': ('%s/producto19/CasosActivosPorComuna_std.csv' % GITHUB_REPO),
+    'prod20': ('%s/producto20/NumeroVentiladores_std.csv' % GITHUB_REPO),
+    'prod21.1': ('%s/producto21/SintomasCasosConfirmados_std.csv' % GITHUB_REPO),
+    'prod21.2': ('%s/producto21/SintomasHospitalizados_std.csv' % GITHUB_REPO),
+    'prod22.1': ('%s/producto22/HospitalizadosEtario_Acumulado_std.csv' % GITHUB_REPO),
+    'prod22.2': ('%s/producto22/HospitalizadosUCI_Acumulado_std.csv' % GITHUB_REPO),
+    'prod23': ('%s/producto23/PacientesCriticos_std.csv' % GITHUB_REPO),
+    'prod24': ('%s/producto24/CamasHospital_Diario_std.csv' % GITHUB_REPO),
+    'prod25': ('%s/producto25/CasosActualesPorComuna_std.csv' % GITHUB_REPO),
+    'prod26': ('%s/producto26/CasosNuevosConSintomas_std.csv' % GITHUB_REPO),
+    'prod27': ('%s/producto27/CasosNuevosSinSintomas_std.csv' % GITHUB_REPO),
+    'prod28': ('%s/producto28/FechaInicioSintomas_reportadosSEREMIHistorico_std.csv' % GITHUB_REPO),
+    'prod29': '',  # geo product
+    'prod30': ('%s/producto30/PacientesVMI_std.csv' % GITHUB_REPO),
+    'prod31': ('%s/producto31/Nacimientos_std.csv' % GITHUB_REPO),
+    'prod32': ('%s/producto32/Defunciones_std.csv' % GITHUB_REPO),
+    'prod33': ('%s/producto33/IndiceDeMovilidad_std.csv' % GITHUB_REPO),
+    'prod34': '',  # geo product
+    'prod35': ('%s/producto35/Comorbilidad_std.csv' % GITHUB_REPO),
+    'prod36': ('%s/producto36/ResidenciasSanitarias_std.csv' % GITHUB_REPO),
+    'prod37': ('%s/producto37/Defunciones_std.csv' % GITHUB_REPO)
 
 }
 
 
-def fileWriter(path, lines):
-    thefile = open(path, 'w')
+def file_writer(path, lines):
+    the_file = open(path, 'w')
     header = ['# DML', '# CONTEXT-DATABASE: covid19']
     for line in header:
-        thefile.write("%s\n" % line)
+        the_file.write("%s\n" % line)
     for item in lines:
-        thefile.write("%s\n" % item)
+        the_file.write("%s\n" % item)
 
 
-def prod1_to_line(df, path):
+def prod1_to_line(df1, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df1)):
         lines.append('Casos_confirmados_comunal,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df1['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df1['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df1['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df1['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
 
-                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                     + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
+                     + 'Poblacion=' + str(df1['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df1['Casos confirmados'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df1["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod3_to_line(df, path):
+def prod3_to_line(df3, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df3)):
         lines.append('Casos_acumulados_regional,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df3['Region'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Casos_acumulados=' + str(df['Total'][d])
+                     + 'Casos_acumulados=' + str(df3['Total'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df3["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod5_to_line(df, path):
+def prod5_to_line(df5, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df5)):
         lines.append('Totales_nacionales,'
                      # TAGS are used to check if measurements are the same
-                     + 'Serie="' + unidecode.unidecode(str(df['Dato'][d]).replace(' ', '_')) + '"'
+                     + 'Serie="' + unidecode.unidecode(str(df5['Dato'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Total'][d])
+                     + 'Total=' + str(df5['Total'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df5["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod7_to_line(df, path):
+def prod7_to_line(df7, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df7)):
         lines.append('PCR_Regional,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df7['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df7['Codigo region'][d]) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df7['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df7["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod8_to_line(df, path):
+def prod8_to_line(df8, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df8)):
         lines.append('UCI_Regional,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df8['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df8['Codigo region'][d]) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df8['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df8["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod9_to_line(df, path):
+def prod9_to_line(df9, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df9 = df9.replace('<=', 'menor que ', regex=True)
+    df9 = df9.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df9)):
         lines.append('UCI_Etario,'
                      # TAGS are used to check if measurements are the same
-                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '"'
+                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df9['Grupo de edad'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + 'Total=' + str(df9['Casos confirmados'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df9["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod10_to_line(df, path):
+
+def prod10_to_line(df10, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df10 = df10.replace('<=', 'menor que ', regex=True)
+    df10 = df10.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df10)):
         lines.append('Fallecidos_Etario,'
                      # TAGS are used to check if measurements are the same
-                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '"'
+                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df10['Grupo de edad'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + 'Total=' + str(df10['Casos confirmados'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df10["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod13_to_line(df, path):
+def prod13_to_line(df13, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df13 = df13.replace('<=', 'menor que ', regex=True)
+    df13 = df13.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df13)):
         lines.append('Casos_nuevos_cumulativo_regional,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df13['Region'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Total'][d]).replace('-', '0')
+                     + 'Total=' + str(df13['Total'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df13["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod14_to_line(df, path):
+
+def prod14_to_line(df14, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df14 = df14.replace('<=', 'menor que ', regex=True)
+    df14 = df14.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df14)):
         lines.append('Fallecidos_cumulativo_regional,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df14['Region'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Total'][d]).replace('-', '0')
+                     + 'Total=' + str(df14['Total'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df14["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod15_to_line(df, path):
+def prod15_to_line(df15, path):
     lines = []
-    df2 = pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv')
-    for d in range(len(df)):
+    df2 = pd.read_csv(
+        '%s/producto15/SemanasEpidemiologicas.csv' % GITHUB_REPO)
+    for d in range(len(df15)):
         lines.append('Inicio_sintomas_comunal,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '",'
-                     + 'Publicacion="' + str(df['Publicacion'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df15['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df15['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df15['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df15['Codigo comuna'][d]) + '",'
+                     + 'Publicacion="' + str(df15['Publicacion'][d]) + '"'
                      + ' '
                      # Fields
-                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                     + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
+                     + 'Poblacion=' + str(df15['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df15['Casos confirmados'][d])
                      + ' '
-                     + str(pd.to_datetime(df2.loc[[0], df["Semana Epidemiologica"][d]][0]).value)
+                     + str(pd.to_datetime(df2.loc[[0], df15["Semana Epidemiologica"][d]][0]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod16_to_line(df, path):
+def prod16_to_line(df16, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df16 = df16.replace('<=', 'menor que ', regex=True)
+    df16 = df16.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df16)):
         lines.append('Casos_genero_Etario,'
                      # TAGS are used to check if measurements are the same
-                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '",'
-                     + 'Sexo="' + unidecode.unidecode(str(df['Sexo'][d]).replace(' ', '_')) + '"'
+                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df16['Grupo de edad'][d]).replace(' ', '_')) + '",'
+                     + 'Sexo="' + unidecode.unidecode(str(df16['Sexo'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + 'Total=' + str(df16['Casos confirmados'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df16["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod17_to_line(df, path):
+def prod17_to_line(df17, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df17 = df17.replace('<=', 'menor que ', regex=True)
+    df17 = df17.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df17)):
         lines.append('PCR_tipo_establecimiento,'
                      # TAGS are used to check if measurements are the same
-                     + 'Establecimiento="' + unidecode.unidecode(str(df['Establecimiento'][d]).replace(' ', '_')) + '",'
-                     + 'Examenes="' + unidecode.unidecode(str(df['Examenes'][d]).replace(' ', '_')) + '"'
+                     + 'Establecimiento="' + unidecode.unidecode(str(df17['Establecimiento'][d]).replace(' ', '_')) + '",'
+                     + 'Examenes="' + unidecode.unidecode(str(df17['Examenes'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Numero de PCR'][d]).replace('-', '0')
+                     + 'Total=' + str(df17['Numero de PCR'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df17["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod18_to_line(df, path):
+def prod18_to_line(df18, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df18)):
         lines.append('Tasa_de_incidencia_comunal,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df18['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df18['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df18['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df18['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
 
-                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                     + 'Tasa_de_incidencia=' + str(df['Tasa de incidencia'][d])
+                     + 'Poblacion=' + str(df18['Poblacion'][d]) + ","
+                     + 'Tasa_de_incidencia=' + str(df18['Tasa de incidencia'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df18["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod19_to_line(df, path):
+
+def prod19_to_line(df19, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df19)):
         lines.append('Casos_activos_comunal,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df19['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df19['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df19['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df19['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
 
-                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                     + 'Casos_activos=' + str(df['Casos activos'][d])
+                     + 'Poblacion=' + str(df19['Poblacion'][d]) + ","
+                     + 'Casos_activos=' + str(df19['Casos activos'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df19["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod20_to_line(df, path):
+
+def prod20_to_line(df20, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df20 = df20.replace('<=', 'menor que ', regex=True)
+    df20 = df20.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df20)):
         lines.append('Ventiladores_nacional,'
                      # TAGS are used to check if measurements are the same
-                     + 'Ventiladores="' + unidecode.unidecode(str(df['Ventiladores'][d]).replace(' ', '_')) + '"'
+                     + 'Ventiladores="' + unidecode.unidecode(str(df20['Ventiladores'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df20['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df20["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod21_1_to_line(df, path):
+
+def prod21_1_to_line(df211, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df211 = df211.replace('<=', 'menor que ', regex=True)
+    df211 = df211.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df211)):
         lines.append('Sintomas_casos_confirmados,'
                      # TAGS are used to check if measurements are the same
-                     + 'Sintomas="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
+                     + 'Sintomas="' + unidecode.unidecode(str(df211['Sintomas'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df211['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df211["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod21_2_to_line(df, path):
+def prod21_2_to_line(df212, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df212 = df212.replace('<=', 'menor que ', regex=True)
+    df212 = df212.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df212)):
         lines.append('Sintomas_hospitalizados,'
                      # TAGS are used to check if measurements are the same
-                     + 'Sintomas="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
+                     + 'Sintomas="' + unidecode.unidecode(str(df212['Sintomas'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df212['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df212["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod22_1_to_line(df, path):
+def prod22_1_to_line(df221, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df221 = df221.replace('<=', 'menor que ', regex=True)
+    df221 = df221.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df221)):
         lines.append('Hospitalizados_etario,'
                      # TAGS are used to check if measurements are the same
-                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '",'
-                     + 'Sexo="' + unidecode.unidecode(str(df['Sexo'][d]).replace(' ', '_')) + '"'
+                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df221['Grupo de edad'][d]).replace(' ', '_')) + '",'
+                     + 'Sexo="' + unidecode.unidecode(str(df221['Sexo'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df221['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df221["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod22_2_to_line(df, path):
+def prod22_2_to_line(df222, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df222 = df222.replace('<=', 'menor que ', regex=True)
+    df222 = df222.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df222)):
         lines.append('Hospitalizados_UCI_etario,'
                      # TAGS are used to check if measurements are the same
-                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df['Grupo de edad'][d]).replace(' ', '_')) + '"'
+                     + 'Grupo_de_edad="' + unidecode.unidecode(str(df222['Grupo de edad'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df222['numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df222["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod23_to_line(df, path):
+def prod23_to_line(df23, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df23 = df23.replace('<=', 'menor que ', regex=True)
+    df23 = df23.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df23)):
         lines.append('Pacientes_criticos'
                      # TAGS are used to check if measurements are the same
-                     #+ 'Pacientes_criticos="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
+                     # + 'Pacientes_criticos="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + 'Total=' + str(df23['Casos confirmados'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df23["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod24_to_line(df, path):
+def prod24_to_line(df24, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df24 = df24.replace('<=', 'menor que ', regex=True)
+    df24 = df24.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df24)):
         lines.append('Camas_hospital,'
                      # TAGS are used to check if measurements are the same
-                     + 'Tipo_de_cama="' + unidecode.unidecode(str(df['Tipo de cama'][d]).replace(' ', '_')) + '"'
+                     + 'Tipo_de_cama="' + unidecode.unidecode(str(df24['Tipo de cama'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + 'Total=' + str(df24['Casos confirmados'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["fecha"][d]).value)
+                     + str(pd.to_datetime(df24["fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod25_to_line(df, path):
+def prod25_to_line(df25, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df25)):
         lines.append('Casos_actuales_comunal,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df25['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df25['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df25['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df25['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
 
-                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                     + 'Casos_actuales=' + str(df['Casos actuales'][d])
+                     + 'Poblacion=' + str(df25['Poblacion'][d]) + ","
+                     + 'Casos_actuales=' + str(df25['Casos actuales'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df25["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod28_to_line(df,path):
+
+def prod28_to_line(df28, path):
     lines = []
-    df2 = pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv')
-    for d in range(len(df)):
+    df2 = pd.read_csv(
+        '%s/producto15/SemanasEpidemiologicas.csv' % GITHUB_REPO)
+    for d in range(len(df28)):
         lines.append('Inicio_sintomas_reportados,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Publicacion="' + str(df['Publicacion'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df28['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df28['Codigo region'][d]) + '",'
+                     + 'Publicacion="' + str(df28['Publicacion'][d]) + '"'
                      + ' '
                      # Fields
-                     + 'Casos_confirmados=' + str(df['Casos confirmados'][d])
+                     + 'Casos_confirmados=' + str(df28['Casos confirmados'][d])
                      + ' '
-                     + str(pd.to_datetime(df2.loc[[0], df["Semana Epidemiologica"][d]][0]).value)
+                     + str(pd.to_datetime(df2.loc[[0], df28["Semana Epidemiologica"][d]][0]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod30_to_line(df, path):
+
+def prod30_to_line(df30, path):
     lines = []
-    df = df.replace('<=', 'menor que ', regex=True)
-    df = df.replace('>=', 'mayor que ', regex=True)
-    for d in range(len(df)):
+    df30 = df30.replace('<=', 'menor que ', regex=True)
+    df30 = df30.replace('>=', 'mayor que ', regex=True)
+    for d in range(len(df30)):
         lines.append('Pacientes_VMI'
                      # TAGS are used to check if measurements are the same
-                     #+ 'Pacientes_criticos="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
+                     # + 'Pacientes_criticos="' + unidecode.unidecode(str(df['Sintomas'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + 'Total=' + str(df30['Casos confirmados'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df30["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod31_to_line(df, path):
+def prod31_to_line(df31, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df31)):
         lines.append('Nacimientos_comunal,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df31['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df31['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df31['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df31['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
-                     + 'Nacimientos=' + str(df['Nacimientos'][d])
+                     + 'Nacimientos=' + str(df31['Nacimientos'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df31["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod32_to_line(df, path):
+def prod32_to_line(df32, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df32)):
         lines.append('Defunciones_comunal,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df32['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df32['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df32['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df32['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
-                     + 'Defunciones=' + str(df['Defunciones'][d])
+                     + 'Defunciones=' + str(df32['Defunciones'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df32["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod33_to_line(df, path):
+def prod33_to_line(df33, path):
     lines = []
-    #Region,Codigo region,Comuna,Codigo comuna,Superficie_km2,Poblacion,Fecha,variable,value
-    for d in range(len(df)):
+    # Region,Codigo region,Comuna,Codigo comuna,Superficie_km2,Poblacion,Fecha,variable,value
+    for d in range(len(df33)):
         lines.append('Indice_de_movilidad,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_region="' + str(df['Codigo region'][d]) + '",'
-                     + 'Comuna="' + unidecode.unidecode(str(df['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df['Codigo comuna'][d]) + '",'
-                     + 'Serie="' + unidecode.unidecode(str(df['variable'][d])) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df33['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df33['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df33['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df33['Codigo comuna'][d]) + '",'
+                     + 'Serie="' + unidecode.unidecode(str(df33['variable'][d])) + '"'
                      + ' '
                      # Fields
-                     + 'Poblacion=' + str(df['Poblacion'][d]) + ","
-                     + 'Superficie_km2=' + str(df['Superficie_km2'][d]) + ","
-                     + 'Indice=' + str(df['value'][d])
+                     + 'Poblacion=' + str(df33['Poblacion'][d]) + ","
+                     + 'Superficie_km2=' + str(df33['Superficie_km2'][d]) + ","
+                     + 'Indice=' + str(df33['value'][d])
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df33["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod35_to_line(df, path):
+
+def prod35_to_line(df35, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df35)):
         lines.append('Comorbilidad,'
                      # TAGS are used to check if measurements are the same
-                     + 'Comorbilidad="' + unidecode.unidecode(str(df['Comorbilidad'][d]).replace(' ', '_')) + '",'
-                     + 'Hospitalización="' + unidecode.unidecode(str(df['Hospitalización'][d]).replace(' ', '_')) + '"'
+                     + 'Comorbilidad="' + unidecode.unidecode(str(df35['Comorbilidad'][d]).replace(' ', '_')) + '",'
+                     + 'Hospitalización="' + unidecode.unidecode(str(df35['Hospitalización'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + 'Total=' + str(df35['Casos confirmados'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df35["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-def prod36_to_line(df, path):
+def prod36_to_line(df36, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df36)):
         lines.append('Residencias_sanitarias,'
                      # TAGS are used to check if measurements are the same
-                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
-                     + 'Categoria="' + unidecode.unidecode(str(df['Categoria'][d]).replace(' ', '_')) + '"'
+                     + 'Region="' + unidecode.unidecode(str(df36['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Categoria="' + unidecode.unidecode(str(df36['Categoria'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df36['Numero'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df36["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
-def prod37_to_line(df, path):
+
+def prod37_to_line(df37, path):
     lines = []
-    for d in range(len(df)):
+    for d in range(len(df37)):
         lines.append('Defunciones_nueva_definicion,'
                      # TAGS are used to check if measurements are the same
-                     + 'Publicacion="' + unidecode.unidecode(str(df['Publicacion'][d]).replace(' ', '_')) + '"'
+                     + 'Publicacion="' + unidecode.unidecode(str(df37['Publicacion'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Total'][d]).replace('-', '0')
+                     + 'Total=' + str(df37['Total'][d]).replace('-', '0')
                      + ' '
-                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     + str(pd.to_datetime(df37["Fecha"][d]).value)
                      )
-    fileWriter(path, lines)
+    file_writer(path, lines)
 
 
-
-
-def csv2line(input):
-    if input != '':
-        df = pd.read_csv(input)
+def csv2line(input_csv):
+    if input_csv != '':
+        df = pd.read_csv(input_csv)
         df = df.fillna(0)
         print((list(df)))
-        if 'producto1/Covid-19_std.csv' in input:
+        if 'producto1/Covid-19_std.csv' in input_csv:
             prod1_to_line(df, '../output/p1-chronograf.txt')
-        if 'producto3/' in input:
+        if 'producto3/' in input_csv:
             prod3_to_line(df, '../output/p3-chronograf.txt')
-        if 'producto5' in input:
+        if 'producto5' in input_csv:
             prod5_to_line(df, '../output/p5-chronograf.txt')
-        if 'producto7' in input:
+        if 'producto7' in input_csv:
             prod7_to_line(df, '../output/p7-chronograf.txt')
-        if 'producto8' in input:
+        if 'producto8' in input_csv:
             prod8_to_line(df, '../output/p8-chronograf.txt')
-        if 'producto9' in input:
+        if 'producto9' in input_csv:
             prod9_to_line(df, '../output/p9-chronograf.txt')
-        if 'producto10' in input:
+        if 'producto10' in input_csv:
             prod10_to_line(df, '../output/p10-chronograf.txt')
-        if 'producto13' in input:
+        if 'producto13' in input_csv:
             prod13_to_line(df, '../output/p13-chronograf.txt')
-        if 'producto14' in input:
+        if 'producto14' in input_csv:
             prod14_to_line(df, '../output/p14-chronograf.txt')
-        if 'producto15' in input:
+        if 'producto15' in input_csv:
             prod15_to_line(df, '../output/p15-chronograf.txt')
-        if 'producto16' in input:
+        if 'producto16' in input_csv:
             prod16_to_line(df, '../output/p16-chronograf.txt')
-        if 'producto17' in input:
+        if 'producto17' in input_csv:
             prod17_to_line(df, '../output/p17-chronograf.txt')
-        if 'producto18' in input:
+        if 'producto18' in input_csv:
             prod18_to_line(df, '../output/p18-chronograf.txt')
-        if 'producto19' in input:
+        if 'producto19' in input_csv:
             prod19_to_line(df, '../output/p19-chronograf.txt')
-        if 'producto20' in input:
+        if 'producto20' in input_csv:
             prod20_to_line(df, '../output/p20-chronograf.txt')
-        #prod 21
-        if 'SintomasCasosConfirmados' in input:
+        # prod 21
+        if 'SintomasCasosConfirmados' in input_csv:
             prod21_1_to_line(df, '../output/p21_1-chronograf.txt')
-        if 'SintomasHospitalizados' in input:
-        #prod 22
+        if 'SintomasHospitalizados' in input_csv:
+            # prod 22
             prod21_2_to_line(df, '../output/p21_2-chronograf.txt')
-        if 'HospitalizadosEtario_Acumulado' in input:
+        if 'HospitalizadosEtario_Acumulado' in input_csv:
             prod22_1_to_line(df, '../output/p22_1-chronograf.txt')
-        if 'HospitalizadosUCI_Acumulado' in input:
+        if 'HospitalizadosUCI_Acumulado' in input_csv:
             prod22_2_to_line(df, '../output/p22_2-chronograf.txt')
-        if 'producto23' in input:
+        if 'producto23' in input_csv:
             prod23_to_line(df, '../output/p23-chronograf.txt')
-        if 'producto24' in input:
+        if 'producto24' in input_csv:
             prod24_to_line(df, '../output/p24-chronograf.txt')
-        if 'producto25' in input:
+        if 'producto25' in input_csv:
             prod25_to_line(df, '../output/p25-chronograf.txt')
-        if 'producto28' in input:
+        if 'producto28' in input_csv:
             prod28_to_line(df, '../output/p28-chronograf.txt')
-        if 'producto30' in input:
+        if 'producto30' in input_csv:
             prod30_to_line(df, '../output/p30-chronograf.txt')
-        if 'producto31' in input:
+        if 'producto31' in input_csv:
             prod31_to_line(df, '../output/p31-chronograf.txt')
-        if 'producto32' in input:
+        if 'producto32' in input_csv:
             prod32_to_line(df, '../output/p32-chronograf.txt')
-        if 'producto33' in input:
+        if 'producto33' in input_csv:
             prod33_to_line(df, '../output/p33-chronograf.txt')
-        if 'producto35' in input:
+        if 'producto35' in input_csv:
             prod35_to_line(df, '../output/p35-chronograf.txt')
-        if 'producto36' in input:
+        if 'producto36' in input_csv:
             prod36_to_line(df, '../output/p36-chronograf.txt')
-        if 'producto37' in input:
+        if 'producto37' in input_csv:
             prod37_to_line(df, '../output/p37-chronograf.txt')
-
-
 
 
 if __name__ == '__main__':
