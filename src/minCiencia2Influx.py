@@ -61,7 +61,7 @@ def fileWriter(path, lines):
         thefile.write("%s\n" % item)
 
 
-def prod1ToLine(df, path):
+def prod1_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Casos_confirmados_comunal,'
@@ -81,7 +81,7 @@ def prod1ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod3ToLine(df, path):
+def prod3_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Casos_acumulados_regional,'
@@ -96,7 +96,7 @@ def prod3ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod5ToLine(df, path):
+def prod5_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Totales_nacionales,'
@@ -111,7 +111,7 @@ def prod5ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod7ToLine(df, path):
+def prod7_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('PCR_Regional,'
@@ -127,7 +127,7 @@ def prod7ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod8ToLine(df, path):
+def prod8_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('UCI_Regional,'
@@ -143,7 +143,7 @@ def prod8ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod9ToLine(df, path):
+def prod9_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -159,7 +159,7 @@ def prod9ToLine(df, path):
                      )
     fileWriter(path, lines)
 
-def prod10ToLine(df, path):
+def prod10_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -176,7 +176,7 @@ def prod10ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod13ToLine(df, path):
+def prod13_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -192,7 +192,7 @@ def prod13ToLine(df, path):
                      )
     fileWriter(path, lines)
 
-def prod14ToLine(df, path):
+def prod14_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -209,7 +209,7 @@ def prod14ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod15ToLine(df, path):
+def prod15_to_line(df, path):
     lines = []
     df2 = pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv')
     for d in range(len(df)):
@@ -230,7 +230,7 @@ def prod15ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod16ToLine(df, path):
+def prod16_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -248,7 +248,7 @@ def prod16ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod17ToLine(df, path):
+def prod17_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -266,7 +266,7 @@ def prod17ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod18ToLine(df, path):
+def prod18_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Tasa_de_incidencia_comunal,'
@@ -285,7 +285,7 @@ def prod18ToLine(df, path):
                      )
     fileWriter(path, lines)
 
-def prod19ToLine(df, path):
+def prod19_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Casos_activos_comunal,'
@@ -304,7 +304,7 @@ def prod19ToLine(df, path):
                      )
     fileWriter(path, lines)
 
-def prod20ToLine(df, path):
+def prod20_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -320,7 +320,7 @@ def prod20ToLine(df, path):
                      )
     fileWriter(path, lines)
 
-def prod21_1ToLine(df, path):
+def prod21_1_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -337,7 +337,7 @@ def prod21_1ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod21_2ToLine(df, path):
+def prod21_2_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -354,7 +354,7 @@ def prod21_2ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod22_1ToLine(df, path):
+def prod22_1_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -372,7 +372,7 @@ def prod22_1ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod22_2ToLine(df, path):
+def prod22_2_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -388,7 +388,8 @@ def prod22_2ToLine(df, path):
                      )
     fileWriter(path, lines)
 
-def prod23ToLine(df, path):
+
+def prod23_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -405,7 +406,7 @@ def prod23ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod24ToLine(df, path):
+def prod24T_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -422,7 +423,7 @@ def prod24ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod25ToLine(df, path):
+def prod25_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Casos_actuales_comunal,'
@@ -441,7 +442,7 @@ def prod25ToLine(df, path):
                      )
     fileWriter(path, lines)
 
-def prod28ToLine(df,path):
+def prod28_to_line(df,path):
     lines = []
     df2 = pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto15/SemanasEpidemiologicas.csv')
     for d in range(len(df)):
@@ -458,7 +459,7 @@ def prod28ToLine(df,path):
                      )
     fileWriter(path, lines)
 
-def prod30ToLine(df, path):
+def prod30_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
@@ -475,7 +476,7 @@ def prod30ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod31ToLine(df, path):
+def prod31_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Nacimientos_comunal,'
@@ -493,7 +494,7 @@ def prod31ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod32ToLine(df, path):
+def prod32_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Defunciones_comunal,'
@@ -511,7 +512,7 @@ def prod32ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod33ToLine(df, path):
+def prod33_to_line(df, path):
     lines = []
     #Region,Codigo region,Comuna,Codigo comuna,Superficie_km2,Poblacion,Fecha,variable,value
     for d in range(len(df)):
@@ -532,7 +533,7 @@ def prod33ToLine(df, path):
                      )
     fileWriter(path, lines)
 
-def prod35ToLine(df, path):
+def prod35_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Comorbilidad,'
@@ -548,7 +549,7 @@ def prod35ToLine(df, path):
     fileWriter(path, lines)
 
 
-def prod36ToLine(df, path):
+def prod36_to_line(df, path):
     lines = []
     for d in range(len(df)):
         lines.append('Residencias_sanitarias,'
@@ -566,13 +567,12 @@ def prod36ToLine(df, path):
 def prod37_to_line(df, path):
     lines = []
     for d in range(len(df)):
-        lines.append('Defunciones_provisorio,'
+        lines.append('Defunciones_nueva_definicion,'
                      # TAGS are used to check if measurements are the same
-                     + 'Publicacion="' + unidecode.unidecode(str(df['Publicacion'][d]).replace(' ', '_')) + '",'
-                     + 'Categoria="' + unidecode.unidecode(str(df['Categoria'][d]).replace(' ', '_')) + '"'
+                     + 'Publicacion="' + unidecode.unidecode(str(df['Publicacion'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df['Numero'][d]).replace('-', '0')
+                     + 'Total=' + str(df['Total'][d]).replace('-', '0')
                      + ' '
                      + str(pd.to_datetime(df["Fecha"][d]).value)
                      )
@@ -587,65 +587,67 @@ def csv2line(input):
         df = df.fillna(0)
         print((list(df)))
         if 'producto1/Covid-19_std.csv' in input:
-            prod1ToLine(df, '../output/p1-chronograf.txt')
+            prod1_to_line(df, '../output/p1-chronograf.txt')
         if 'producto3/' in input:
-            prod3ToLine(df, '../output/p3-chronograf.txt')
+            prod3_to_line(df, '../output/p3-chronograf.txt')
         if 'producto5' in input:
-            prod5ToLine(df, '../output/p5-chronograf.txt')
+            prod5_to_line(df, '../output/p5-chronograf.txt')
         if 'producto7' in input:
-            prod7ToLine(df, '../output/p7-chronograf.txt')
+            prod7_to_line(df, '../output/p7-chronograf.txt')
         if 'producto8' in input:
-            prod8ToLine(df, '../output/p8-chronograf.txt')
+            prod8_to_line(df, '../output/p8-chronograf.txt')
         if 'producto9' in input:
-            prod9ToLine(df, '../output/p9-chronograf.txt')
+            prod9_to_line(df, '../output/p9-chronograf.txt')
         if 'producto10' in input:
-            prod10ToLine(df, '../output/p10-chronograf.txt')
+            prod10_to_line(df, '../output/p10-chronograf.txt')
         if 'producto13' in input:
-            prod13ToLine(df, '../output/p13-chronograf.txt')
+            prod13_to_line(df, '../output/p13-chronograf.txt')
         if 'producto14' in input:
-            prod14ToLine(df, '../output/p14-chronograf.txt')
+            prod14_to_line(df, '../output/p14-chronograf.txt')
         if 'producto15' in input:
-            prod15ToLine(df, '../output/p15-chronograf.txt')
+            prod15_to_line(df, '../output/p15-chronograf.txt')
         if 'producto16' in input:
-            prod16ToLine(df, '../output/p16-chronograf.txt')
+            prod16_to_line(df, '../output/p16-chronograf.txt')
         if 'producto17' in input:
-            prod17ToLine(df, '../output/p17-chronograf.txt')
+            prod17_to_line(df, '../output/p17-chronograf.txt')
         if 'producto18' in input:
-            prod18ToLine(df, '../output/p18-chronograf.txt')
+            prod18_to_line(df, '../output/p18-chronograf.txt')
         if 'producto19' in input:
-            prod19ToLine(df, '../output/p19-chronograf.txt')
+            prod19_to_line(df, '../output/p19-chronograf.txt')
         if 'producto20' in input:
-            prod20ToLine(df, '../output/p20-chronograf.txt')
+            prod20_to_line(df, '../output/p20-chronograf.txt')
         #prod 21
         if 'SintomasCasosConfirmados' in input:
-            prod21_1ToLine(df, '../output/p21_1-chronograf.txt')
+            prod21_1_to_line(df, '../output/p21_1-chronograf.txt')
         if 'SintomasHospitalizados' in input:
         #prod 22
-            prod21_2ToLine(df, '../output/p21_2-chronograf.txt')
+            prod21_2_to_line(df, '../output/p21_2-chronograf.txt')
         if 'HospitalizadosEtario_Acumulado' in input:
-            prod22_1ToLine(df, '../output/p22_1-chronograf.txt')
+            prod22_1_to_line(df, '../output/p22_1-chronograf.txt')
         if 'HospitalizadosUCI_Acumulado' in input:
-            prod22_2ToLine(df, '../output/p22_2-chronograf.txt')
+            prod22_2_to_line(df, '../output/p22_2-chronograf.txt')
         if 'producto23' in input:
-            prod23ToLine(df, '../output/p23-chronograf.txt')
+            prod23_to_line(df, '../output/p23-chronograf.txt')
         if 'producto24' in input:
-            prod24ToLine(df, '../output/p24-chronograf.txt')
+            prod24_to_line(df, '../output/p24-chronograf.txt')
         if 'producto25' in input:
-            prod25ToLine(df, '../output/p25-chronograf.txt')
+            prod25_to_line(df, '../output/p25-chronograf.txt')
         if 'producto28' in input:
-            prod28ToLine(df, '../output/p28-chronograf.txt')
+            prod28_to_line(df, '../output/p28-chronograf.txt')
         if 'producto30' in input:
-            prod30ToLine(df, '../output/p30-chronograf.txt')
+            prod30_to_line(df, '../output/p30-chronograf.txt')
         if 'producto31' in input:
-            prod31ToLine(df, '../output/p31-chronograf.txt')
+            prod31_to_line(df, '../output/p31-chronograf.txt')
         if 'producto32' in input:
-            prod32ToLine(df, '../output/p32-chronograf.txt')
+            prod32_to_line(df, '../output/p32-chronograf.txt')
         if 'producto33' in input:
-            prod33ToLine(df, '../output/p33-chronograf.txt')
+            prod33_to_line(df, '../output/p33-chronograf.txt')
         if 'producto35' in input:
-            prod35ToLine(df, '../output/p35-chronograf.txt')
+            prod35_to_line(df, '../output/p35-chronograf.txt')
         if 'producto36' in input:
-            prod36ToLine(df, '../output/p36-chronograf.txt')
+            prod36_to_line(df, '../output/p36-chronograf.txt')
+        if 'producto37' in input:
+            prod37_to_line(df, '../output/p37-chronograf.txt')
 
 
 
