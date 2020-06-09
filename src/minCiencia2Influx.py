@@ -6,9 +6,6 @@
 
 import pandas as pd
 import unidecode
-import numpy as np
-import time
-from datetime import datetime
 
 relevantCSVs = {
     'prod1': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto1/Covid-19_std.csv',
@@ -50,7 +47,7 @@ relevantCSVs = {
     'prod34': '', #geo product
     'prod35': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto35/Comorbilidad_std.csv',
     'prod36': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto36/ResidenciasSanitarias_std.csv',
-    'prod37': ''
+    'prod37': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto37/Defunciones_std.csv'
 
 }
 
@@ -565,6 +562,23 @@ def prod36ToLine(df, path):
                      + str(pd.to_datetime(df["Fecha"][d]).value)
                      )
     fileWriter(path, lines)
+
+def prod37_to_line(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('Defunciones_provisorio,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Publicacion="' + unidecode.unidecode(str(df['Publicacion'][d]).replace(' ', '_')) + '",'
+                     + 'Categoria="' + unidecode.unidecode(str(df['Categoria'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Numero'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+
 
 
 def csv2line(input):
