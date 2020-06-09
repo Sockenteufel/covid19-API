@@ -46,7 +46,11 @@ relevantCSVs = {
     'prod30': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto30/PacientesVMI_std.csv',
     'prod31': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto31/Nacimientos_std.csv',
     'prod32': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto32/Defunciones_std.csv',
-    'prod33': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto33/IndiceDeMovilidad_std.csv'
+    'prod33': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto33/IndiceDeMovilidad_std.csv',
+    'prod34': '', #geo product
+    'prod35': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto35/Comorbilidad_std.csv',
+    'prod36': 'https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto36/ResidenciasSanitarias_std.csv',
+    'prod37': ''
 
 }
 
@@ -531,6 +535,36 @@ def prod33ToLine(df, path):
                      )
     fileWriter(path, lines)
 
+def prod35ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('Comorbilidad,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Comorbilidad="' + unidecode.unidecode(str(df['Comorbilidad'][d]).replace(' ', '_')) + '",'
+                     + 'Hospitalización="' + unidecode.unidecode(str(df['Hospitalización'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Casos confirmados'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
+
+
+def prod36ToLine(df, path):
+    lines = []
+    for d in range(len(df)):
+        lines.append('Residencias_sanitarias,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Categoria="' + unidecode.unidecode(str(df['Categoria'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df['Numero'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df["Fecha"][d]).value)
+                     )
+    fileWriter(path, lines)
 
 
 def csv2line(input):
@@ -594,6 +628,10 @@ def csv2line(input):
             prod32ToLine(df, '../output/p32-chronograf.txt')
         if 'producto33' in input:
             prod33ToLine(df, '../output/p33-chronograf.txt')
+        if 'producto35' in input:
+            prod35ToLine(df, '../output/p35-chronograf.txt')
+        if 'producto36' in input:
+            prod36ToLine(df, '../output/p36-chronograf.txt')
 
 
 
