@@ -406,7 +406,7 @@ def prod23_to_line(df, path):
     fileWriter(path, lines)
 
 
-def prod24T_to_line(df, path):
+def prod24_to_line(df, path):
     lines = []
     df = df.replace('<=', 'menor que ', regex=True)
     df = df.replace('>=', 'mayor que ', regex=True)
