@@ -224,3 +224,7 @@ Camas_hospital,Tipo_de_cama="Basica" Total=3157 1591747200000000000
 Camas_hospital,Tipo_de_cama="Media" Total=1706 1591747200000000000
 Camas_hospital,Tipo_de_cama="UTI" Total=1017 1591747200000000000
 Camas_hospital,Tipo_de_cama="UCI" Total=1590 1591747200000000000
+Camas_hospital,Tipo_de_cama="Basica" Total=3215 1591833600000000000
+Camas_hospital,Tipo_de_cama="Media" Total=1762 1591833600000000000
+Camas_hospital,Tipo_de_cama="UTI" Total=1045 1591833600000000000
+Camas_hospital,Tipo_de_cama="UCI" Total=1618 1591833600000000000
