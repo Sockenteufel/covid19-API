@@ -51,7 +51,9 @@ relevantCSVs = {
     'prod34': '',  # geo product
     'prod35': ('%s/producto35/Comorbilidad_std.csv' % GITHUB_REPO),
     'prod36': ('%s/producto36/ResidenciasSanitarias_std.csv' % GITHUB_REPO),
-    'prod37': ('%s/producto37/Defunciones_std.csv' % GITHUB_REPO)
+    'prod37': ('%s/producto37/Defunciones_std.csv' % GITHUB_REPO),
+    'prod38': ('%s/producto38/CasosFallecidosPorComuna_std.csv' % GITHUB_REPO),
+    'prod39': ('%s/producto39/NotificacionInicioSintomas_std.csv' % GITHUB_REPO)
 
 }
 
@@ -593,6 +595,39 @@ def prod37_to_line(df37, path):
                      )
     file_writer(path, lines)
 
+def prod38_to_line(df38, path):
+    lines = []
+    # Region,Codigo region,Comuna,Codigo comuna,Superficie_km2,Poblacion,Fecha,variable,value
+    for d in range(len(df38)):
+        lines.append('Defunciones_comunales,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df38['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df38['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df38['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df38['Codigo comuna'][d]) + '",'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df38['Casos fallecidos'][d]) + ","
+                     + ' '
+                     + str(pd.to_datetime(df38["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
+def prod39_to_line(df39, path):
+    lines = []
+    for d in range(len(df39)):
+        lines.append('Notificacion_inicio_sintomas,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Serie="' + unidecode.unidecode(str(df39['Casos'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df39['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df39["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
+
 
 def csv2line(input_csv):
     if input_csv != '':
@@ -661,6 +696,10 @@ def csv2line(input_csv):
             prod36_to_line(df, '../output/p36-chronograf.txt')
         if 'producto37' in input_csv:
             prod37_to_line(df, '../output/p37-chronograf.txt')
+        if 'producto38' in input_csv:
+            prod38_to_line(df, '../output/p38-chronograf.txt')
+        if 'producto39' in input_csv:
+            prod39_to_line(df, '../output/p39-chronograf.txt')
 
 
 if __name__ == '__main__':
