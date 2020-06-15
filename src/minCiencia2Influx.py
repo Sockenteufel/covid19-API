@@ -604,10 +604,10 @@ def prod38_to_line(df38, path):
                      + 'Region="' + unidecode.unidecode(str(df38['Region'][d]).replace(' ', '_')) + '",'
                      + 'Codigo_region="' + str(df38['Codigo region'][d]) + '",'
                      + 'Comuna="' + unidecode.unidecode(str(df38['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df38['Codigo comuna'][d]) + '",'
+                     + 'Codigo_comuna="' + str(df38['Codigo comuna'][d]) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df38['Casos fallecidos'][d]) + ","
+                     + 'Total=' + str(df38['Casos fallecidos'][d])
                      + ' '
                      + str(pd.to_datetime(df38["Fecha"][d]).value)
                      )
@@ -631,75 +631,75 @@ def prod39_to_line(df39, path):
 
 def csv2line(input_csv):
     if input_csv != '':
-        df = pd.read_csv(input_csv)
-        df = df.fillna(0)
-        print((list(df)))
+        my_df = pd.read_csv(input_csv)
+        my_df = my_df.fillna(0)
+        print((list(my_df)))
         if 'producto1/Covid-19_std.csv' in input_csv:
-            prod1_to_line(df, '../output/p1-chronograf.txt')
+            prod1_to_line(my_df, '../output/p1-chronograf.txt')
         if 'producto3/' in input_csv:
-            prod3_to_line(df, '../output/p3-chronograf.txt')
+            prod3_to_line(my_df, '../output/p3-chronograf.txt')
         if 'producto5' in input_csv:
-            prod5_to_line(df, '../output/p5-chronograf.txt')
+            prod5_to_line(my_df, '../output/p5-chronograf.txt')
         if 'producto7' in input_csv:
-            prod7_to_line(df, '../output/p7-chronograf.txt')
+            prod7_to_line(my_df, '../output/p7-chronograf.txt')
         if 'producto8' in input_csv:
-            prod8_to_line(df, '../output/p8-chronograf.txt')
+            prod8_to_line(my_df, '../output/p8-chronograf.txt')
         if 'producto9' in input_csv:
-            prod9_to_line(df, '../output/p9-chronograf.txt')
+            prod9_to_line(my_df, '../output/p9-chronograf.txt')
         if 'producto10' in input_csv:
-            prod10_to_line(df, '../output/p10-chronograf.txt')
+            prod10_to_line(my_df, '../output/p10-chronograf.txt')
         if 'producto13' in input_csv:
-            prod13_to_line(df, '../output/p13-chronograf.txt')
+            prod13_to_line(my_df, '../output/p13-chronograf.txt')
         if 'producto14' in input_csv:
-            prod14_to_line(df, '../output/p14-chronograf.txt')
+            prod14_to_line(my_df, '../output/p14-chronograf.txt')
         if 'producto15' in input_csv:
-            prod15_to_line(df, '../output/p15-chronograf.txt')
+            prod15_to_line(my_df, '../output/p15-chronograf.txt')
         if 'producto16' in input_csv:
-            prod16_to_line(df, '../output/p16-chronograf.txt')
+            prod16_to_line(my_df, '../output/p16-chronograf.txt')
         if 'producto17' in input_csv:
-            prod17_to_line(df, '../output/p17-chronograf.txt')
+            prod17_to_line(my_df, '../output/p17-chronograf.txt')
         if 'producto18' in input_csv:
-            prod18_to_line(df, '../output/p18-chronograf.txt')
+            prod18_to_line(my_df, '../output/p18-chronograf.txt')
         if 'producto19' in input_csv:
-            prod19_to_line(df, '../output/p19-chronograf.txt')
+            prod19_to_line(my_df, '../output/p19-chronograf.txt')
         if 'producto20' in input_csv:
-            prod20_to_line(df, '../output/p20-chronograf.txt')
+            prod20_to_line(my_df, '../output/p20-chronograf.txt')
         # prod 21
         if 'SintomasCasosConfirmados' in input_csv:
-            prod21_1_to_line(df, '../output/p21_1-chronograf.txt')
+            prod21_1_to_line(my_df, '../output/p21_1-chronograf.txt')
         if 'SintomasHospitalizados' in input_csv:
             # prod 22
-            prod21_2_to_line(df, '../output/p21_2-chronograf.txt')
+            prod21_2_to_line(my_df, '../output/p21_2-chronograf.txt')
         if 'HospitalizadosEtario_Acumulado' in input_csv:
-            prod22_1_to_line(df, '../output/p22_1-chronograf.txt')
+            prod22_1_to_line(my_df, '../output/p22_1-chronograf.txt')
         if 'HospitalizadosUCI_Acumulado' in input_csv:
-            prod22_2_to_line(df, '../output/p22_2-chronograf.txt')
+            prod22_2_to_line(my_df, '../output/p22_2-chronograf.txt')
         if 'producto23' in input_csv:
-            prod23_to_line(df, '../output/p23-chronograf.txt')
+            prod23_to_line(my_df, '../output/p23-chronograf.txt')
         if 'producto24' in input_csv:
-            prod24_to_line(df, '../output/p24-chronograf.txt')
+            prod24_to_line(my_df, '../output/p24-chronograf.txt')
         if 'producto25' in input_csv:
-            prod25_to_line(df, '../output/p25-chronograf.txt')
+            prod25_to_line(my_df, '../output/p25-chronograf.txt')
         if 'producto28' in input_csv:
-            prod28_to_line(df, '../output/p28-chronograf.txt')
+            prod28_to_line(my_df, '../output/p28-chronograf.txt')
         if 'producto30' in input_csv:
-            prod30_to_line(df, '../output/p30-chronograf.txt')
+            prod30_to_line(my_df, '../output/p30-chronograf.txt')
         if 'producto31' in input_csv:
-            prod31_to_line(df, '../output/p31-chronograf.txt')
+            prod31_to_line(my_df, '../output/p31-chronograf.txt')
         if 'producto32' in input_csv:
-            prod32_to_line(df, '../output/p32-chronograf.txt')
+            prod32_to_line(my_df, '../output/p32-chronograf.txt')
         if 'producto33' in input_csv:
-            prod33_to_line(df, '../output/p33-chronograf.txt')
+            prod33_to_line(my_df, '../output/p33-chronograf.txt')
         if 'producto35' in input_csv:
-            prod35_to_line(df, '../output/p35-chronograf.txt')
+            prod35_to_line(my_df, '../output/p35-chronograf.txt')
         if 'producto36' in input_csv:
-            prod36_to_line(df, '../output/p36-chronograf.txt')
+            prod36_to_line(my_df, '../output/p36-chronograf.txt')
         if 'producto37' in input_csv:
-            prod37_to_line(df, '../output/p37-chronograf.txt')
+            prod37_to_line(my_df, '../output/p37-chronograf.txt')
         if 'producto38' in input_csv:
-            prod38_to_line(df, '../output/p38-chronograf.txt')
+            prod38_to_line(my_df, '../output/p38-chronograf.txt')
         if 'producto39' in input_csv:
-            prod39_to_line(df, '../output/p39-chronograf.txt')
+            prod39_to_line(my_df, '../output/p39-chronograf.txt')
 
 
 if __name__ == '__main__':
