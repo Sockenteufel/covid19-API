@@ -635,10 +635,10 @@ def prod40_to_line(df40, path):
         #Semana,Inicio_semana,Fin_semana,Cod_region_origen,Region_origen,Cod_region_destino,Region_destino,Origen,Destino,Operaciones,Pasajeros
         lines.append('Transporte_aereo,'
                      # TAGS are used to check if measurements are the same
-                     + 'Cod_region_origen="' + unidecode.unidecode(str(df40['Cod_region_origen'][d]).replace(' ', '_')) + '",'
-                     + 'Region_origen="' + df40['Region_origen'][d] + '",'
-                     + 'Cod_region_destino="' + unidecode.unidecode(str(df40['Cod_region_destino'][d]).replace(' ', '_')) + '",'
-                     + 'Region_destino="' + df40['Region_destino'][d] + '",'
+                     + 'Cod_region_origen="' + str(df40['Cod_region_origen'][d]) + '",'
+                     + 'Region_origen="' + unidecode.unidecode(str(df40['Region_origen'][d]).replace(' ', '_')) + '",'
+                     + 'Cod_region_destino="' + str(df40['Cod_region_destino'][d]) + '",'
+                     + 'Region_destino="' + unidecode.unidecode(str(df40['Region_destino'][d]).replace(' ', '_')) + '",'
                      + 'Origen="' + unidecode.unidecode(str(df40['Origen'][d]).replace(' ', '_')) + '",'
                      + 'Destino="' + unidecode.unidecode(str(df40['Destino'][d]).replace(' ', '_')) + '"'
                      + ' '
