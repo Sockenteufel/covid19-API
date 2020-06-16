@@ -54,7 +54,10 @@ relevantCSVs = {
     'prod37': ('%s/producto37/Defunciones_std.csv' % GITHUB_REPO),
     'prod38': ('%s/producto38/CasosFallecidosPorComuna_std.csv' % GITHUB_REPO),
     'prod39': ('%s/producto39/NotificacionInicioSintomas_std.csv' % GITHUB_REPO),
-    'prod40': ('%s/producto40/TransporteAereo_std.csv' % GITHUB_REPO)
+    'prod40': ('%s/producto40/TransporteAereo_std.csv' % GITHUB_REPO),
+    'prod41.1': ('%s/producto41/BIPTotal_std.csv' % GITHUB_REPO),
+    'prod41.2': ('%s/producto41/BIPComuna_std.csv' % GITHUB_REPO),
+    'prod42': ('%s/producto42/ViajesComunas_std.csv' % GITHUB_REPO)
 
 }
 
@@ -596,6 +599,7 @@ def prod37_to_line(df37, path):
                      )
     file_writer(path, lines)
 
+
 def prod38_to_line(df38, path):
     lines = []
     # Region,Codigo region,Comuna,Codigo comuna,Superficie_km2,Poblacion,Fecha,variable,value
@@ -613,6 +617,7 @@ def prod38_to_line(df38, path):
                      + str(pd.to_datetime(df38["Fecha"][d]).value)
                      )
     file_writer(path, lines)
+
 
 def prod39_to_line(df39, path):
     lines = []
@@ -650,6 +655,53 @@ def prod40_to_line(df40, path):
                      )
     file_writer(path, lines)
 
+
+def prod41_1_to_line(df41, path):
+    lines = []
+    for d in range(len(df41)):
+        lines.append('BIP_Total,'
+                     + ' '
+                     # Fields
+                     + 'Transacciones=' + str(df41['Transacciones'][d])
+                     + ' '
+                     + str(pd.to_datetime(df41["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
+
+
+def prod41_2_to_line(df41, path):
+    lines = []
+    # Comuna,Codigo comuna,Transacciones,Fecha
+    for d in range(len(df41)):
+        lines.append('Transporte_aereo,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Codigo_comuna="' + str(df41['Codigo comuna'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df41['Comuna'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Transacciones=' + str(df41['Transacciones'][d])
+                     + ' '
+                     + str(pd.to_datetime(df41["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
+
+def prod42_to_line(df42, path):
+    lines = []
+    for d in range(len(df42)):
+        # Fecha,Origen,Destino,Viajes
+        lines.append('Transporte_aereo,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Origen="' + unidecode.unidecode(str(df42['Origen'][d]).replace(' ', '_')) + '",'
+                     + 'Destino="' + unidecode.unidecode(str(df42['Destino'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Viajes=' + str(df42['Viajes'][d])
+                     + ' '
+                     + str(pd.to_datetime(df42["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
 
 
 def csv2line(input_csv):
@@ -725,6 +777,12 @@ def csv2line(input_csv):
             prod39_to_line(my_df, '../output/p39-chronograf.txt')
         elif 'producto40' in input_csv:
             prod40_to_line(my_df, '../output/p40-chronograf.txt')
+        elif 'BIPTotal' in input_csv:
+            prod41_1_to_line(my_df, '../output/p41_1-chronograf.txt')
+        elif 'BIPComuna' in input_csv:
+            prod41_2_to_line(my_df, '../output/p41_2-chronograf.txt')
+        elif 'producto42' in input_csv:
+            prod42_to_line(my_df, '../output/p42-chronograf.txt')
 
 
 if __name__ == '__main__':
