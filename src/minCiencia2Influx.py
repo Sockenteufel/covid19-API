@@ -659,7 +659,7 @@ def prod40_to_line(df40, path):
 def prod41_1_to_line(df41, path):
     lines = []
     for d in range(len(df41)):
-        lines.append('BIP_Total,'
+        lines.append('BIP_total,'
                      + ' '
                      # Fields
                      + 'Transacciones=' + str(df41['Transacciones'][d])
@@ -674,7 +674,7 @@ def prod41_2_to_line(df41, path):
     lines = []
     # Comuna,Codigo comuna,Transacciones,Fecha
     for d in range(len(df41)):
-        lines.append('Transporte_aereo,'
+        lines.append('BIP_comunal,'
                      # TAGS are used to check if measurements are the same
                      + 'Codigo_comuna="' + str(df41['Codigo comuna'][d]) + '",'
                      + 'Comuna="' + unidecode.unidecode(str(df41['Comuna'][d]).replace(' ', '_')) + '"'
