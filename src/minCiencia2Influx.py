@@ -659,7 +659,7 @@ def prod40_to_line(df40, path):
 def prod41_1_to_line(df41, path):
     lines = []
     for d in range(len(df41)):
-        lines.append('BIP_total,'
+        lines.append('BIP_total'
                      + ' '
                      # Fields
                      + 'Transacciones=' + str(df41['Transacciones'][d])
