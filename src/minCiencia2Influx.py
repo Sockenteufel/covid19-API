@@ -53,7 +53,8 @@ relevantCSVs = {
     'prod36': ('%s/producto36/ResidenciasSanitarias_std.csv' % GITHUB_REPO),
     'prod37': ('%s/producto37/Defunciones_std.csv' % GITHUB_REPO),
     'prod38': ('%s/producto38/CasosFallecidosPorComuna_std.csv' % GITHUB_REPO),
-    'prod39': ('%s/producto39/NotificacionInicioSintomas_std.csv' % GITHUB_REPO)
+    'prod39': ('%s/producto39/NotificacionInicioSintomas_std.csv' % GITHUB_REPO),
+    'prod40': ('%s/producto40/TransporteAereo_std.csv' % GITHUB_REPO)
 
 }
 
@@ -628,6 +629,28 @@ def prod39_to_line(df39, path):
     file_writer(path, lines)
 
 
+def prod40_to_line(df40, path):
+    lines = []
+    for d in range(len(df40)):
+        #Semana,Inicio_semana,Fin_semana,Cod_region_origen,Region_origen,Cod_region_destino,Region_destino,Origen,Destino,Operaciones,Pasajeros
+        lines.append('Transporte_aereo,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Cod_region_origen="' + unidecode.unidecode(str(df40['Cod_region_origen'][d]).replace(' ', '_')) + '",'
+                     + 'Region_origen="' + df40['Region_origen'][d] + '",'
+                     + 'Cod_region_destino="' + unidecode.unidecode(str(df40['Cod_region_destino'][d]).replace(' ', '_')) + '",'
+                     + 'Region_destino="' + df40['Region_destino'][d] + '",'
+                     + 'Origen="' + unidecode.unidecode(str(df40['Origen'][d]).replace(' ', '_')) + '",'
+                     + 'Destino="' + unidecode.unidecode(str(df40['Destino'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Operaciones=' + str(df40['Operaciones'][d]) + ","
+                     + 'Pasajeros=' + str(df40['Pasajeros'][d])
+                     + ' '
+                     + str(pd.to_datetime(df40["Inicio_semana"][d]).value)
+                     )
+    file_writer(path, lines)
+
+
 
 def csv2line(input_csv):
     if input_csv != '':
@@ -636,70 +659,72 @@ def csv2line(input_csv):
         print((list(my_df)))
         if 'producto1/Covid-19_std.csv' in input_csv:
             prod1_to_line(my_df, '../output/p1-chronograf.txt')
-        if 'producto3/' in input_csv:
+        elif 'producto3/' in input_csv:
             prod3_to_line(my_df, '../output/p3-chronograf.txt')
-        if 'producto5' in input_csv:
+        elif 'producto5' in input_csv:
             prod5_to_line(my_df, '../output/p5-chronograf.txt')
-        if 'producto7' in input_csv:
+        elif 'producto7' in input_csv:
             prod7_to_line(my_df, '../output/p7-chronograf.txt')
-        if 'producto8' in input_csv:
+        elif 'producto8' in input_csv:
             prod8_to_line(my_df, '../output/p8-chronograf.txt')
-        if 'producto9' in input_csv:
+        elif 'producto9' in input_csv:
             prod9_to_line(my_df, '../output/p9-chronograf.txt')
-        if 'producto10' in input_csv:
+        elif 'producto10' in input_csv:
             prod10_to_line(my_df, '../output/p10-chronograf.txt')
-        if 'producto13' in input_csv:
+        elif 'producto13' in input_csv:
             prod13_to_line(my_df, '../output/p13-chronograf.txt')
-        if 'producto14' in input_csv:
+        elif 'producto14' in input_csv:
             prod14_to_line(my_df, '../output/p14-chronograf.txt')
-        if 'producto15' in input_csv:
+        elif 'producto15' in input_csv:
             prod15_to_line(my_df, '../output/p15-chronograf.txt')
-        if 'producto16' in input_csv:
+        elif 'producto16' in input_csv:
             prod16_to_line(my_df, '../output/p16-chronograf.txt')
-        if 'producto17' in input_csv:
+        elif 'producto17' in input_csv:
             prod17_to_line(my_df, '../output/p17-chronograf.txt')
-        if 'producto18' in input_csv:
+        elif 'producto18' in input_csv:
             prod18_to_line(my_df, '../output/p18-chronograf.txt')
-        if 'producto19' in input_csv:
+        elif 'producto19' in input_csv:
             prod19_to_line(my_df, '../output/p19-chronograf.txt')
-        if 'producto20' in input_csv:
+        elif 'producto20' in input_csv:
             prod20_to_line(my_df, '../output/p20-chronograf.txt')
         # prod 21
-        if 'SintomasCasosConfirmados' in input_csv:
+        elif 'SintomasCasosConfirmados' in input_csv:
             prod21_1_to_line(my_df, '../output/p21_1-chronograf.txt')
-        if 'SintomasHospitalizados' in input_csv:
+        elif 'SintomasHospitalizados' in input_csv:
             # prod 22
             prod21_2_to_line(my_df, '../output/p21_2-chronograf.txt')
-        if 'HospitalizadosEtario_Acumulado' in input_csv:
+        elif 'HospitalizadosEtario_Acumulado' in input_csv:
             prod22_1_to_line(my_df, '../output/p22_1-chronograf.txt')
-        if 'HospitalizadosUCI_Acumulado' in input_csv:
+        elif 'HospitalizadosUCI_Acumulado' in input_csv:
             prod22_2_to_line(my_df, '../output/p22_2-chronograf.txt')
-        if 'producto23' in input_csv:
+        elif 'producto23' in input_csv:
             prod23_to_line(my_df, '../output/p23-chronograf.txt')
-        if 'producto24' in input_csv:
+        elif 'producto24' in input_csv:
             prod24_to_line(my_df, '../output/p24-chronograf.txt')
-        if 'producto25' in input_csv:
+        elif 'producto25' in input_csv:
             prod25_to_line(my_df, '../output/p25-chronograf.txt')
-        if 'producto28' in input_csv:
+        elif 'producto28' in input_csv:
             prod28_to_line(my_df, '../output/p28-chronograf.txt')
-        if 'producto30' in input_csv:
+        elif 'producto30' in input_csv:
             prod30_to_line(my_df, '../output/p30-chronograf.txt')
-        if 'producto31' in input_csv:
+        elif 'producto31' in input_csv:
             prod31_to_line(my_df, '../output/p31-chronograf.txt')
-        if 'producto32' in input_csv:
+        elif 'producto32' in input_csv:
             prod32_to_line(my_df, '../output/p32-chronograf.txt')
-        if 'producto33' in input_csv:
+        elif 'producto33' in input_csv:
             prod33_to_line(my_df, '../output/p33-chronograf.txt')
-        if 'producto35' in input_csv:
+        elif 'producto35' in input_csv:
             prod35_to_line(my_df, '../output/p35-chronograf.txt')
-        if 'producto36' in input_csv:
+        elif 'producto36' in input_csv:
             prod36_to_line(my_df, '../output/p36-chronograf.txt')
-        if 'producto37' in input_csv:
+        elif 'producto37' in input_csv:
             prod37_to_line(my_df, '../output/p37-chronograf.txt')
-        if 'producto38' in input_csv:
+        elif 'producto38' in input_csv:
             prod38_to_line(my_df, '../output/p38-chronograf.txt')
-        if 'producto39' in input_csv:
+        elif 'producto39' in input_csv:
             prod39_to_line(my_df, '../output/p39-chronograf.txt')
+        elif 'producto40' in input_csv:
+            prod40_to_line(my_df, '../output/p40-chronograf.txt')
 
 
 if __name__ == '__main__':
