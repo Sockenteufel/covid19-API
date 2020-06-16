@@ -691,7 +691,7 @@ def prod42_to_line(df42, path):
     lines = []
     for d in range(len(df42)):
         # Fecha,Origen,Destino,Viajes
-        lines.append('Transporte_aereo,'
+        lines.append('Viajes_comunas,'
                      # TAGS are used to check if measurements are the same
                      + 'Origen="' + unidecode.unidecode(str(df42['Origen'][d]).replace(' ', '_')) + '",'
                      + 'Destino="' + unidecode.unidecode(str(df42['Destino'][d]).replace(' ', '_')) + '"'
