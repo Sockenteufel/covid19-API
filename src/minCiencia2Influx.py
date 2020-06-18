@@ -94,6 +94,7 @@ def prod1_to_line(df1, path):
 def prod2_to_line(df2, path):
     #Poblacion,Casos Confirmados,Fecha,Region ID,Region,Provincia ID,Provincia,Comuna ID,Comuna,Tasa
     lines = []
+    df2.replace(to_replace='-', value=0, regex=True, inplace=True)
     for d in range(len(df2)):
         lines.append('Tasa_de_incidencia,'
                      # TAGS are used to check if measurements are the same

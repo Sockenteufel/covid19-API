@@ -2014,7 +2014,7 @@ Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo
 Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo",Codigo_comuna="5606.0" Poblacion=11934.0,Tasa=92.17362158538629 1587081600000000000
 Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo",Codigo_comuna="5606.0" Poblacion=11934.0,Tasa=293.27970504441095 1590105600000000000
 Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo",Codigo_comuna="5606.0" Poblacion=11934.0,Tasa=175.96782302664656 1588896000000000000
-Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo",Codigo_comuna="5606.0" Poblacion=11934.0,Tasa=- 1585526400000000000
+Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo",Codigo_comuna="5606.0" Poblacion=11934.0,Tasa=0 1585526400000000000
 Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo",Codigo_comuna="5606.0" Poblacion=11934.0,Tasa=184.34724317077257 1588550400000000000
 Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo",Codigo_comuna="5606.0" Poblacion=11934.0,Tasa=159.2089827383945 1588291200000000000
 Tasa_de_incidencia,Region="Valparaiso",Codigo_region="5.0",Comuna="Santo_Domingo",Codigo_comuna="5606.0" Poblacion=11934.0,Tasa=653.59477124183 1591920000000000000
@@ -6486,7 +6486,7 @@ Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_c
 Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_comuna="8312.0" Poblacion=15205.0,Tasa=6.576783952647156 1587081600000000000
 Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_comuna="8312.0" Poblacion=15205.0,Tasa=26.307135810588623 1590105600000000000
 Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_comuna="8312.0" Poblacion=15205.0,Tasa=6.576783952647156 1588896000000000000
-Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_comuna="8312.0" Poblacion=15205.0,Tasa=- 1585526400000000000
+Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_comuna="8312.0" Poblacion=15205.0,Tasa=0 1585526400000000000
 Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_comuna="8312.0" Poblacion=15205.0,Tasa=6.576783952647156 1588550400000000000
 Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_comuna="8312.0" Poblacion=15205.0,Tasa=6.576783952647156 1588291200000000000
 Tasa_de_incidencia,Region="Biobio",Codigo_region="8.0",Comuna="Tucapel",Codigo_comuna="8312.0" Poblacion=15205.0,Tasa=322.2624136797106 1591920000000000000
@@ -7344,7 +7344,7 @@ Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica"
 Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica",Codigo_comuna="9120.0" Poblacion=59103.0,Tasa=28.763345346259918 1587081600000000000
 Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica",Codigo_comuna="9120.0" Poblacion=59103.0,Tasa=37.22315280104225 1590105600000000000
 Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica",Codigo_comuna="9120.0" Poblacion=59103.0,Tasa=35.53119131008578 1588896000000000000
-Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica",Codigo_comuna="9120.0" Poblacion=59103.0,Tasa=- 1585526400000000000
+Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica",Codigo_comuna="9120.0" Poblacion=59103.0,Tasa=0 1585526400000000000
 Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica",Codigo_comuna="9120.0" Poblacion=59103.0,Tasa=33.839229819129315 1588550400000000000
 Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica",Codigo_comuna="9120.0" Poblacion=59103.0,Tasa=33.839229819129315 1588291200000000000
 Tasa_de_incidencia,Region="La_Araucania",Codigo_region="9.0",Comuna="Villarrica",Codigo_comuna="9120.0" Poblacion=59103.0,Tasa=69.3704211292151 1591920000000000000
@@ -8996,4 +8996,4 @@ Tasa_de_incidencia,Region="Magallanes_y_de_la_Antartica_Chilena",Codigo_region="
 Tasa_de_incidencia,Region="Magallanes_y_de_la_Antartica_Chilena",Codigo_region="12.0",Comuna="Torres_del_Paine",Codigo_comuna="12402.0" Poblacion=1021.0,Tasa=0.0 1586908800000000000
 Tasa_de_incidencia,Region="Magallanes_y_de_la_Antartica_Chilena",Codigo_region="12.0",Comuna="Torres_del_Paine",Codigo_comuna="12402.0" Poblacion=1021.0,Tasa=0.0 1590364800000000000
 Tasa_de_incidencia,Region="Magallanes_y_de_la_Antartica_Chilena",Codigo_region="12.0",Comuna="Torres_del_Paine",Codigo_comuna="12402.0" Poblacion=1021.0,Tasa=0.0 1590969600000000000
-Tasa_de_incidencia,Region="Aysen_del_General_Carlos_Ibanez_del_Campo",Codigo_region="11.0",Comuna="Aisen",Codigo_comuna="11201.0" Poblacion=0.0,Tasa=- 0
+Tasa_de_incidencia,Region="Aysen_del_General_Carlos_Ibanez_del_Campo",Codigo_region="11.0",Comuna="Aisen",Codigo_comuna="11201.0" Poblacion=0.0,Tasa=0 0
