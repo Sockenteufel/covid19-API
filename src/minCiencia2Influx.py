@@ -91,6 +91,25 @@ def prod1_to_line(df1, path):
     file_writer(path, lines)
 
 
+def prod2_to_line(df2, path):
+    #Poblacion,Casos Confirmados,Fecha,Region ID,Region,Provincia ID,Provincia,Comuna ID,Comuna,Tasa
+    lines = []
+    for d in range(len(df2)):
+        lines.append('Tasa_de_incidencia'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df2['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df2['Region ID'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df2['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df2['Comuna ID'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df2['Poblacion'][d]) + ","
+                     + 'Tasa=' + str(df2['Tasa'][d])
+                     + ' '
+                     + str(pd.to_datetime(df2["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
 def prod3_to_line(df3, path):
     lines = []
     for d in range(len(df3)):
@@ -711,6 +730,8 @@ def csv2line(input_csv):
         print((list(my_df)))
         if 'producto1/Covid-19_std.csv' in input_csv:
             prod1_to_line(my_df, '../output/p1-chronograf.txt')
+        elif 'producto6/bulk/data.csv'in input_csv:
+            prod2_to_line(my_df, '../output/p2-chronograf.txt')
         elif 'producto3/' in input_csv:
             prod3_to_line(my_df, '../output/p3-chronograf.txt')
         elif 'producto5' in input_csv:
