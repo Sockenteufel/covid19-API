@@ -95,7 +95,7 @@ def prod2_to_line(df2, path):
     #Poblacion,Casos Confirmados,Fecha,Region ID,Region,Provincia ID,Provincia,Comuna ID,Comuna,Tasa
     lines = []
     for d in range(len(df2)):
-        lines.append('Tasa_de_incidencia'
+        lines.append('Tasa_de_incidencia,'
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df2['Region'][d]).replace(' ', '_')) + '",'
                      + 'Codigo_region="' + str(df2['Region ID'][d]) + '",'
