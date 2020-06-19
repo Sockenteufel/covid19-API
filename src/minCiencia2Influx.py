@@ -815,13 +815,13 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
             df43 = pd.read_csv(url, header=[0, 1, 2, 3, 4, 5, 6], sep=',')
             unidad = ''
             if each_particle in ['SO2', 'NO2', 'O3']:
-                unidad = 'partes_por_billon'
+                unidad = 'Unidad="partes_por_billon"'
             if each_particle in ['CO']:
-                unidad = 'partes_por_millon'
+                unidad = 'Unidad="partes_por_millon"'
             if each_particle in ['MP10']:
-                unidad = 'ugr_metro_cub_normalizado'
+                unidad = 'Unidad="ugr_m_cub_normalizado"'
             if each_particle in ['MP2_5']:
-                unidad = 'ugr_metro_cub'
+                unidad = 'Unidad="ugr_m_cub"'
             # print(df43)
             df43.fillna(0, inplace=True)
             # hay que recorrer por columnas (son los tags) y filas (son las observaciones por timestamp)
@@ -839,10 +839,11 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
                                      + 'Comuna="' + unidecode.unidecode(str(each_column[3]).replace(' ', '_')) + '",'
                                      + 'Codigo_comuna="' + str(each_column[4]) + '",'
                                      + 'UTM_Este="' + unidecode.unidecode(str(each_column[5])) + '",'
-                                     + 'UTM_Norte="' + unidecode.unidecode(str(each_column[6])) + '"'
+                                     + 'UTM_Norte="' + unidecode.unidecode(str(each_column[6])) + '",'
+                                     + unidad
                                      + ' '
                                      # Fields
-                                     + unidad + '=' + str(df43.loc[each_row, each_column])
+                                     + 'Medicion=' + str(df43.loc[each_row, each_column])
                                      + ' '
                                      + str(pd.to_datetime(df43.loc[each_row, df43.columns[0]]).value)
                                      )
