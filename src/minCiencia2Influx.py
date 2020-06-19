@@ -786,7 +786,7 @@ def prod43_generator(path, from_year=2019, to_year=2020 ):
 
 def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_year=2020):
     # generate urls for every serie
-    valid_particles = ['CO', 'MP10', 'MP2.5', 'NO2', 'O3', 'SO2']
+    valid_particles = ['CO', 'MP10', 'MP2_5', 'NO2', 'O3', 'SO2']
     from_year = int(from_year)
     to_year = int(to_year)
     #validate the particles passed are valid
