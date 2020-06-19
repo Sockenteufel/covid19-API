@@ -819,9 +819,9 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
             if each_particle in ['CO']:
                 unidad = 'partes_por_millon'
             if each_particle in ['MP10']:
-                unidad = 'microgramos_por_metro_3_normalizado'
+                unidad = 'ugr_metro_3cub_normalizado'
             if each_particle in ['MP2.5']:
-                unidad = 'microgramos_por_metro_3'
+                unidad = 'ugr_metro_cub'
             # print(df43)
             df43.fillna(0, inplace=True)
             # hay que recorrer por columnas (son los tags) y filas (son las observaciones por timestamp)
