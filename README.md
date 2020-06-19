@@ -74,3 +74,10 @@ La asociación entre productos y series es:
 * [producto 41_1](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto41/BIPTotal_std.csv) BIP_total
 * [producto 41_2](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto41/BIPComuna_std.csv) BIP_comunal
 * [producto 42](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto42/ViajesComunas_std.csv) Viajes_comunas
+* [producto 43](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto43/ViajesComunas_std.csv) Datos del Ministario del Medio Ambiente, una serie para cada contaminante:
+   1. CO
+   2. MP10
+   3. MP2.5
+   4. NO2
+   5. O3
+   6. SO2
