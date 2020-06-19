@@ -792,12 +792,12 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
     #validate the particles passed are valid
     my_particles = my_particles[0]
     particles = []
-    for each_my_particle in list(my_particles):
+    for each_my_particle in my_particles:
         if each_my_particle in valid_particles:
             print(each_my_particle + ' is valid')
             particles.append(each_my_particle)
         else:
-            print('Particle unknown. Should be one of: ' + str(valid_particles))
+            print('Particle ' + each_my_particle + ' unknown. Should be one of: ' + str(valid_particles))
 
     if len(particles) > 0:
         print('Will process ' + str(particles) + ' between ' + str(from_year) + ' and ' + str(to_year))
@@ -823,6 +823,7 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
             if each_particle in ['MP2.5']:
                 unidad = 'microgramos_por_metro_3'
             # print(df43)
+            df43.fillna(0, inplace=True)
             # hay que recorrer por columnas (son los tags) y filas (son las observaciones por timestamp)
             lines = []
             for each_column in df43.columns:
@@ -849,7 +850,7 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
                                      + ' '
                                      + str(pd.to_datetime(df43.loc[each_row, df43.columns[0]]).value)
                                      )
-            file_writer(path + each_particle + '-' + str(each_year) + '_test.txt', lines)
+            file_writer(path + each_particle + '-' + str(each_year) + '.txt', lines)
             t1 = time.perf_counter()
             print('Took ' + str(t1 - t0) + ' seconds')
 
@@ -941,12 +942,13 @@ def csv2line(input_csv):
 
 
 if __name__ == '__main__':
-    # for k in relevantCSVs:
-    #     print('Checking ' + k + ': ' + relevantCSVs[k])
-    #     df = csv2line(relevantCSVs[k])
+
     if len(sys.argv) >= 3:
         print('Generando prod43 entre ' + sys.argv[1] + ' y ' + sys.argv[2])
         prod43_generator_validate_particles('../output/p43-', sys.argv[3:], from_year=sys.argv[1], to_year=sys.argv[2])
     elif len(sys.argv) == 1:
+        for k in relevantCSVs:
+            print('Checking ' + k + ': ' + relevantCSVs[k])
+            df = csv2line(relevantCSVs[k])
         print('Generando prod43 entre 2019 y 2020')
         prod43_generator('../output/p43-')
