@@ -819,8 +819,8 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
             if each_particle in ['CO']:
                 unidad = 'partes_por_millon'
             if each_particle in ['MP10']:
-                unidad = 'ugr_metro_3cub_normalizado'
-            if each_particle in ['MP2.5']:
+                unidad = 'ugr_metro_cub_normalizado'
+            if each_particle in ['MP2_5']:
                 unidad = 'ugr_metro_cub'
             # print(df43)
             df43.fillna(0, inplace=True)
@@ -828,11 +828,7 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
             lines = []
             for each_column in df43.columns:
 
-                if 'Nombre de estacion' in each_column:
-                    print('Skipping')
-                    print(each_column)
-                else:
-
+                if 'Nombre de estacion' not in each_column:
                     for each_row in df43.index:
                         lines.append(each_particle + ','
                                      # TAGS are used to check if measurements are the same
