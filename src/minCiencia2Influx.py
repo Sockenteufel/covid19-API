@@ -786,7 +786,7 @@ def prod43_generator(path, from_year=2019, to_year=2020 ):
 
 def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_year=2020):
     # generate urls for every serie
-    valid_particles = ['CO', 'MP10', 'MP2_5', 'NO2', 'O3', 'SO2']
+    valid_particles = ['CO', 'MP10', 'MP2.5', 'NO2', 'O3', 'SO2']
     from_year = int(from_year)
     to_year = int(to_year)
     #validate the particles passed are valid
@@ -820,7 +820,7 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
                 unidad = 'Unidad="partes_por_millon"'
             if each_particle in ['MP10']:
                 unidad = 'Unidad="ugr_m_cub_normalizado"'
-            if each_particle in ['MP2_5']:
+            if each_particle in ['MP2.5']:
                 unidad = 'Unidad="ugr_m_cub"'
             # print(df43)
             df43.fillna(0, inplace=True)
