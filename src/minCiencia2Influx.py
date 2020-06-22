@@ -934,8 +934,7 @@ def csv2line(input_csv):
             prod41_2_to_line(my_df, '../output/p41_2-chronograf.txt')
         elif 'producto42' in input_csv:
             prod42_to_line(my_df, '../output/p42-chronograf.txt')
-        elif 'producto43' in input_csv:
-            p43urls = prod43_generator('../output/p43-')
+
 
 
 if __name__ == '__main__':
@@ -944,8 +943,9 @@ if __name__ == '__main__':
         print('Generando prod43 entre ' + sys.argv[1] + ' y ' + sys.argv[2])
         prod43_generator_validate_particles('../output/p43-', sys.argv[3:], from_year=sys.argv[1], to_year=sys.argv[2])
     elif len(sys.argv) == 1:
+        # print('Generando prod43 entre 2019 y 2020')
+        # prod43_generator_validate_particles('../output/p43-', ['CO', 'MP10', 'MP2.5', 'NO2', 'O3', 'SO2'])
         for k in relevantCSVs:
             print('Checking ' + k + ': ' + relevantCSVs[k])
             df = csv2line(relevantCSVs[k])
-        print('Generando prod43 entre 2019 y 2020')
-        prod43_generator('../output/p43-')
+
