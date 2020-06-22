@@ -939,7 +939,7 @@ def csv2line(input_csv):
 
 
 if __name__ == '__main__':
-
+#run as  for i in $(seq 2010 2020); do for j in MP2.5; do python minCiencia2Influx.py $i $((${i}+1)) $j ; done &; done
     if len(sys.argv) >= 3:
         print('Generando prod43 entre ' + sys.argv[1] + ' y ' + sys.argv[2])
         prod43_generator_validate_particles('../output/p43-', sys.argv[3:], from_year=sys.argv[1], to_year=sys.argv[2])
