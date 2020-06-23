@@ -58,8 +58,7 @@ relevantCSVs = {
     'prod40': ('%s/producto40/TransporteAereo_std.csv' % GITHUB_REPO),
     'prod41.1': ('%s/producto41/BIPTotal_std.csv' % GITHUB_REPO),
     'prod41.2': ('%s/producto41/BIPComuna_std.csv' % GITHUB_REPO),
-    'prod42': ('%s/producto42/ViajesComunas_std.csv' % GITHUB_REPO),
-    'prod43': ('%s/producto43/' % GITHUB_REPO)
+    'prod42': ('%s/producto42/ViajesComunas_std.csv' % GITHUB_REPO)
 
 }
 
