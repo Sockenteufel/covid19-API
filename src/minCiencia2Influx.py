@@ -858,10 +858,10 @@ def prod44_to_line(df44, path):
         # Fecha,Origen,Destino,Viajes
         lines.append('Egresos_semanales,'
                      # TAGS are used to check if measurements are the same
-                     + 'Publicacion="' + unidecode.unidecode(str(df44['Evolucion semanal'][d]).replace(' ', '_')) + '"'
+                     + 'Publicacion="' + unidecode.unidecode(str(df44['Egresos semanales'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Egresos=' + str(df44['Viajes'][d])
+                     + 'Egresos=' + str(df44['Egresos'][d])
                      + ' '
                      + str(pd.to_datetime(df44["Fecha"][d]).value)
                      )
