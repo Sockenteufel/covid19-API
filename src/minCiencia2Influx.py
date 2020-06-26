@@ -58,7 +58,8 @@ relevantCSVs = {
     'prod40': ('%s/producto40/TransporteAereo_std.csv' % GITHUB_REPO),
     'prod41.1': ('%s/producto41/BIPTotal_std.csv' % GITHUB_REPO),
     'prod41.2': ('%s/producto41/BIPComuna_std.csv' % GITHUB_REPO),
-    'prod42': ('%s/producto42/ViajesComunas_std.csv' % GITHUB_REPO)
+    'prod42': ('%s/producto42/ViajesComunas_std.csv' % GITHUB_REPO),
+    'prod44': ('%s/producto44/EgresosHospitalarios_std.csv' % GITHUB_REPO)
 
 }
 
@@ -851,6 +852,21 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
             print('Took ' + str(t1 - t0) + ' seconds')
 
 
+def prod44_to_line(df44, path):
+    lines = []
+    for d in range(len(df44)):
+        # Fecha,Origen,Destino,Viajes
+        lines.append('Egresos_semanales,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Publicacion="' + unidecode.unidecode(str(df44['Evolucion semanal'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Egresos=' + str(df44['Viajes'][d])
+                     + ' '
+                     + str(pd.to_datetime(df44["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
 
 def csv2line(input_csv):
     if input_csv != '':
@@ -933,6 +949,8 @@ def csv2line(input_csv):
             prod41_2_to_line(my_df, '../output/p41_2-chronograf.txt')
         elif 'producto42' in input_csv:
             prod42_to_line(my_df, '../output/p42-chronograf.txt')
+        elif 'producto44' in input_csv:
+            prod44_to_line(my_df, '../output/p44-chronograf.txt')
 
 
 
