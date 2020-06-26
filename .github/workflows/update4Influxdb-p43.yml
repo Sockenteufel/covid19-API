@@ -35,7 +35,11 @@ jobs:
         pip install -r requirements.txt
 
     - name: generate products from Minciencia for influx
-      run: cd src; python minCiencia2Influx.py
+      run: |
+        cd src
+        YEAR = $(date +'%Y')
+        python minCiencia2Influx.py $(YEAR) $((${YEAR}+1)) MP2.5
+        python minCiencia2Influx.py $(YEAR) $((${YEAR}+1)) MP10
 
     - uses: stefanzweifel/git-auto-commit-action@v4.2.0
       with:
