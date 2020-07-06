@@ -37,7 +37,7 @@ jobs:
     - name: generate products from Minciencia for influx
       run: |
         cd src
-        YEAR = $(date +'%Y')
+        YEAR=$(date +'%Y')
         python minCiencia2Influx.py ${YEAR} $(($YEAR+1)) MP2.5
         python minCiencia2Influx.py ${YEAR} $(($YEAR+1)) MP10
 
