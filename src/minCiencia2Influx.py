@@ -59,7 +59,8 @@ relevantCSVs = {
     'prod41.1': ('%s/producto41/BIPTotal_std.csv' % GITHUB_REPO),
     'prod41.2': ('%s/producto41/BIPComuna_std.csv' % GITHUB_REPO),
     'prod42': ('%s/producto42/ViajesComunas_std.csv' % GITHUB_REPO),
-    'prod44': ('%s/producto44/EgresosHospitalarios_std.csv' % GITHUB_REPO)
+    'prod44': ('%s/producto44/EgresosHospitalarios_std.csv' % GITHUB_REPO),
+    'prod45_1': ('%s/producto45/CasosConfirmadosPorComuna_std.csv' % GITHUB_REPO)
 
 }
 
@@ -970,7 +971,8 @@ def csv2line(input_csv):
             prod42_to_line(my_df, '../output/p42-chronograf.txt')
         elif 'producto44' in input_csv:
             prod44_to_line(my_df, '../output/p44-chronograf.txt')
-
+        elif 'producto45/CasosConfirmadosPorComuna_std.csv' in input_csv:
+            prod45_1_to_line(my_df, '../output/p45_1-chronograf.txt')
 
 if __name__ == '__main__':
     # run as  for i in $(seq 2010 2020); do for j in MP2.5; do python minCiencia2Influx.py $i $((${i}+1)) $j ; done &; done
