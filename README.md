@@ -239,4 +239,4 @@ La asociación entre productos y series es:
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Egresos_semanales%22)  
     * [Tag values "Publicacion"](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20VALUES%20FROM%20%22Egresos_semanales%22%20WITH%20KEY=%22Publicacion%22)
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Egresos_semanales%22)
-
+* [producto45_1](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto45/CasosConfirmadosPorComuna_std.csv) Casos_confirmados_comunal_FIS
