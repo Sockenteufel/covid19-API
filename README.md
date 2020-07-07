@@ -39,21 +39,21 @@ la base de datos ingesta las nuevas series.
 La asociación entre productos y series es:
 
 * [producto 1](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto1/Covid-19_std.csv) Casos_confirmados_comunal:
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22Casos_confirmados_comunal%22)
-    * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Casos_acumulados_regional%22)
-    * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Casos_acumulados_regional%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Casos_confirmados")%20FROM%20%22Casos_confirmados_comunal%22)
+    * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Casos_confirmados_comunal%22)
+    * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Casos_confirmados_comunal%22)
 * [producto 2](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto6/bulk/data.csv) Tasa_de_incidencia:
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22Tasa_de_incidencia%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Tasa")%20FROM%20%22Tasa_de_incidencia%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Tasa_de_incidencia%22)
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Tasa_de_incidencia%22)
 * [producto 3](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto3/CasosTotalesCumulativo_std.csv) Casos_acumulados_regional:
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22Casos_acumulados_regional%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Casos_acumulados")%20FROM%20%22Casos_acumulados_regional%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Casos_acumulados_regional%22)
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Casos_acumulados_regional%22)
 * [producto 4](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto11/bulk/producto4.csv)
     * Pendiente
 * [producto 5](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto5/TotalesNacionales_std.csv) Totales_nacionales:
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22Totales_nacionales%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Total")%20FROM%20%22Totales_nacionales%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Totales_nacionales%22)
     * [Tag values "Serie"](http://covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20VALUES%20FROM%20%22Totales_nacionales%22%20WITH%20KEY=%22Serie%22)
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Totales_nacionales%22)
