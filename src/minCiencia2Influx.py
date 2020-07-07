@@ -728,7 +728,7 @@ def prod42_to_line(df42, path):
     file_writer(path, lines)
 
 
-def prod43_generator(path, from_year=2019, to_year=2020 ):
+def prod43_generator(path, from_year=2019, to_year=2020):
     # generate urls for every serie
     particles = ['CO', 'MP10', 'MP2.5', 'NO2', 'O3', 'SO2']
     from_year = int(from_year)
@@ -742,7 +742,7 @@ def prod43_generator(path, from_year=2019, to_year=2020 ):
             url = GITHUB_REPO + '/producto43/' + each_particle + '-' + str(each_year) + '_std.csv'
             print('processing ' + url)
             df43 = pd.read_csv(url, header=[0, 1, 2, 3, 4, 5, 6], sep=',')
-            unidad =''
+            unidad = ''
             if each_particle in ['SO2', 'NO2', 'O3']:
                 unidad = 'partes_por_billon'
             if each_particle in ['CO']:
@@ -765,7 +765,7 @@ def prod43_generator(path, from_year=2019, to_year=2020 ):
                         lines.append(each_particle + ','
                                      # TAGS are used to check if measurements are the same
                                      + 'Nombre_estacion="' + unidecode.unidecode(
-                                        str(each_column[0]).replace(' ', '_')) + '",'
+                            str(each_column[0]).replace(' ', '_')) + '",'
                                      + 'Region="' + unidecode.unidecode(str(each_column[1]).replace(' ', '_')) + '",'
                                      + 'Codigo_region="' + str(each_column[2]) + '",'
                                      + 'Comuna="' + unidecode.unidecode(str(each_column[3]).replace(' ', '_')) + '",'
@@ -789,7 +789,7 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
     valid_particles = ['CO', 'MP10', 'MP2.5', 'NO2', 'O3', 'SO2']
     from_year = int(from_year)
     to_year = int(to_year)
-    #validate the particles passed are valid
+    # validate the particles passed are valid
     my_particles = my_particles[0]
     particles = []
     for each_my_particle in my_particles:
@@ -833,7 +833,7 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
                         lines.append(each_particle + ','
                                      # TAGS are used to check if measurements are the same
                                      + 'Nombre_estacion="' + unidecode.unidecode(
-                                        str(each_column[0]).replace(' ', '_')) + '",'
+                            str(each_column[0]).replace(' ', '_')) + '",'
                                      + 'Region="' + unidecode.unidecode(str(each_column[1]).replace(' ', '_')) + '",'
                                      + 'Codigo_region="' + str(each_column[2]) + '",'
                                      + 'Comuna="' + unidecode.unidecode(str(each_column[3]).replace(' ', '_')) + '",'
@@ -953,9 +953,8 @@ def csv2line(input_csv):
             prod44_to_line(my_df, '../output/p44-chronograf.txt')
 
 
-
 if __name__ == '__main__':
-#run as  for i in $(seq 2010 2020); do for j in MP2.5; do python minCiencia2Influx.py $i $((${i}+1)) $j ; done &; done
+    # run as  for i in $(seq 2010 2020); do for j in MP2.5; do python minCiencia2Influx.py $i $((${i}+1)) $j ; done &; done
     if len(sys.argv) >= 3:
         print('Generando prod43 entre ' + sys.argv[1] + ' y ' + sys.argv[2])
         prod43_generator_validate_particles('../output/p43-', sys.argv[3:], from_year=sys.argv[1], to_year=sys.argv[2])
@@ -965,4 +964,3 @@ if __name__ == '__main__':
         for k in relevantCSVs:
             print('Checking ' + k + ': ' + relevantCSVs[k])
             df = csv2line(relevantCSVs[k])
-
