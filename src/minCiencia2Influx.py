@@ -583,7 +583,7 @@ def prod35_to_line(df35, path):
         lines.append('Comorbilidad,'
                      # TAGS are used to check if measurements are the same
                      + 'Comorbilidad="' + unidecode.unidecode(str(df35['Comorbilidad'][d]).replace(' ', '_')) + '",'
-                     + 'Hospitalización="' + unidecode.unidecode(
+                     + 'Hospitalizacion="' + unidecode.unidecode(
             str(df35['Hospitalización'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
