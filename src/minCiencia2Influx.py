@@ -59,7 +59,10 @@ relevantCSVs = {
     'prod41.1': ('%s/producto41/BIPTotal_std.csv' % GITHUB_REPO),
     'prod41.2': ('%s/producto41/BIPComuna_std.csv' % GITHUB_REPO),
     'prod42': ('%s/producto42/ViajesComunas_std.csv' % GITHUB_REPO),
-    'prod44': ('%s/producto44/EgresosHospitalarios_std.csv' % GITHUB_REPO)
+    'prod44': ('%s/producto44/EgresosHospitalarios_std.csv' % GITHUB_REPO),
+    'prod45_1': ('%s/producto45/CasosConfirmadosPorComunaHistorico_std.csv' % GITHUB_REPO),
+    'prod45_2': ('%s/producto45/CasosNoNotificadosPorComunaHistorico_std.csv' % GITHUB_REPO),
+    'prod45_3': ('%s/producto45/CasosProbablesPorComunaHistorico_std.csv' % GITHUB_REPO)
 
 }
 
@@ -583,7 +586,7 @@ def prod35_to_line(df35, path):
         lines.append('Comorbilidad,'
                      # TAGS are used to check if measurements are the same
                      + 'Comorbilidad="' + unidecode.unidecode(str(df35['Comorbilidad'][d]).replace(' ', '_')) + '",'
-                     + 'Hospitalización="' + unidecode.unidecode(
+                     + 'Hospitalizacion="' + unidecode.unidecode(
             str(df35['Hospitalización'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
@@ -728,60 +731,60 @@ def prod42_to_line(df42, path):
     file_writer(path, lines)
 
 
-def prod43_generator(path, from_year=2019, to_year=2020 ):
-    # generate urls for every serie
-    particles = ['CO', 'MP10', 'MP2.5', 'NO2', 'O3', 'SO2']
-    from_year = int(from_year)
-    to_year = int(to_year)
-
-    years = [x for x in range(from_year, to_year)]
-
-    for each_particle in particles:
-        for each_year in years:
-            t0 = time.perf_counter()
-            url = GITHUB_REPO + '/producto43/' + each_particle + '-' + str(each_year) + '_std.csv'
-            print('processing ' + url)
-            df43 = pd.read_csv(url, header=[0, 1, 2, 3, 4, 5, 6], sep=',')
-            unidad =''
-            if each_particle in ['SO2', 'NO2', 'O3']:
-                unidad = 'partes_por_billon'
-            if each_particle in ['CO']:
-                unidad = 'partes_por_millon'
-            if each_particle in ['MP10']:
-                unidad = 'microgramos_por_metro_3_normalizado'
-            if each_particle in ['MP2.5']:
-                unidad = 'microgramos_por_metro_3'
-            # print(df43)
-            # hay que recorrer por columnas (son los tags) y filas (son las observaciones por timestamp)
-            lines = []
-            for each_column in df43.columns:
-
-                if 'Nombre de estacion' in each_column:
-                    print('Skipping')
-                    print(each_column)
-                else:
-
-                    for each_row in df43.index:
-                        lines.append(each_particle + ','
-                                     # TAGS are used to check if measurements are the same
-                                     + 'Nombre_estacion="' + unidecode.unidecode(
-                                        str(each_column[0]).replace(' ', '_')) + '",'
-                                     + 'Region="' + unidecode.unidecode(str(each_column[1]).replace(' ', '_')) + '",'
-                                     + 'Codigo_region="' + str(each_column[2]) + '",'
-                                     + 'Comuna="' + unidecode.unidecode(str(each_column[3]).replace(' ', '_')) + '",'
-                                     + 'Codigo_comuna="' + str(each_column[4]) + '",'
-                                     + 'UTM_Este="' + unidecode.unidecode(str(each_column[5])) + '",'
-                                     + 'UTM_Norte="' + unidecode.unidecode(str(each_column[6])) + '"'
-                                     + ' '
-                                     # Fields
-
-                                     + unidad + '=' + str(df43.loc[each_row, each_column])
-                                     + ' '
-                                     + str(pd.to_datetime(df43.loc[each_row, df43.columns[0]]).value)
-                                     )
-            file_writer(path + each_particle + '-' + str(each_year) + '.txt', lines)
-            t1 = time.perf_counter()
-            print('Took ' + str(t1 - t0) + ' seconds')
+# def prod43_generator(path, from_year=2019, to_year=2020):
+#     # generate urls for every serie
+#     particles = ['CO', 'MP10', 'MP2.5', 'NO2', 'O3', 'SO2']
+#     from_year = int(from_year)
+#     to_year = int(to_year)
+#
+#     years = [x for x in range(from_year, to_year)]
+#
+#     for each_particle in particles:
+#         for each_year in years:
+#             t0 = time.perf_counter()
+#             url = GITHUB_REPO + '/producto43/' + each_particle + '-' + str(each_year) + '_std.csv'
+#             print('processing ' + url)
+#             df43 = pd.read_csv(url, header=[0, 1, 2, 3, 4, 5, 6], sep=',')
+#             unidad = ''
+#             if each_particle in ['SO2', 'NO2', 'O3']:
+#                 unidad = 'partes_por_billon'
+#             if each_particle in ['CO']:
+#                 unidad = 'partes_por_millon'
+#             if each_particle in ['MP10']:
+#                 unidad = 'microgramos_por_metro_3_normalizado'
+#             if each_particle in ['MP2.5']:
+#                 unidad = 'microgramos_por_metro_3'
+#             # print(df43)
+#             # hay que recorrer por columnas (son los tags) y filas (son las observaciones por timestamp)
+#             lines = []
+#             for each_column in df43.columns:
+#
+#                 if 'Nombre de estacion' in each_column:
+#                     print('Skipping')
+#                     print(each_column)
+#                 else:
+#
+#                     for each_row in df43.index:
+#                         lines.append(each_particle + ','
+#                                      # TAGS are used to check if measurements are the same
+#                                      + 'Nombre_estacion="' + unidecode.unidecode(
+#                             str(each_column[0]).replace(' ', '_')) + '",'
+#                                      + 'Region="' + unidecode.unidecode(str(each_column[1]).replace(' ', '_')) + '",'
+#                                      + 'Codigo_region="' + str(each_column[2]) + '",'
+#                                      + 'Comuna="' + unidecode.unidecode(str(each_column[3]).replace(' ', '_')) + '",'
+#                                      + 'Codigo_comuna="' + str(each_column[4]) + '",'
+#                                      + 'UTM_Este="' + unidecode.unidecode(str(each_column[5])) + '",'
+#                                      + 'UTM_Norte="' + unidecode.unidecode(str(each_column[6])) + '"'
+#                                      + ' '
+#                                      # Fields
+#
+#                                      + unidad + '=' + str(df43.loc[each_row, each_column])
+#                                      + ' '
+#                                      + str(pd.to_datetime(df43.loc[each_row, df43.columns[0]]).value)
+#                                      )
+#             file_writer(path + each_particle + '-' + str(each_year) + '.txt', lines)
+#             t1 = time.perf_counter()
+#             print('Took ' + str(t1 - t0) + ' seconds')
 
 
 def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_year=2020):
@@ -789,7 +792,7 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
     valid_particles = ['CO', 'MP10', 'MP2.5', 'NO2', 'O3', 'SO2']
     from_year = int(from_year)
     to_year = int(to_year)
-    #validate the particles passed are valid
+    # validate the particles passed are valid
     my_particles = my_particles[0]
     particles = []
     for each_my_particle in my_particles:
@@ -833,7 +836,7 @@ def prod43_generator_validate_particles(path, *my_particles, from_year=2019, to_
                         lines.append(each_particle + ','
                                      # TAGS are used to check if measurements are the same
                                      + 'Nombre_estacion="' + unidecode.unidecode(
-                                        str(each_column[0]).replace(' ', '_')) + '",'
+                            str(each_column[0]).replace(' ', '_')) + '",'
                                      + 'Region="' + unidecode.unidecode(str(each_column[1]).replace(' ', '_')) + '",'
                                      + 'Codigo_region="' + str(each_column[2]) + '",'
                                      + 'Comuna="' + unidecode.unidecode(str(each_column[3]).replace(' ', '_')) + '",'
@@ -864,6 +867,71 @@ def prod44_to_line(df44, path):
                      + 'Egresos=' + str(df44['Egresos'][d])
                      + ' '
                      + str(pd.to_datetime(df44["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
+
+def prod45_1_to_line(df45_1, path):
+    lines = []
+    df2 = pd.read_csv(
+        '%s/producto45/SemanasEpidemiologicas.csv' % GITHUB_REPO)
+    for d in range(len(df45_1)):
+        lines.append('Casos_confirmados_comunal_FIS,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df45_1['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df45_1['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df45_1['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df45_1['Codigo comuna'][d]) + '",'
+                     + 'Publicacion="' + str(df45_1['Publicacion'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df45_1['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df45_1['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df2.loc[[0], df45_1["Semana Epidemiologica"][d]][0]).value)
+                     )
+    file_writer(path, lines)
+
+
+def prod45_2_to_line(df45_2, path):
+    lines = []
+    df2 = pd.read_csv(
+        '%s/producto45/SemanasEpidemiologicas.csv' % GITHUB_REPO)
+    for d in range(len(df45_2)):
+        lines.append('Casos_no_notificados_comunal_FIS,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df45_2['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df45_2['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df45_2['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df45_2['Codigo comuna'][d]) + '",'
+                     + 'Publicacion="' + str(df45_2['Publicacion'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df45_2['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df45_2['Casos no notificados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df2.loc[[0], df45_2["Semana Epidemiologica"][d]][0]).value)
+                     )
+    file_writer(path, lines)
+
+def prod45_3_to_line(df45_3, path):
+    lines = []
+    df2 = pd.read_csv(
+        '%s/producto45/SemanasEpidemiologicas.csv' % GITHUB_REPO)
+    for d in range(len(df45_3)):
+        lines.append('Casos_probables_comunal_FIS,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df45_3['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df45_3['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df45_3['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df45_3['Codigo comuna'][d]) + '",'
+                     + 'Publicacion="' + str(df45_3['Publicacion'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df45_3['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df45_3['Casos probables'][d])
+                     + ' '
+                     + str(pd.to_datetime(df2.loc[[0], df45_3["Semana Epidemiologica"][d]][0]).value)
                      )
     file_writer(path, lines)
 
@@ -951,11 +1019,16 @@ def csv2line(input_csv):
             prod42_to_line(my_df, '../output/p42-chronograf.txt')
         elif 'producto44' in input_csv:
             prod44_to_line(my_df, '../output/p44-chronograf.txt')
-
+        elif 'producto45/CasosConfirmadosPorComunaHistorico_std.csv' in input_csv:
+            prod45_1_to_line(my_df, '../output/p45_1-chronograf.txt')
+        elif 'producto45/CasosNoNotificadosPorComunaHistorico_std.csv' in input_csv:
+            prod45_2_to_line(my_df, '../output/p45_2-chronograf.txt')
+        elif 'producto45/CasosProbablesPorComunaHistorico_std.csv' in input_csv:
+            prod45_3_to_line(my_df, '../output/p45_3-chronograf.txt')
 
 
 if __name__ == '__main__':
-#run as  for i in $(seq 2010 2020); do for j in MP2.5; do python minCiencia2Influx.py $i $((${i}+1)) $j ; done &; done
+    # run as  for i in $(seq 2010 2020); do for j in MP2.5; do python minCiencia2Influx.py $i $((${i}+1)) $j ; done &; done
     if len(sys.argv) >= 3:
         print('Generando prod43 entre ' + sys.argv[1] + ' y ' + sys.argv[2])
         prod43_generator_validate_particles('../output/p43-', sys.argv[3:], from_year=sys.argv[1], to_year=sys.argv[2])
@@ -965,4 +1038,3 @@ if __name__ == '__main__':
         for k in relevantCSVs:
             print('Checking ' + k + ': ' + relevantCSVs[k])
             df = csv2line(relevantCSVs[k])
-
