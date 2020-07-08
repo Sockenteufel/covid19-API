@@ -225,54 +225,62 @@ La asociación entre productos y series es:
     * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Total")%20FROM%20%22Defunciones_comunales%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Defunciones_comunales%22)  
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Defunciones_comunales%22)
+    
 * [producto 39](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto39/NotificacionInicioSintomas_std.csv) Notificacion_inicio_sintomas
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22Notificacion_inicio_sintomas%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Total")%20FROM%20%22Notificacion_inicio_sintomas%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Notificacion_inicio_sintomas%22)  
     * [Tag values "Serie"](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20VALUES%20FROM%20%22Notificacion_inicio_sintomas%22%20WITH%20KEY=%22Serie%22)
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Notificacion_inicio_sintomas%22)
+    
 * [producto 40](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto40/TransporteAereo_std.csv) Transporte_aereo
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22Transporte_aereo%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Pasajeros")%20FROM%20%22Transporte_aereo%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Transporte_aereo%22)  
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Transporte_aereo%22)
+    
 * [producto 41_1](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto41/BIPTotal_std.csv) BIP_total
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22BIP_total%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Transacciones")%20FROM%20%22BIP_total%22)
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22BIP_total%22)
+    
 * [producto 41_2](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto41/BIPComuna_std.csv) BIP_comunal
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22BIP_comunal%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Transacciones")%20FROM%20%22BIP_comunal%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22BIP_comunal%22)  
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22BIP_comunal%22)
+    
 * [producto 42](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto42/ViajesComunas_std.csv) Viajes_comunas
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22Viajes_comunas%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Viajes")%20FROM%20%22Viajes_comunas%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Viajes_comunas%22)  
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Viajes_comunas%22)
+    
 * [producto 43](https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto43) Datos del Ministario del Medio Ambiente, una serie para cada contaminante:
     1. CO
-        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22CO%22)
+        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22CO%22)
         * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22CO%22)  
         * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22CO%22)
     2. MP10
-        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22MP10%22)
+        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22MP10%22)
         * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22MP10%22)  
         * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22MP10%22)   
     3. MP2.5
-        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22MP2.5%22)
+        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22MP2.5%22)
         * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22MP2.5%22)  
         * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22MP2.5%22) 
     4. NO2
-        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22NO2%22)
+        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22NO2%22)
         * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22NO2%22)  
         * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22NO2%22)    
     5. O3
-        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22O3%22)
+        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22O3%22)
         * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22O3%22)  
         * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22O3%22)    
     6. SO2
-        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22SO2%22)
+        * [Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22SO2%22)
         * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22SO2%22)  
-        * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22SO2%22)    
+        * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22SO2%22)
+            
 * [producto 44](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto44/EgresosHospitalarios_std.csv) Egresos_semanales
-    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST(*)%20FROM%20%22Egresos_semanales%22)
+    * [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Egresos")%20FROM%20%22Egresos_semanales%22)
     * [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Egresos_semanales%22)  
     * [Tag values "Publicacion"](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20VALUES%20FROM%20%22Egresos_semanales%22%20WITH%20KEY=%22Publicacion%22)
     * [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Egresos_semanales%22)
+    
 * [producto45_1](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto45/CasosConfirmadosPorComuna_std.csv) Casos_confirmados_comunal_FIS
