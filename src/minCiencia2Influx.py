@@ -60,7 +60,9 @@ relevantCSVs = {
     'prod41.2': ('%s/producto41/BIPComuna_std.csv' % GITHUB_REPO),
     'prod42': ('%s/producto42/ViajesComunas_std.csv' % GITHUB_REPO),
     'prod44': ('%s/producto44/EgresosHospitalarios_std.csv' % GITHUB_REPO),
-    'prod45_1': ('%s/producto45/CasosConfirmadosPorComuna_std.csv' % GITHUB_REPO)
+    'prod45_1': ('%s/producto45/CasosConfirmadosPorComunaHistorico_std.csv' % GITHUB_REPO),
+    'prod45_2': ('%s/producto45/CasosNoNotificadosPorComunaHistorico_std.csv' % GITHUB_REPO),
+    'prod45_3': ('%s/producto45/CasosProbablesPorComunaHistorico_std.csv' % GITHUB_REPO)
 
 }
 
@@ -868,8 +870,9 @@ def prod44_to_line(df44, path):
                      )
     file_writer(path, lines)
 
+
 def prod45_1_to_line(df45_1, path):
-    lines=[]
+    lines = []
     df2 = pd.read_csv(
         '%s/producto45/SemanasEpidemiologicas.csv' % GITHUB_REPO)
     for d in range(len(df45_1)):
@@ -878,7 +881,8 @@ def prod45_1_to_line(df45_1, path):
                      + 'Region="' + unidecode.unidecode(str(df45_1['Region'][d]).replace(' ', '_')) + '",'
                      + 'Codigo_region="' + str(df45_1['Codigo region'][d]) + '",'
                      + 'Comuna="' + unidecode.unidecode(str(df45_1['Comuna'][d]).replace(' ', '_')) + '",'
-                     + 'Codigo_comuna="' + str(df45_1['Codigo comuna'][d]) + '"'
+                     + 'Codigo_comuna="' + str(df45_1['Codigo comuna'][d]) + '",'
+                     + 'Publicacion="' + str(df45_1['Publicacion'][d]) + '"'
                      + ' '
                      # Fields
                      + 'Poblacion=' + str(df45_1['Poblacion'][d]) + ","
@@ -887,6 +891,50 @@ def prod45_1_to_line(df45_1, path):
                      + str(pd.to_datetime(df2.loc[[0], df45_1["Semana Epidemiologica"][d]][0]).value)
                      )
     file_writer(path, lines)
+
+
+def prod45_2_to_line(df45_2, path):
+    lines = []
+    df2 = pd.read_csv(
+        '%s/producto45/SemanasEpidemiologicas.csv' % GITHUB_REPO)
+    for d in range(len(df45_2)):
+        lines.append('Casos_no_notificados_comunal_FIS,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df45_2['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df45_2['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df45_2['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df45_2['Codigo comuna'][d]) + '",'
+                     + 'Publicacion="' + str(df45_2['Publicacion'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df45_2['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df45_2['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df2.loc[[0], df45_2["Semana Epidemiologica"][d]][0]).value)
+                     )
+    file_writer(path, lines)
+
+def prod45_3_to_line(df45_3, path):
+    lines = []
+    df2 = pd.read_csv(
+        '%s/producto45/SemanasEpidemiologicas.csv' % GITHUB_REPO)
+    for d in range(len(df45_3)):
+        lines.append('Casos_probables_comunal_FIS,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df45_3['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df45_3['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df45_3['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df45_3['Codigo comuna'][d]) + '",'
+                     + 'Publicacion="' + str(df45_3['Publicacion'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df45_3['Poblacion'][d]) + ","
+                     + 'Casos_confirmados=' + str(df45_3['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df2.loc[[0], df45_3["Semana Epidemiologica"][d]][0]).value)
+                     )
+    file_writer(path, lines)
+
 
 def csv2line(input_csv):
     if input_csv != '':
@@ -971,8 +1019,13 @@ def csv2line(input_csv):
             prod42_to_line(my_df, '../output/p42-chronograf.txt')
         elif 'producto44' in input_csv:
             prod44_to_line(my_df, '../output/p44-chronograf.txt')
-        elif 'producto45/CasosConfirmadosPorComuna_std.csv' in input_csv:
+        elif 'producto45/CasosConfirmadosPorComunaHistorico_std.csv' in input_csv:
             prod45_1_to_line(my_df, '../output/p45_1-chronograf.txt')
+        elif 'producto45/CasosNoNotificadosPorComunaHistorico_std.csv' in input_csv:
+            prod45_2_to_line(my_df, '../output/p45_2-chronograf.txt')
+        elif 'producto45/CasosProbablesPorComunaHistorico_std.csv' in input_csv:
+            prod45_3_to_line(my_df, '../output/p45_3-chronograf.txt')
+
 
 if __name__ == '__main__':
     # run as  for i in $(seq 2010 2020); do for j in MP2.5; do python minCiencia2Influx.py $i $((${i}+1)) $j ; done &; done
