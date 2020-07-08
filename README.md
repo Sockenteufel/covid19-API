@@ -265,27 +265,27 @@ Pendiente
     
 * [producto 43](https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto43) Datos del Ministario del Medio Ambiente, una serie para cada contaminante:
     1. CO:
-[Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22CO%22)
+[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22CO%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22CO%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22CO%22)
     2. MP10:
-[Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22MP10%22)
+[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22MP10%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22MP10%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22MP10%22)   
     3. MP2.5:
-[Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22MP2.5%22)
+[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22MP2.5%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22MP2.5%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22MP2.5%22) 
     4. NO2:
-[Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22NO2%22)
+[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22NO2%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22NO2%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22NO2%22)    
     5. O3:
-[Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22O3%22)
+[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22O3%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22O3%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22O3%22)    
     6. SO2:
-[Ultimo registro](http://covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22SO2%22)
+[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Medicion")%20FROM%20%22SO2%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22SO2%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22SO2%22)
             
@@ -317,3 +317,6 @@ Pendiente
 [Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Total")%20FROM%20%22Activos_vs_recuperados%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Activos_vs_recuperados%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Activos_vs_recuperados%22)
+
+
+![Actualiza_productos_para influxdb](https://github.com/Data-Observatory/covid19-API/workflows/Actualiza_productos_para%20influxdb/badge.svg)
