@@ -485,6 +485,34 @@ def prod25_to_line(df25, path):
                      )
     file_writer(path, lines)
 
+def prod26_to_line(df26, path):
+    lines = []
+    for d in range(len(df26)):
+        lines.append('Casos_nuevos_con_sintomas_regional,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df26['Region'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Casos=' + str(df26['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df26["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
+def prod27_to_line(df27, path):
+    lines = []
+    for d in range(len(df27)):
+        lines.append('Casos_nuevos_sin_sintomas_regional,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df27['Region'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Casos=' + str(df27['Casos confirmados'][d])
+                     + ' '
+                     + str(pd.to_datetime(df27["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
 
 def prod28_to_line(df28, path):
     lines = []
@@ -977,8 +1005,8 @@ def csv2line(input_csv):
         elif 'SintomasCasosConfirmados' in input_csv:
             prod21_1_to_line(my_df, '../output/p21_1-chronograf.txt')
         elif 'SintomasHospitalizados' in input_csv:
-            # prod 22
             prod21_2_to_line(my_df, '../output/p21_2-chronograf.txt')
+        # prod 22
         elif 'HospitalizadosEtario_Acumulado' in input_csv:
             prod22_1_to_line(my_df, '../output/p22_1-chronograf.txt')
         elif 'HospitalizadosUCI_Acumulado' in input_csv:
@@ -989,6 +1017,10 @@ def csv2line(input_csv):
             prod24_to_line(my_df, '../output/p24-chronograf.txt')
         elif 'producto25' in input_csv:
             prod25_to_line(my_df, '../output/p25-chronograf.txt')
+        elif 'producto26' in input_csv:
+            prod26_to_line(my_df, '../output/p26-chronograf.txt')
+        elif 'producto27' in input_csv:
+            prod27_to_line(my_df, '../output/p27-chronograf.txt')
         elif 'producto28' in input_csv:
             prod28_to_line(my_df, '../output/p28-chronograf.txt')
         elif 'producto30' in input_csv:
