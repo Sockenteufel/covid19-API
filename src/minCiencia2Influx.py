@@ -62,8 +62,8 @@ relevantCSVs = {
     'prod44': ('%s/producto44/EgresosHospitalarios_std.csv' % GITHUB_REPO),
     'prod45_1': ('%s/producto45/CasosConfirmadosPorComunaHistorico_std.csv' % GITHUB_REPO),
     'prod45_2': ('%s/producto45/CasosNoNotificadosPorComunaHistorico_std.csv' % GITHUB_REPO),
-    'prod45_3': ('%s/producto45/CasosProbablesPorComunaHistorico_std.csv' % GITHUB_REPO)
-
+    'prod45_3': ('%s/producto45/CasosProbablesPorComunaHistorico_std.csv' % GITHUB_REPO),
+    'prod46': ('%s/producto46/activos_vs_recuperados_std.csv' % GITHUB_REPO)
 }
 
 
@@ -963,6 +963,20 @@ def prod45_3_to_line(df45_3, path):
                      )
     file_writer(path, lines)
 
+def prod46_to_line(df46, path):
+    lines = []
+    for d in range(len(df46)):
+        lines.append('Activos_vs_recuperados,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Serie="' + unidecode.unidecode(str(df46['Casos'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df46['Total'][d])
+                     + ' '
+                     + str(pd.to_datetime(df46["fecha_primeros_sintomas"][d]).value)
+                     )
+    file_writer(path, lines)
+
 
 def csv2line(input_csv):
     if input_csv != '':
@@ -1057,6 +1071,8 @@ def csv2line(input_csv):
             prod45_2_to_line(my_df, '../output/p45_2-chronograf.txt')
         elif 'producto45/CasosProbablesPorComunaHistorico_std.csv' in input_csv:
             prod45_3_to_line(my_df, '../output/p45_3-chronograf.txt')
+        elif 'producto46' in input_csv:
+            prod46_to_line(my_df, '../output/p46-chronograf.txt')
 
 
 if __name__ == '__main__':
