@@ -908,7 +908,7 @@ def prod45_2_to_line(df45_2, path):
                      + ' '
                      # Fields
                      + 'Poblacion=' + str(df45_2['Poblacion'][d]) + ","
-                     + 'Casos_confirmados=' + str(df45_2['Casos confirmados'][d])
+                     + 'Casos_confirmados=' + str(df45_2['Casos no notificados'][d])
                      + ' '
                      + str(pd.to_datetime(df2.loc[[0], df45_2["Semana Epidemiologica"][d]][0]).value)
                      )
@@ -929,7 +929,7 @@ def prod45_3_to_line(df45_3, path):
                      + ' '
                      # Fields
                      + 'Poblacion=' + str(df45_3['Poblacion'][d]) + ","
-                     + 'Casos_confirmados=' + str(df45_3['Casos confirmados'][d])
+                     + 'Casos_confirmados=' + str(df45_3['Casos probables'][d])
                      + ' '
                      + str(pd.to_datetime(df2.loc[[0], df45_3["Semana Epidemiologica"][d]][0]).value)
                      )
