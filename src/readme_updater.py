@@ -29,7 +29,7 @@ def getFile(my_file):
     return data
 
 def write_data(my_data):
-    output = ['##Esta tabla tiene el ultimo timestamp de cada producto']
+    output = ['## Esta tabla tiene el ultimo timestamp de cada producto']
     for each_prod in my_data:
         line = '|' + each_prod + '|'
         if 'producto 43' in line:
