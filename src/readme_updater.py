@@ -5,7 +5,7 @@ README_FILE = '../README.md'
 def getFile(my_file):
     f = open(my_file, 'r')
     file_lines = f.readlines()
-    data = {'| Producto |': '| Ultima actualizacion |', '|------| ': '|------| '}
+    data = {'Producto': ['Ultima actualizacion '], '------ ': ['------ ']}
     last_updates = []
     prod = ''
     for each_line in file_lines:
@@ -26,8 +26,34 @@ def getFile(my_file):
         if len(prod) > 1:
             data[prod] = last_updates
 
-    print(data)
+    return data
 
+def write_data(my_data):
+    output = ['##Esta tabla tiene el ultimo timestamp de cada producto']
+    for each_prod in my_data:
+        line = '|' + each_prod + '|'
+        if 'producto 43' in line:
+            for i in range(len(my_data[each_prod])):
+                if i == 0:
+                    line += my_data[each_prod][i] + '|\n'
+                elif i == len(my_data[each_prod]) - 1:
+                    line += '| |' + my_data[each_prod][i] + '|'
+                else:
+                    line += '| |' + my_data[each_prod][i] + '|\n'
+        else:
+            for each_time in my_data[each_prod]:
+                line += each_time + '|'
+        output.append(line)
+
+    return output
+
+def list2file(my_output, file):
+    f = open(file, 'w')
+    for ele in my_output:
+        f.write(ele + '\n')
+    f.close()
 
 if __name__ =='__main__':
-    getFile(README_FILE)
+    my_data = getFile(README_FILE)
+    output = write_data(my_data)
+    list2file(output, '../Products_last_update.md')

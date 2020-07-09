@@ -319,4 +319,3 @@ Pendiente
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Activos_vs_recuperados%22)
 
 
-![Actualiza_productos_para influxdb](https://github.com/Data-Observatory/covid19-API/workflows/Actualiza_productos_para%20influxdb/badge.svg)
