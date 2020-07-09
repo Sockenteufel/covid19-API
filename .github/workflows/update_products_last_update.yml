@@ -31,7 +31,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: generate products from Minciencia for influx
+    - name: updates timestamp table
       run: |
         cd src
         python readme_updater.py
