@@ -1,4 +1,4 @@
-##Esta tabla tiene el ultimo timestamp de cada producto
+## Esta tabla tiene el ultimo timestamp de cada producto
 |Producto|Ultima actualizacion |
 |------ |------ |
 |producto 1|2020-07-05T00:00:00Z|
