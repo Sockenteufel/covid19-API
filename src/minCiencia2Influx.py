@@ -487,6 +487,7 @@ def prod25_to_line(df25, path):
                      )
     file_writer(path, lines)
 
+
 def prod26_to_line(df26, path):
     lines = []
     for d in range(len(df26)):
@@ -500,6 +501,7 @@ def prod26_to_line(df26, path):
                      + str(pd.to_datetime(df26["Fecha"][d]).value)
                      )
     file_writer(path, lines)
+
 
 def prod27_to_line(df27, path):
     lines = []
@@ -944,6 +946,7 @@ def prod45_2_to_line(df45_2, path):
                      )
     file_writer(path, lines)
 
+
 def prod45_3_to_line(df45_3, path):
     lines = []
     df2 = pd.read_csv(
@@ -964,6 +967,7 @@ def prod45_3_to_line(df45_3, path):
                      + str(pd.to_datetime(df2.loc[[0], df45_3["Semana Epidemiologica"][d]][0]).value)
                      )
     file_writer(path, lines)
+
 
 def prod46_to_line(df46, path):
     lines = []
@@ -994,6 +998,7 @@ def prod47_to_line(df47, path):
                      )
     file_writer(path, lines)
 
+
 def prod48_to_line(df48, path):
     lines = []
     for d in range(len(df48)):
@@ -1001,7 +1006,8 @@ def prod48_to_line(df48, path):
                      # TAGS are used to check if measurements are the same
                      + 'Region="' + unidecode.unidecode(str(df48['Region'][d]).replace(' ', '_')) + '",'
                      + 'Codigo_region="' + str(df48['Codigo region'][d]) + '",'
-                     + 'Servicio_de_salud="' + unidecode.unidecode(str(df48['Servicio salud'][d]).replace(' ', '_')) + '"'
+                     + 'Servicio_de_salud="' + unidecode.unidecode(
+            str(df48['Servicio salud'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
                      + 'Camas_ocupadas_intensivo=' + str(df48['Camas ocupadas intensivo'][d]).replace('-', '0') + ","
@@ -1010,7 +1016,7 @@ def prod48_to_line(df48, path):
                      + 'Camas_totales_intermedio=' + str(df48['Camas totales intermedio'][d]).replace('-', '0') + ","
                      + 'Vmi_covid19_confirmados=' + str(df48['Vmi covid19 confirmados'][d]).replace('-', '0') + ","
                      + 'Vmi_covid19_sospechosos=' + str(df48['Vmi covid19 sospechosos'][d]).replace('-', '0') + ","
-                     + 'Vmi_ocupados=' + str(df48['Vmi ocupados'][d]).replace('-', '0') + + ","
+                     + 'Vmi_ocupados=' + str(df48['Vmi ocupados'][d]).replace('-', '0') + ","
                      + 'Vmi_totales=' + str(df48['Vmi totales'][d]).replace('-', '0')
                      + ' '
                      + str(pd.to_datetime(df48["Fecha"][d]).value)
