@@ -319,11 +319,11 @@ Pendiente
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Activos_vs_recuperados%22)
 
 * [producto 47](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto47/MediaMovil_std.csv) Media_movil
-[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Total")%20FROM%20%22Media_movil%22)
+[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Media_movil")%20FROM%20%22Media_movil%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22Media_movil%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22Media_movil%22)
 
 * [producto 48](https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto48/SOCHIMI_std.csv) SOCHIMI
-[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Total")%20FROM%20%22SOCHIMI%22)
+[Ultimo registro](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SELECT%20LAST("Vmi_totales")%20FROM%20%22SOCHIMI%22)
 , [Tag keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20TAG%20KEYS%20FROM%20%22SOCHIMI%22)  
 , [Field keys](http://anonymous:anonymous@covid19.dataobservatory.net:85/query?db=covid19&q=SHOW%20FIELD%20KEYS%20FROM%20%22SOCHIMI%22)
