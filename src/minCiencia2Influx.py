@@ -63,7 +63,9 @@ relevantCSVs = {
     'prod45_1': ('%s/producto45/CasosConfirmadosPorComunaHistorico_std.csv' % GITHUB_REPO),
     'prod45_2': ('%s/producto45/CasosNoNotificadosPorComunaHistorico_std.csv' % GITHUB_REPO),
     'prod45_3': ('%s/producto45/CasosProbablesPorComunaHistorico_std.csv' % GITHUB_REPO),
-    'prod46': ('%s/producto46/activos_vs_recuperados_std.csv' % GITHUB_REPO)
+    'prod46': ('%s/producto46/activos_vs_recuperados_std.csv' % GITHUB_REPO),
+    'prod47': ('%s/producto47/MediaMovil_std.csv' % GITHUB_REPO),
+    'prod48': ('%s/producto48/SOCHIMI_std.csv' % GITHUB_REPO)
 }
 
 
@@ -485,6 +487,7 @@ def prod25_to_line(df25, path):
                      )
     file_writer(path, lines)
 
+
 def prod26_to_line(df26, path):
     lines = []
     for d in range(len(df26)):
@@ -498,6 +501,7 @@ def prod26_to_line(df26, path):
                      + str(pd.to_datetime(df26["Fecha"][d]).value)
                      )
     file_writer(path, lines)
+
 
 def prod27_to_line(df27, path):
     lines = []
@@ -942,6 +946,7 @@ def prod45_2_to_line(df45_2, path):
                      )
     file_writer(path, lines)
 
+
 def prod45_3_to_line(df45_3, path):
     lines = []
     df2 = pd.read_csv(
@@ -963,6 +968,7 @@ def prod45_3_to_line(df45_3, path):
                      )
     file_writer(path, lines)
 
+
 def prod46_to_line(df46, path):
     lines = []
     for d in range(len(df46)):
@@ -974,6 +980,46 @@ def prod46_to_line(df46, path):
                      + 'Total=' + str(df46['Total'][d])
                      + ' '
                      + str(pd.to_datetime(df46["fecha_primeros_sintomas"][d]).value)
+                     )
+    file_writer(path, lines)
+
+
+def prod47_to_line(df47, path):
+    lines = []
+    for d in range(len(df47)):
+        lines.append('Media_movil,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df47['Region'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Media_movil=' + str(df47['Media movil'][d])
+                     + ' '
+                     + str(pd.to_datetime(df47["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
+
+def prod48_to_line(df48, path):
+    lines = []
+    for d in range(len(df48)):
+        lines.append('SOCHIMI,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df48['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df48['Codigo region'][d]) + '",'
+                     + 'Servicio_de_salud="' + unidecode.unidecode(
+            str(df48['Servicio salud'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Camas_ocupadas_intensivo=' + str(df48['Camas ocupadas intensivo'][d]).replace('-', '0') + ","
+                     + 'Camas_totales_intensivo=' + str(df48['Camas totales intensivo'][d]).replace('-', '0') + ","
+                     + 'Camas_ocupadas_intermedio=' + str(df48['Camas ocupadas intermedio'][d]).replace('-', '0') + ","
+                     + 'Camas_totales_intermedio=' + str(df48['Camas totales intermedio'][d]).replace('-', '0') + ","
+                     + 'Vmi_covid19_confirmados=' + str(df48['Vmi covid19 confirmados'][d]).replace('-', '0') + ","
+                     + 'Vmi_covid19_sospechosos=' + str(df48['Vmi covid19 sospechosos'][d]).replace('-', '0') + ","
+                     + 'Vmi_ocupados=' + str(df48['Vmi ocupados'][d]).replace('-', '0') + ","
+                     + 'Vmi_totales=' + str(df48['Vmi totales'][d]).replace('-', '0')
+                     + ' '
+                     + str(pd.to_datetime(df48["Fecha"][d]).value)
                      )
     file_writer(path, lines)
 
@@ -1073,6 +1119,10 @@ def csv2line(input_csv):
             prod45_3_to_line(my_df, '../output/p45_3-chronograf.txt')
         elif 'producto46' in input_csv:
             prod46_to_line(my_df, '../output/p46-chronograf.txt')
+        elif 'producto47' in input_csv:
+            prod47_to_line(my_df, '../output/p47-chronograf.txt')
+        elif 'producto48' in input_csv:
+            prod48_to_line(my_df, '../output/p48-chronograf.txt')
 
 
 if __name__ == '__main__':
