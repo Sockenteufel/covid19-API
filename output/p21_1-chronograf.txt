@@ -485,7 +485,7 @@ Sintomas_casos_confirmados,Sintomas="Tos" Total=178583.0 1594598400000000000
 Sintomas_casos_confirmados,Sintomas="Mialgia" Total=178872.0 1594598400000000000
 Sintomas_casos_confirmados,Sintomas="Fiebre" Total=115332.0 1594598400000000000
 Sintomas_casos_confirmados,Sintomas="Odinofagia" Total=105254.0 1594598400000000000
-Sintomas_casos_confirmados,Sintomas="Anosmia" Total=46592.0 1594598400000000000
+Sintomas_casos_confirmados,Sintomas="Anosmia" Total=58809.0 1594598400000000000
 Sintomas_casos_confirmados,Sintomas="Ageusia" Total=46592.0 1594598400000000000
 Sintomas_casos_confirmados,Sintomas="Disnea" Total=36522.0 1594598400000000000
 Sintomas_casos_confirmados,Sintomas="Diarrea" Total=32570.0 1594598400000000000
