@@ -39,6 +39,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=1.0 1584
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=1.0 1584662400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1584662400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=1.0 1584662400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=1.0 1584662400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=1.0 1585094400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=1.0 1585094400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=1.0 1585094400000000000
@@ -78,6 +79,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=1.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=1.0 1585094400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1585094400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=1.0 1585094400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=1.0 1585094400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=1.0 1585180800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=1.0 1585180800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=1.0 1585180800000000000
@@ -117,6 +119,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=1.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=1.0 1585180800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1585180800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=1.0 1585180800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=1.0 1585180800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=1.0 1585267200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=1.0 1585267200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=1.0 1585267200000000000
@@ -156,6 +159,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=1.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=1.0 1585267200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1585267200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=1.0 1585267200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=1.0 1585267200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=1.0 1585353600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=1.0 1585353600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=1.0 1585353600000000000
@@ -195,6 +199,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=1.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=1.0 1585353600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1585353600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=1.0 1585353600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=1.0 1585353600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=1.0 1585440000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=1.0 1585440000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=1.0 1585440000000000000
@@ -234,6 +239,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=1.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=1.0 1585440000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1585440000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=1.0 1585440000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=1.0 1585440000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=3.0 1585526400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=3.0 1585526400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=3.0 1585526400000000000
@@ -273,6 +279,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=3.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=3.0 1585526400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=3.0 1585526400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=3.0 1585526400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=3.0 1585526400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=3.0 1585612800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=4.0 1585612800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=4.0 1585612800000000000
@@ -312,6 +319,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=4.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=4.0 1585612800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=4.0 1585612800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=4.0 1585612800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=4.0 1585612800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=1.0 1585699200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=1.0 1585699200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=1.0 1585699200000000000
@@ -351,6 +359,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=1.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=1.0 1585699200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1585699200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=1.0 1585699200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=1.0 1585699200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=4.0 1585785600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=4.0 1585785600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=4.0 1585785600000000000
@@ -390,6 +399,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=4.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=4.0 1585785600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=4.0 1585785600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=4.0 1585785600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=4.0 1585785600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=6.0 1585872000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=6.0 1585872000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=6.0 1585872000000000000
@@ -429,6 +439,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=6.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=6.0 1585872000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=6.0 1585872000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=6.0 1585872000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=6.0 1585872000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=8.0 1585958400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=8.0 1585958400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=8.0 1585958400000000000
@@ -468,6 +479,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=8.0 1585
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=8.0 1585958400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=8.0 1585958400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=8.0 1585958400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=8.0 1585958400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=1.0 1586044800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=1.0 1586044800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=1.0 1586044800000000000
@@ -507,6 +519,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=1.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=1.0 1586044800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1586044800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=1.0 1586044800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=1.0 1586044800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=5.0 1586131200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=5.0 1586131200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=5.0 1586131200000000000
@@ -546,6 +559,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=6.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=6.0 1586131200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=6.0 1586131200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=6.0 1586131200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=6.0 1586131200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=4.0 1586217600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=4.0 1586217600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=4.0 1586217600000000000
@@ -585,6 +599,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=4.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=4.0 1586217600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=4.0 1586217600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=4.0 1586217600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=4.0 1586217600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=10.0 1586304000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=10.0 1586304000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=10.0 1586304000000000000
@@ -624,6 +639,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=10.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=10.0 1586304000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=10.0 1586304000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=10.0 1586304000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=10.0 1586304000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=9.0 1586390400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=9.0 1586390400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=9.0 1586390400000000000
@@ -663,6 +679,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=9.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=9.0 1586390400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=9.0 1586390400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=9.0 1586390400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=9.0 1586390400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=6.0 1586476800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=6.0 1586476800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=6.0 1586476800000000000
@@ -702,6 +719,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=6.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=6.0 1586476800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=6.0 1586476800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=6.0 1586476800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=6.0 1586476800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=7.0 1586563200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=7.0 1586563200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=7.0 1586563200000000000
@@ -741,6 +759,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=7.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=7.0 1586563200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=7.0 1586563200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=7.0 1586563200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=7.0 1586563200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=3.0 1586649600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=3.0 1586649600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=3.0 1586649600000000000
@@ -780,6 +799,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=3.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=3.0 1586649600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=3.0 1586649600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=3.0 1586649600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=3.0 1586649600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=9.0 1586736000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=9.0 1586736000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=9.0 1586736000000000000
@@ -819,6 +839,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=9.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=9.0 1586736000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=9.0 1586736000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=9.0 1586736000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=9.0 1586736000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=4.0 1586822400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=4.0 1586822400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=4.0 1586822400000000000
@@ -858,6 +879,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=4.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=4.0 1586822400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=4.0 1586822400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=4.0 1586822400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=4.0 1586822400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=8.0 1586908800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=8.0 1586908800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=8.0 1586908800000000000
@@ -897,6 +919,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=9.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=9.0 1586908800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=9.0 1586908800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=9.0 1586908800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=9.0 1586908800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=6.0 1586995200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=6.0 1586995200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=6.0 1586995200000000000
@@ -936,6 +959,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=6.0 1586
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=6.0 1586995200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=6.0 1586995200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=6.0 1586995200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=6.0 1586995200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=5.0 1587081600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=5.0 1587081600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=5.0 1587081600000000000
@@ -975,6 +999,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=5.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=5.0 1587081600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=5.0 1587081600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=5.0 1587081600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=5.0 1587081600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=6.0 1587168000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=6.0 1587168000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=6.0 1587168000000000000
@@ -1014,6 +1039,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=7.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=7.0 1587168000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=7.0 1587168000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=7.0 1587168000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=7.0 1587168000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=5.0 1587254400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=5.0 1587254400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=5.0 1587254400000000000
@@ -1053,6 +1079,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=6.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=6.0 1587254400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=6.0 1587254400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=6.0 1587254400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=6.0 1587254400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=10.0 1587340800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=10.0 1587340800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=10.0 1587340800000000000
@@ -1092,6 +1119,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=10.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=10.0 1587340800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=10.0 1587340800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=10.0 1587340800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=10.0 1587340800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=8.0 1587427200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=8.0 1587427200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=8.0 1587427200000000000
@@ -1131,6 +1159,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=8.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=8.0 1587427200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=8.0 1587427200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=8.0 1587427200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=8.0 1587427200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=5.0 1587513600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=5.0 1587513600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=5.0 1587513600000000000
@@ -1170,6 +1199,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=5.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=5.0 1587513600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=5.0 1587513600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=5.0 1587513600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=5.0 1587513600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=7.0 1587600000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=7.0 1587600000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=7.0 1587600000000000000
@@ -1209,6 +1239,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=7.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=7.0 1587600000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=7.0 1587600000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=7.0 1587600000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=7.0 1587600000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=5.0 1587686400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=6.0 1587686400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=6.0 1587686400000000000
@@ -1248,6 +1279,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=6.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=6.0 1587686400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=6.0 1587686400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=6.0 1587686400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=6.0 1587686400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=7.0 1587772800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=7.0 1587772800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=7.0 1587772800000000000
@@ -1287,6 +1319,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=7.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=7.0 1587772800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=7.0 1587772800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=7.0 1587772800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=7.0 1587772800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=9.0 1587859200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=9.0 1587859200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=9.0 1587859200000000000
@@ -1326,6 +1359,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=9.0 1587
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=9.0 1587859200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=9.0 1587859200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=9.0 1587859200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=9.0 1587859200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=11.0 1587945600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=11.0 1587945600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=11.0 1587945600000000000
@@ -1365,6 +1399,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=12.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=12.0 1587945600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=12.0 1587945600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=12.0 1587945600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=12.0 1587945600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=6.0 1588032000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=7.0 1588032000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=7.0 1588032000000000000
@@ -1404,6 +1439,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=7.0 1588
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=7.0 1588032000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=7.0 1588032000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=7.0 1588032000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=7.0 1588032000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=6.0 1588118400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=6.0 1588118400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=6.0 1588118400000000000
@@ -1443,6 +1479,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=7.0 1588
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=7.0 1588118400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=7.0 1588118400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=7.0 1588118400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=7.0 1588118400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=8.0 1588204800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=8.0 1588204800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=8.0 1588204800000000000
@@ -1482,6 +1519,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=8.0 1588
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=8.0 1588204800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=8.0 1588204800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=8.0 1588204800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=8.0 1588204800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=10.0 1588291200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=10.0 1588291200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=10.0 1588291200000000000
@@ -1521,6 +1559,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=10.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=10.0 1588291200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=10.0 1588291200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=10.0 1588291200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=10.0 1588291200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=7.0 1588377600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=7.0 1588377600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=7.0 1588377600000000000
@@ -1560,6 +1599,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=7.0 1588
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=7.0 1588377600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=7.0 1588377600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=7.0 1588377600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=7.0 1588377600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=19.0 1588464000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=19.0 1588464000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=19.0 1588464000000000000
@@ -1599,6 +1639,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=19.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=19.0 1588464000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=19.0 1588464000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=19.0 1588464000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=19.0 1588464000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=11.0 1588550400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=12.0 1588550400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=12.0 1588550400000000000
@@ -1638,6 +1679,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=13.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=13.0 1588550400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=13.0 1588550400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=13.0 1588550400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=13.0 1588550400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=11.0 1588636800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=11.0 1588636800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=11.0 1588636800000000000
@@ -1677,6 +1719,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=11.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=11.0 1588636800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=11.0 1588636800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=12.0 1588636800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=12.0 1588636800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=14.0 1588723200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=14.0 1588723200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=14.0 1588723200000000000
@@ -1716,6 +1759,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=15.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=15.0 1588723200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=15.0 1588723200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=15.0 1588723200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=15.0 1588723200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=27.0 1588809600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=29.0 1588809600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=29.0 1588809600000000000
@@ -1755,6 +1799,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=30.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=30.0 1588809600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=30.0 1588809600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=30.0 1588809600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=30.0 1588809600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=16.0 1588896000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=16.0 1588896000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=16.0 1588896000000000000
@@ -1794,6 +1839,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=15.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=15.0 1588896000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=15.0 1588896000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=15.0 1588896000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=15.0 1588896000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=22.0 1588982400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=22.0 1588982400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=22.0 1588982400000000000
@@ -1833,6 +1879,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=23.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=23.0 1588982400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=23.0 1588982400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=23.0 1588982400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=23.0 1588982400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=30.0 1589068800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=30.0 1589068800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=30.0 1589068800000000000
@@ -1872,6 +1919,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=31.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=31.0 1589068800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=31.0 1589068800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=31.0 1589068800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=31.0 1589068800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=19.0 1589155200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=19.0 1589155200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=19.0 1589155200000000000
@@ -1911,6 +1959,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=20.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=20.0 1589155200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=20.0 1589155200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=20.0 1589155200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=20.0 1589155200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=24.0 1589241600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=25.0 1589241600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=25.0 1589241600000000000
@@ -1950,6 +1999,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=26.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=26.0 1589241600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=26.0 1589241600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=26.0 1589241600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=26.0 1589241600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=38.0 1589328000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=38.0 1589328000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=38.0 1589328000000000000
@@ -1989,6 +2039,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=38.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=38.0 1589328000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=38.0 1589328000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=38.0 1589328000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=38.0 1589328000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=36.0 1589414400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=35.0 1589414400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=35.0 1589414400000000000
@@ -2028,6 +2079,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=35.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=35.0 1589414400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=35.0 1589414400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=35.0 1589414400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=35.0 1589414400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=29.0 1589500800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=32.0 1589500800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=32.0 1589500800000000000
@@ -2067,6 +2119,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=33.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=33.0 1589500800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=33.0 1589500800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=33.0 1589500800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=33.0 1589500800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=46.0 1589587200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=47.0 1589587200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=47.0 1589587200000000000
@@ -2106,6 +2159,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=49.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=49.0 1589587200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=49.0 1589587200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=50.0 1589587200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=50.0 1589587200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=43.0 1589673600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=45.0 1589673600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=45.0 1589673600000000000
@@ -2145,6 +2199,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=46.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=46.0 1589673600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=46.0 1589673600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=46.0 1589673600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=46.0 1589673600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=60.0 1589760000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=60.0 1589760000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=60.0 1589760000000000000
@@ -2184,6 +2239,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=62.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=62.0 1589760000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=62.0 1589760000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=62.0 1589760000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=63.0 1589760000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=60.0 1589846400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=60.0 1589846400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=60.0 1589846400000000000
@@ -2223,6 +2279,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=64.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=64.0 1589846400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=64.0 1589846400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=64.0 1589846400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=65.0 1589846400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=61.0 1589932800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=65.0 1589932800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=65.0 1589932800000000000
@@ -2262,6 +2319,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=66.0 158
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=66.0 1589932800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=66.0 1589932800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=66.0 1589932800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=66.0 1589932800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=60.0 1590019200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=60.0 1590019200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=60.0 1590019200000000000
@@ -2301,6 +2359,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=63.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=63.0 1590019200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=63.0 1590019200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=63.0 1590019200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=63.0 1590019200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=69.0 1590105600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=69.0 1590105600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=69.0 1590105600000000000
@@ -2340,6 +2399,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=72.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=72.0 1590105600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=72.0 1590105600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=72.0 1590105600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=72.0 1590105600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=83.0 1590192000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=83.0 1590192000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=83.0 1590192000000000000
@@ -2379,6 +2439,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=86.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=86.0 1590192000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=86.0 1590192000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=86.0 1590192000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=86.0 1590192000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=89.0 1590278400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=91.0 1590278400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=92.0 1590278400000000000
@@ -2418,6 +2479,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=97.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=97.0 1590278400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=97.0 1590278400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=97.0 1590278400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=97.0 1590278400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=79.0 1590364800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=82.0 1590364800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=83.0 1590364800000000000
@@ -2457,6 +2519,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=87.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=87.0 1590364800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=87.0 1590364800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=87.0 1590364800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=87.0 1590364800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=101.0 1590451200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=101.0 1590451200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=101.0 1590451200000000000
@@ -2496,6 +2559,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=106.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=106.0 1590451200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=106.0 1590451200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=106.0 1590451200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=106.0 1590451200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=104.0 1590537600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=105.0 1590537600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=105.0 1590537600000000000
@@ -2535,6 +2599,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=121.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=121.0 1590537600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=121.0 1590537600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=121.0 1590537600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=121.0 1590537600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=102.0 1590624000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=106.0 1590624000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=106.0 1590624000000000000
@@ -2574,6 +2639,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=115.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=115.0 1590624000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=115.0 1590624000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=115.0 1590624000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=115.0 1590624000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=94.0 1590710400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=97.0 1590710400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=101.0 1590710400000000000
@@ -2613,6 +2679,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=125.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=125.0 1590710400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=125.0 1590710400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=125.0 1590710400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=125.0 1590710400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=101.0 1590796800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=105.0 1590796800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=106.0 1590796800000000000
@@ -2652,6 +2719,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=135.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=135.0 1590796800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=135.0 1590796800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=135.0 1590796800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=135.0 1590796800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=88.0 1590883200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=94.0 1590883200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=96.0 1590883200000000000
@@ -2691,6 +2759,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=117.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=117.0 1590883200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=117.0 1590883200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=117.0 1590883200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=117.0 1590883200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=116.0 1590969600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=120.0 1590969600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=122.0 1590969600000000000
@@ -2730,6 +2799,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=143.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=143.0 1590969600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=143.0 1590969600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=143.0 1590969600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=143.0 1590969600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=105.0 1591056000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=116.0 1591056000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=116.0 1591056000000000000
@@ -2769,6 +2839,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=138.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=138.0 1591056000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=138.0 1591056000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=138.0 1591056000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=138.0 1591056000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=109.0 1591142400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=113.0 1591142400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=113.0 1591142400000000000
@@ -2808,6 +2879,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=151.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=151.0 1591142400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=151.0 1591142400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=151.0 1591142400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=151.0 1591142400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=86.0 1591228800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=96.0 1591228800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=98.0 1591228800000000000
@@ -2847,6 +2919,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=148.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=148.0 1591228800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=148.0 1591228800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=148.0 1591228800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=148.0 1591228800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=20.0 1591315200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=24.0 1591315200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=25.0 1591315200000000000
@@ -2886,6 +2959,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=156.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=156.0 1591315200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=156.0 1591315200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=156.0 1591315200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=156.0 1591315200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1591401600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=2.0 1591401600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=7.0 1591401600000000000
@@ -2925,6 +2999,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=160.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=160.0 1591401600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=160.0 1591401600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=160.0 1591401600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=160.0 1591401600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1591488000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1591488000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1591488000000000000
@@ -2964,6 +3039,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=148.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=148.0 1591488000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=148.0 1591488000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=148.0 1591488000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=148.0 1591488000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1591574400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1591574400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1591574400000000000
@@ -3003,6 +3079,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=139.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=139.0 1591574400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=139.0 1591574400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=139.0 1591574400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=139.0 1591574400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1591660800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1591660800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1591660800000000000
@@ -3042,6 +3119,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=172.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=172.0 1591660800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=172.0 1591660800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=172.0 1591660800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=172.0 1591660800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1591747200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1591747200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1591747200000000000
@@ -3081,6 +3159,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=158.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=158.0 1591747200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=158.0 1591747200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=158.0 1591747200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=158.0 1591747200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1591833600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1591833600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1591833600000000000
@@ -3120,6 +3199,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=161.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=161.0 1591833600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=161.0 1591833600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=161.0 1591833600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=161.0 1591833600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1591920000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1591920000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1591920000000000000
@@ -3159,6 +3239,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=163.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=163.0 1591920000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=163.0 1591920000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=163.0 1591920000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=165.0 1591920000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592006400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592006400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592006400000000000
@@ -3198,6 +3279,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=173.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=173.0 1592006400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=173.0 1592006400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=173.0 1592006400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=173.0 1592006400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592092800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592092800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592092800000000000
@@ -3237,6 +3319,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=151.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=151.0 1592092800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=151.0 1592092800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=151.0 1592092800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=151.0 1592092800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592179200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592179200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592179200000000000
@@ -3276,6 +3359,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=148.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=148.0 1592179200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=148.0 1592179200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=148.0 1592179200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=148.0 1592179200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592265600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592265600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592265600000000000
@@ -3315,6 +3399,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=167.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=167.0 1592265600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=167.0 1592265600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=167.0 1592265600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=167.0 1592265600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592352000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592352000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592352000000000000
@@ -3354,6 +3439,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=169.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=169.0 1592352000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=169.0 1592352000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=169.0 1592352000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=169.0 1592352000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592438400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592438400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592438400000000000
@@ -3393,6 +3479,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=126.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=126.0 1592438400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=126.0 1592438400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=127.0 1592438400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=127.0 1592438400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592524800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592524800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592524800000000000
@@ -3432,6 +3519,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=142.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=142.0 1592524800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=142.0 1592524800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=142.0 1592524800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=142.0 1592524800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592611200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592611200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592611200000000000
@@ -3471,6 +3559,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=135.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=135.0 1592611200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=135.0 1592611200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=135.0 1592611200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=135.0 1592611200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592697600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592697600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592697600000000000
@@ -3510,6 +3599,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=126.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=126.0 1592697600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=126.0 1592697600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=126.0 1592697600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=126.0 1592697600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592784000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592784000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592784000000000000
@@ -3549,6 +3639,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=123.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=123.0 1592784000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=123.0 1592784000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=123.0 1592784000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=123.0 1592784000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592870400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592870400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592870400000000000
@@ -3588,6 +3679,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=120.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=120.0 1592870400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=120.0 1592870400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=120.0 1592870400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=120.0 1592870400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1592956800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1592956800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1592956800000000000
@@ -3627,6 +3719,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=122.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=122.0 1592956800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=122.0 1592956800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=122.0 1592956800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=122.0 1592956800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593043200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593043200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593043200000000000
@@ -3666,6 +3759,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=123.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=123.0 1593043200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=123.0 1593043200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=123.0 1593043200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=124.0 1593043200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593129600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593129600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593129600000000000
@@ -3705,6 +3799,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=119.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=119.0 1593129600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=119.0 1593129600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=120.0 1593129600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=120.0 1593129600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593216000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593216000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593216000000000000
@@ -3744,6 +3839,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=109.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=109.0 1593216000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=109.0 1593216000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=109.0 1593216000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=109.0 1593216000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593302400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593302400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593302400000000000
@@ -3783,6 +3879,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=120.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=120.0 1593302400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=120.0 1593302400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=120.0 1593302400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=120.0 1593302400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593388800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593388800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593388800000000000
@@ -3822,6 +3919,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=110.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=110.0 1593388800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=110.0 1593388800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=110.0 1593388800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=111.0 1593388800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593475200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593475200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593475200000000000
@@ -3861,6 +3959,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=105.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=105.0 1593475200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=105.0 1593475200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=105.0 1593475200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=106.0 1593475200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593561600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593561600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593561600000000000
@@ -3900,6 +3999,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=97.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=97.0 1593561600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=97.0 1593561600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=97.0 1593561600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=97.0 1593561600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593648000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593648000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593648000000000000
@@ -3939,6 +4039,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=115.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=115.0 1593648000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=115.0 1593648000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=117.0 1593648000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=117.0 1593648000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593734400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593734400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593734400000000000
@@ -3978,6 +4079,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=105.0 15
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=105.0 1593734400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=105.0 1593734400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=106.0 1593734400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=106.0 1593734400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593820800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593820800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593820800000000000
@@ -4017,6 +4119,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=83.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=83.0 1593820800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=83.0 1593820800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=84.0 1593820800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=85.0 1593820800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593907200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593907200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593907200000000000
@@ -4056,6 +4159,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=81.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=81.0 1593907200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=81.0 1593907200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=84.0 1593907200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=84.0 1593907200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1593993600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1593993600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1593993600000000000
@@ -4095,6 +4199,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=93.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=93.0 1593993600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=93.0 1593993600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=93.0 1593993600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=95.0 1593993600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1594080000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1594080000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1594080000000000000
@@ -4134,6 +4239,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=80.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=80.0 1594080000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=80.0 1594080000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=84.0 1594080000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=87.0 1594080000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1594166400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1594166400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1594166400000000000
@@ -4173,6 +4279,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=75.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=75.0 1594166400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=75.0 1594166400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=78.0 1594166400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=81.0 1594166400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1594252800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1594252800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1594252800000000000
@@ -4212,6 +4319,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=66.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=80.0 1594252800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=81.0 1594252800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=86.0 1594252800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=95.0 1594252800000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1594339200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1594339200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1594339200000000000
@@ -4251,6 +4359,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=12.0 159
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=37.0 1594339200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=51.0 1594339200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=67.0 1594339200000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=67.0 1594339200000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1594425600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1594425600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1594425600000000000
@@ -4290,6 +4399,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=0.0 1594
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=6.0 1594425600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=35.0 1594425600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=66.0 1594425600000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=70.0 1594425600000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1594512000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1594512000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1594512000000000000
@@ -4329,6 +4439,7 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=0.0 1594
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=0.0 1594512000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=1.0 1594512000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=43.0 1594512000000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=59.0 1594512000000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1594598400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1594598400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1594598400000000000
@@ -4368,3 +4479,44 @@ Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=0.0 1594
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=0.0 1594598400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=0.0 1594598400000000000
 Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=5.0 1594598400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=55.0 1594598400000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-07" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-08" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-09" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-10" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-11" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-12" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-13" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-14" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-15" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-16" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-17" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-18" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-19" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-20" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-21" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-22" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-23" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-24" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-25" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-26" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-27" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-28" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-29" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-06-30" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-01" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-02" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-03" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-04" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-05" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-06" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-07" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-08" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-09" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-10" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-11" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-12" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-13" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-14" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-15" Total=0.0 1594684800000000000
+Defunciones_nueva_definicion,Publicacion="Defunciones_2020-07-16" Total=9.0 1594684800000000000
