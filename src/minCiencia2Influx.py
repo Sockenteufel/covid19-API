@@ -52,7 +52,7 @@ relevantCSVs = {
     'prod34': '',  # geo product
     'prod35': ('%s/producto35/Comorbilidad_std.csv' % GITHUB_REPO),
     'prod36': ('%s/producto36/ResidenciasSanitarias_std.csv' % GITHUB_REPO),
-    'prod37': ('%s/producto37/Defunciones_std.csv' % GITHUB_REPO),
+    'prod37': ('%s/producto37/Defunciones_deis_std.csv' % GITHUB_REPO),
     'prod38': ('%s/producto38/CasosFallecidosPorComuna_std.csv' % GITHUB_REPO),
     'prod39': ('%s/producto39/NotificacionInicioSintomas_std.csv' % GITHUB_REPO),
     'prod40': ('%s/producto40/TransporteAereo_std.csv' % GITHUB_REPO),
@@ -650,12 +650,12 @@ def prod36_to_line(df36, path):
 def prod37_to_line(df37, path):
     lines = []
     for d in range(len(df37)):
-        lines.append('Defunciones_nueva_definicion,'
+        lines.append('Defunciones_deis,'
                      # TAGS are used to check if measurements are the same
                      + 'Publicacion="' + unidecode.unidecode(str(df37['Publicacion'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Total=' + str(df37['Total'][d]).replace('-', '0')
+                     + 'Total=' + str(df37['Numero defunciones'][d]).replace('-', '0')
                      + ' '
                      + str(pd.to_datetime(df37["Fecha"][d]).value)
                      )
