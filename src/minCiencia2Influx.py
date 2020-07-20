@@ -67,6 +67,7 @@ relevantCSVs = {
     'prod47': ('%s/producto47/MediaMovil_std.csv' % GITHUB_REPO),
     'prod48': ('%s/producto48/SOCHIMI_std.csv' % GITHUB_REPO),
     'prod49': ('%s/producto49/Positividad_Diaria_Media_std.csv' % GITHUB_REPO),
+    'prod50': ('%s/producto50/DefuncionesDEISPorComuna_std.csv' % GITHUB_REPO),
 
 }
 
@@ -1041,6 +1042,24 @@ def prod49_to_line(df49, path):
     file_writer(path, lines)
 
 
+#Region,Codigo region,Comuna,Codigo comuna,Poblacion,Fecha,Defunciones
+def prod50_to_line(df50, path):
+    lines = []
+    for d in range(len(df50)):
+        lines.append('Defunciones_DEIS_comunal,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Region="' + unidecode.unidecode(str(df50['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_region="' + str(df50['Codigo region'][d]) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df50['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df50['Codigo comuna'][d]) + '"'
+                     + ' '
+                     # Fields
+                     + 'Poblacion=' + str(df50['Poblacion'][d]) + ","
+                     + 'Defunciones=' + str(df50['Defunciones'][d])
+                     + ' '
+                     + str(pd.to_datetime(df50["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
 
 def csv2line(input_csv):
     if input_csv != '':
@@ -1053,13 +1072,13 @@ def csv2line(input_csv):
             prod2_to_line(my_df, '../output/p2-chronograf.txt')
         elif 'producto3/' in input_csv:
             prod3_to_line(my_df, '../output/p3-chronograf.txt')
-        elif 'producto5' in input_csv:
+        elif 'producto5/' in input_csv:
             prod5_to_line(my_df, '../output/p5-chronograf.txt')
-        elif 'producto7' in input_csv:
+        elif 'producto7/' in input_csv:
             prod7_to_line(my_df, '../output/p7-chronograf.txt')
-        elif 'producto8' in input_csv:
+        elif 'producto8/' in input_csv:
             prod8_to_line(my_df, '../output/p8-chronograf.txt')
-        elif 'producto9' in input_csv:
+        elif 'producto9/' in input_csv:
             prod9_to_line(my_df, '../output/p9-chronograf.txt')
         elif 'producto10' in input_csv:
             prod10_to_line(my_df, '../output/p10-chronograf.txt')
@@ -1143,6 +1162,8 @@ def csv2line(input_csv):
             prod48_to_line(my_df, '../output/p48-chronograf.txt')
         elif 'producto49' in input_csv:
             prod49_to_line(my_df, '../output/p49-chronograf.txt')
+        elif 'producto50' in input_csv:
+            prod50_to_line(my_df, '../output/p50-chronograf.txt')
 
 
 if __name__ == '__main__':
