@@ -653,7 +653,8 @@ def prod37_to_line(df37, path):
     for d in range(len(df37)):
         lines.append('Defunciones_deis,'
                      # TAGS are used to check if measurements are the same
-                     + 'Publicacion="' + unidecode.unidecode(str(df37['Publicacion'][d]).replace(' ', '_')) + '"'
+                     + 'Publicacion="' + unidecode.unidecode(str(df37['Publicacion'][d]).replace(' ', '_')) + '",'
+                     + 'Serie="' + unidecode.unidecode(str(df37['Serie'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
                      + 'Total=' + str(df37['Numero defunciones'][d]).replace('-', '0')
