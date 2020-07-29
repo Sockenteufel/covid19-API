@@ -1076,10 +1076,10 @@ def prod51_to_line(df51, path):
                      + 'Zona_censal="' + unidecode.unidecode(str(df51['Zona censal'][d]).replace(' ', '_')) + '"'
                      + ' '
                      # Fields
-                     + 'Dif_salida_min=' + str(df51['Dif salida'][d].split(',')[0].replace('[','').replace(']', '').replace('%', '')) + ","
-                     + 'Dif_salida_max=' + str(df51['Dif salida'][d].split(',')[1].replace('[','').replace(']', '').replace('%', '')) + ","
-                     + 'Dif_entrada_min=' + str(df51['Dif entrada'][d].split(',')[0].replace('[','').replace(']', '').replace('%', '')) + ","
-                     + 'Dif_entrada_max=' + str(df51['Dif entrada'][d].split(',')[1].replace('[','').replace(']', '').replace('%', ''))
+                     + 'Dif_salida_min=' + str(df51['Dif salida'][d].split(',')[0].replace('[','').replace(']', '').replace('%', '').replace('+','')) + ","
+                     + 'Dif_salida_max=' + str(df51['Dif salida'][d].split(',')[1].replace('[','').replace(']', '').replace('%', '').replace('+','')) + ","
+                     + 'Dif_entrada_min=' + str(df51['Dif entrada'][d].split(',')[0].replace('[','').replace(']', '').replace('%', '').replace('+','')) + ","
+                     + 'Dif_entrada_max=' + str(df51['Dif entrada'][d].split(',')[1].replace('[','').replace(']', '').replace('%', '').replace('+',''))
                      + ' '
                      + str(pd.to_datetime(df51["Fecha"][d]).value)
                      )
