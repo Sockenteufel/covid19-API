@@ -68,7 +68,7 @@ relevantCSVs = {
     'prod48': ('%s/producto48/SOCHIMI_std.csv' % GITHUB_REPO),
     'prod49': ('%s/producto49/Positividad_Diaria_Media_std.csv' % GITHUB_REPO),
     'prod50': ('%s/producto50/DefuncionesDEISPorComuna_std.csv' % GITHUB_REPO),
-
+    'prod51': ('%s/producto51/ISCI_std.csv' % GITHUB_REPO),
 }
 
 
@@ -1062,6 +1062,30 @@ def prod50_to_line(df50, path):
                      )
     file_writer(path, lines)
 
+def prod51_to_line(df51, path):
+    lines = []
+    for d in range(len(df51)):
+        # Region,Codigo region,Comuna,Codigo comuna,Cartodb id,Zona censal,Week,Dif salida,Dif entrada,Fecha
+        lines.append('ISCI,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Codigo_region="' + str(df51['Codigo region'][d]) + '",'
+                     + 'Region="' + unidecode.unidecode(str(df51['Region'][d]).replace(' ', '_')) + '",'
+                     + 'Comuna="' + unidecode.unidecode(str(df51['Comuna'][d]).replace(' ', '_')) + '",'
+                     + 'Codigo_comuna="' + str(df51['Codigo comuna'][d]).replace(' ', '_') + '",'
+                     + 'Cartodb_id="' + str(df51['Cartodb id'][d]).replace(' ', '_') + '",'
+                     + 'Zona_censal="' + unidecode.unidecode(str(df51['Zona censal'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Dif_salida_min=' + str(df51['Dif salida'][d].split(',')[0].replace('[','').replace(']', '').replace('%', '')) + ","
+                     + 'Dif_salida_max=' + str(df51['Dif salida'][d].split(',')[1].replace('[','').replace(']', '').replace('%', '')) + ","
+                     + 'Dif_entrada_min=' + str(df51['Dif entrada'][d].split(',')[0].replace('[','').replace(']', '').replace('%', '')) + ","
+                     + 'Dif_entrada_max=' + str(df51['Dif entrada'][d].split(',')[1].replace('[','').replace(']', '').replace('%', ''))
+                     + ' '
+                     + str(pd.to_datetime(df51["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
+
 def csv2line(input_csv):
     if input_csv != '':
         my_df = pd.read_csv(input_csv)
@@ -1165,6 +1189,8 @@ def csv2line(input_csv):
             prod49_to_line(my_df, '../output/p49-chronograf.txt')
         elif 'producto50' in input_csv:
             prod50_to_line(my_df, '../output/p50-chronograf.txt')
+        elif 'producto51' in input_csv:
+            prod51_to_line(my_df, '../output/p51-chronograf.txt')
 
 
 if __name__ == '__main__':
