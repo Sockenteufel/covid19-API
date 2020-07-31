@@ -600,3 +600,13 @@ UCI_Etario,Grupo_de_edad="40-49" Total=128 1595980800000000000
 UCI_Etario,Grupo_de_edad="50-59" Total=318 1595980800000000000
 UCI_Etario,Grupo_de_edad="60-69" Total=517 1595980800000000000
 UCI_Etario,Grupo_de_edad="mayor_que_70" Total=410 1595980800000000000
+UCI_Etario,Grupo_de_edad="menor_que_39" Total=99 1596067200000000000
+UCI_Etario,Grupo_de_edad="40-49" Total=129 1596067200000000000
+UCI_Etario,Grupo_de_edad="50-59" Total=309 1596067200000000000
+UCI_Etario,Grupo_de_edad="60-69" Total=509 1596067200000000000
+UCI_Etario,Grupo_de_edad="mayor_que_70" Total=417 1596067200000000000
+UCI_Etario,Grupo_de_edad="menor_que_39" Total=97 1596153600000000000
+UCI_Etario,Grupo_de_edad="40-49" Total=123 1596153600000000000
+UCI_Etario,Grupo_de_edad="50-59" Total=318 1596153600000000000
+UCI_Etario,Grupo_de_edad="60-69" Total=489 1596153600000000000
+UCI_Etario,Grupo_de_edad="mayor_que_70" Total=418 1596153600000000000
