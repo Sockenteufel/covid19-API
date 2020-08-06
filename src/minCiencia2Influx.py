@@ -69,6 +69,7 @@ relevantCSVs = {
     'prod49': ('%s/producto49/Positividad_Diaria_Media_std.csv' % GITHUB_REPO),
     'prod50': ('%s/producto50/DefuncionesDEISPorComuna_std.csv' % GITHUB_REPO),
     'prod51': ('%s/producto51/ISCI_std.csv' % GITHUB_REPO),
+    'prod52': ('%s/producto52/Camas_UCI_std.csv' % GITHUB_REPO),
 }
 
 
@@ -1085,6 +1086,21 @@ def prod51_to_line(df51, path):
                      )
     file_writer(path, lines)
 
+def prod52_to_line(df52, path):
+    lines = []
+    for d in range(len(df52)):
+        lines.append('Camas_UCI,'
+                     # TAGS are used to check if measurements are the same
+                     + 'Serie="' + unidecode.unidecode(str(df52['Serie'][d]).replace(' ', '_')) + '",'
+                     + 'Region="' + unidecode.unidecode(str(df52['Region'][d]).replace(' ', '_')) + '"'
+                     + ' '
+                     # Fields
+                     + 'Total=' + str(df52['Casos'][d])
+                     + ' '
+                     + str(pd.to_datetime(df52["Fecha"][d]).value)
+                     )
+    file_writer(path, lines)
+
 
 def csv2line(input_csv):
     if input_csv != '':
@@ -1191,7 +1207,8 @@ def csv2line(input_csv):
             prod50_to_line(my_df, '../output/p50-chronograf.txt')
         elif 'producto51' in input_csv:
             prod51_to_line(my_df, '../output/p51-chronograf.txt')
-
+        elif 'producto52' in input_csv:
+            prod52_to_line(my_df, '../output/p52-chronograf.txt')
 
 if __name__ == '__main__':
     # run as  for i in $(seq 2010 2020); do for j in MP2.5; do python minCiencia2Influx.py $i $((${i}+1)) $j ; done &; done
