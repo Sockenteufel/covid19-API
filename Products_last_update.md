@@ -5,7 +5,7 @@
 |producto 2|2020-08-07T00:00:00Z|
 |producto 3|2020-08-10T00:00:00Z|
 |producto 4|
-|producto 5|2020-08-09T00:00:00Z|
+|producto 5|2020-08-10T00:00:00Z|
 |producto 6|
 |producto 7|2020-08-10T00:00:00Z|
 |producto 8|2020-08-10T00:00:00Z|
