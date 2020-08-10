@@ -651,6 +651,7 @@ def prod36_to_line(df36, path):
 
 def prod37_to_line(df37, path):
     lines = []
+    df37 = df37[df37['Fecha'] != 'en verificación']
     for d in range(len(df37)):
         lines.append('Defunciones_deis,'
                      # TAGS are used to check if measurements are the same
